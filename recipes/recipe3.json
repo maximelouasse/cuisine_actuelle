@@ -1,0 +1,741 @@
+{
+  "id": "6dc5bba8-4ade-49cd-92ca-80d45072e8ef",
+  "slug": "clafoutis-d-aubergine-203441",
+  "title": "Clafoutis d’aubergine",
+  "source": "prisma_recipe",
+  "status": "published",
+  "yield": 4,
+  "cookTime": 1200,
+  "waitTime": 300,
+  "prepTime": 300,
+  "totalTime": 1800,
+  "cookingMethod": null,
+  "calorieLevel": "Elevé",
+  "instructions": {
+    "default": {
+      "html": "<p>1 Rincez les aubergines, coupez-les en petits cubes. Faites-les dorer 5 min à la poêle dans 4 cuil. d’huile. Egouttez-les sur du papier absorbant. Salez, poivrez. Préchauffez le four th. 6-7 (200 °C).<br>2 Battez les œufs avec la Maïzena et la crème, sel, poivre et thym.<br>3 Répartissez les aubergines dans des ramequins, ajoutez le fromage de chèvre en petits morceaux. Versez la préparation par-dessus. Enfournez 10 à 15 min.<br>4 Servez le clafoutis chaud, tiède ou froid, accompagné d’une salade aux herbes.</p>",
+      "scripts": ""
+    },
+    "amp": {
+      "html": "<p>1 Rincez les aubergines, coupez-les en petits cubes. Faites-les dorer 5 min à la poêle dans 4 cuil. d’huile. Egouttez-les sur du papier absorbant. Salez, poivrez. Préchauffez le four th. 6-7 (200 °C).<br>2 Battez les œufs avec la Maïzena et la crème, sel, poivre et thym.<br>3 Répartissez les aubergines dans des ramequins, ajoutez le fromage de chèvre en petits morceaux. Versez la préparation par-dessus. Enfournez 10 à 15 min.<br>4 Servez le clafoutis chaud, tiède ou froid, accompagné d’une salade aux herbes.</p>",
+      "scripts": ""
+    }
+  },
+  "rawIngredients": {
+    "default": {
+      "html": "<p>• 2 aubergines<br>• 150 g de fromage de chèvre<br>• 3 gros œufs<br>• 1 cuil. à café de Maïzena<br>• 20 cl de crème liquide<br>• 2 pincées de thym<br>• 4 cuil. à soupe d’huile d’olive<br>• sel, poivre</p>",
+      "scripts": ""
+    },
+    "amp": {
+      "html": "<p>• 2 aubergines<br>• 150 g de fromage de chèvre<br>• 3 gros œufs<br>• 1 cuil. à café de Maïzena<br>• 20 cl de crème liquide<br>• 2 pincées de thym<br>• 4 cuil. à soupe d’huile d’olive<br>• sel, poivre</p>",
+      "scripts": ""
+    }
+  },
+  "parsedIngredients": {
+    "split_ingredients": [
+      {
+        "title": "Ingrédients",
+        "ingredients": [
+          {
+            "ingredient": "Aubergines",
+            "quantity": "2",
+            "unit": "",
+            "commonIngredient": "Aubergine",
+            "referenceIngredient": "Aubergine"
+          },
+          {
+            "ingredient": "Fromage de chèvre",
+            "quantity": "150",
+            "unit": "g",
+            "commonIngredient": "Fromage de chèvre",
+            "referenceIngredient": "Fromage de chèvre"
+          },
+          {
+            "ingredient": "Gros oeufs",
+            "quantity": "3",
+            "unit": "",
+            "commonIngredient": "Gros oeuf",
+            "referenceIngredient": "Oeuf"
+          },
+          {
+            "ingredient": "Maïzena",
+            "quantity": "1",
+            "unit": "cuil. à café",
+            "commonIngredient": "Maïzena",
+            "referenceIngredient": "Fécule de Maïs"
+          },
+          {
+            "ingredient": "Crème liquide",
+            "quantity": "20",
+            "unit": "cl",
+            "commonIngredient": "Crème liquide",
+            "referenceIngredient": "Crème laitière"
+          },
+          {
+            "ingredient": "Thym",
+            "quantity": "2",
+            "unit": "pincées",
+            "commonIngredient": "Thym",
+            "referenceIngredient": "Thym"
+          },
+          {
+            "ingredient": "Huile d’olive",
+            "quantity": "4",
+            "unit": "cuil. à soupe",
+            "commonIngredient": "Huile d'olive",
+            "referenceIngredient": "Huile"
+          },
+          {
+            "ingredient": "Sel",
+            "quantity": "_",
+            "unit": "",
+            "commonIngredient": "Sel",
+            "referenceIngredient": "Sel"
+          },
+          {
+            "ingredient": "Poivre",
+            "quantity": "_",
+            "unit": "",
+            "commonIngredient": "Poivre",
+            "referenceIngredient": "Poivre"
+          }
+        ]
+      }
+    ],
+    "ingredients_list": [
+      {
+        "ingredients": [
+          "2 aubergines",
+          "150 g de fromage de chèvre",
+          "3 gros œufs",
+          "1 cuil. à café de Maïzena",
+          "20 cl de crème liquide",
+          "2 pincées de thym",
+          "4 cuil. à soupe d’huile d’olive",
+          "sel",
+          "poivre"
+        ],
+        "title": "Ingrédients"
+      }
+    ],
+    "are_ingredients_converted": true,
+    "filter": []
+  },
+  "estimatedCost": {
+    "label": "Bon marché",
+    "value": 0
+  },
+  "difficulty": {
+    "label": "Facile",
+    "value": 0
+  },
+  "createdAt": "2011-09-13T12:53:36.000Z",
+  "updatedAt": "2011-09-13T12:53:36.000Z",
+  "tags": [
+    {
+      "id": "cafdce11-3eb2-495b-80a6-4d658dbe51a5",
+      "title": "aubergine",
+      "slug": "aubergine"
+    }
+  ],
+  "urls": [
+    {
+      "path": "/recettes/clafoutis-d-aubergine-203441",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-de-cuisine/legume/aubergine/clafoutis-d-aubergine",
+      "publicId": "58393"
+    },
+    {
+      "path": "/type-de-plat/plat-principal/legume/aubergine/clafoutis-d-aubergine",
+      "publicId": "58393"
+    },
+    {
+      "path": "/concours-recettes-au-chocolat2/plat-principal/legume/aubergine/clafoutis-d-aubergine",
+      "publicId": "58393"
+    },
+    {
+      "path": "/concours-recettes-de-grand-mere/plat-principal/legume/aubergine/clafoutis-d-aubergine",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-de-cuisine/legume/aubergine/clafoutis-d-aubergine-prisma_recipe-203441",
+      "publicId": "58393"
+    },
+    {
+      "path": "/type-de-plat/plat-principal/legume/aubergine/clafoutis-d-aubergine-prisma_recipe-203441",
+      "publicId": "58393"
+    },
+    {
+      "path": "/concours-recettes-au-chocolat2/plat-principal/legume/aubergine/clafoutis-d-aubergine-prisma_recipe-203441",
+      "publicId": "58393"
+    },
+    {
+      "path": "/concours-recettes-de-grand-mere/plat-principal/legume/aubergine/clafoutis-d-aubergine-prisma_recipe-203441",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-de-cuisine/legume/aubergine/clafoutis-d-aubergine-203441",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-de-cuisine/type-de-plat/plat-principal/legume/aubergine/clafoutis-d-aubergine",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-par-evenements/concours-recettes-au-chocolat2/plat-principal/legume/aubergine/clafoutis-d-aubergine",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-par-evenements/concours-recettes-de-grand-mere/plat-principal/legume/aubergine/clafoutis-d-aubergine",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-de-cuisine/type-de-plat/plat-principal/legume/aubergine/clafoutis-d-aubergine-prisma_recipe-203441",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-par-evenements/concours-recettes-au-chocolat2/plat-principal/legume/aubergine/clafoutis-d-aubergine-prisma_recipe-203441",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-par-evenements/concours-recettes-de-grand-mere/plat-principal/legume/aubergine/clafoutis-d-aubergine-prisma_recipe-203441",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-de-cuisine/recettes-par-evenements/concours-recettes-au-chocolat2/plat-principal/legume/aubergine/clafoutis-d-aubergine",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-de-cuisine/recettes-par-evenements/concours-recettes-de-grand-mere/plat-principal/legume/aubergine/clafoutis-d-aubergine",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-de-cuisine/recettes-par-evenements/concours-recettes-au-chocolat2/plat-principal/legume/aubergine/clafoutis-d-aubergine-prisma_recipe-203441",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-de-cuisine/recettes-par-evenements/concours-recettes-de-grand-mere/plat-principal/legume/aubergine/clafoutis-d-aubergine-prisma_recipe-203441",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-de-cuisine/type-de-plat/plat-principal/legume/aubergine/clafoutis-d-aubergine-203441",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-de-cuisine/recettes-par-evenements/concours-recettes-au-chocolat2/plat-principal/legume/aubergine/clafoutis-d-aubergine-203441",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-de-cuisine/recettes-par-evenements/concours-recettes-de-grand-mere/plat-principal/legume/aubergine/clafoutis-d-aubergine-203441",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-de-cuisine/recettes-pour-tous/familiale/clafoutis-d-aubergine",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-de-cuisine/recettes-pour-tous/familiale/clafoutis-d-aubergine-prisma_recipe-203441",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-de-cuisine/recettes-pour-tous/familiale/clafoutis-d-aubergine-203441",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-de-cuisine/recettes-pour-tous/vegetarien/clafoutis-d-aubergine",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-de-cuisine/recettes-pour-tous/vegetarien/clafoutis-d-aubergine-prisma_recipe-203441",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-de-cuisine/recettes-pour-tous/vegetarien/clafoutis-d-aubergine-203441",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-de-cuisine/recettes-thematiques/recette-facile/clafoutis-d-aubergine",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-de-cuisine/recettes-thematiques/recette-facile/clafoutis-d-aubergine-prisma_recipe-203441",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-de-cuisine/recettes-thematiques/recette-facile/clafoutis-d-aubergine-203441",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-de-cuisine/type-de-plat/entree/clafoutis-d-aubergine",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-de-cuisine/type-de-plat/entree/clafoutis-d-aubergine-prisma_recipe-203441",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes-de-cuisine/type-de-plat/entree/clafoutis-d-aubergine-203441",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes/clafoutis-d-aubergine-64762",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes/clafoutis-d-aubergine-64763",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes/clafoutis-d-aubergine-64764",
+      "publicId": "58393"
+    },
+    {
+      "path": "/recettes/clafoutis-d-aubergine-64765",
+      "publicId": "58393"
+    }
+  ],
+  "categories": [
+    {
+      "id": "4b3bd2de-f9fb-4688-a574-112e5fe13219",
+      "title": "Aubergine",
+      "slug": "aubergine",
+      "level": 4,
+      "urls": [
+        {
+          "path": "/recettes-de-cuisine/legume/aubergine",
+          "publicId": "134706"
+        }
+      ],
+      "parent": {
+        "id": "d67ea223-07f7-4a93-bd45-2dfe39515b6a",
+        "title": "Légume",
+        "slug": "legume",
+        "level": 3,
+        "urls": [
+          {
+            "publicId": "134700",
+            "path": "/recettes-de-cuisine/legume"
+          }
+        ],
+        "parent": {
+          "id": "86f94965-cf4e-48c4-8c95-0ad33892b98d",
+          "title": "Recettes de cuisine",
+          "slug": "recettes-de-cuisine",
+          "level": 2,
+          "urls": [
+            {
+              "publicId": "58",
+              "path": "/recettes-de-cuisine"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "c324ba6a-4cfb-49d0-b07f-8f819770ad88",
+      "title": "Familiale",
+      "slug": "familiale",
+      "level": 4,
+      "urls": [
+        {
+          "path": "/recettes-de-cuisine/recettes-pour-tous/familiale",
+          "publicId": "5323"
+        }
+      ],
+      "parent": {
+        "id": "c01f592f-e738-4e8b-964c-a9d7aa77664f",
+        "title": "Recettes pour tous",
+        "slug": "recettes-pour-tous",
+        "level": 3,
+        "urls": [
+          {
+            "publicId": "5319",
+            "path": "/recettes-de-cuisine/recettes-pour-tous"
+          }
+        ],
+        "parent": {
+          "id": "86f94965-cf4e-48c4-8c95-0ad33892b98d",
+          "title": "Recettes de cuisine",
+          "slug": "recettes-de-cuisine",
+          "level": 2,
+          "urls": [
+            {
+              "publicId": "58",
+              "path": "/recettes-de-cuisine"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fa69f7df-8db0-489c-9dc9-68385a6edc01",
+      "title": "Végétarien",
+      "slug": "vegetarien",
+      "level": 4,
+      "urls": [
+        {
+          "path": "/recettes-de-cuisine/recettes-pour-tous/vegetarien",
+          "publicId": "5326"
+        }
+      ],
+      "parent": {
+        "id": "c01f592f-e738-4e8b-964c-a9d7aa77664f",
+        "title": "Recettes pour tous",
+        "slug": "recettes-pour-tous",
+        "level": 3,
+        "urls": [
+          {
+            "publicId": "5319",
+            "path": "/recettes-de-cuisine/recettes-pour-tous"
+          }
+        ],
+        "parent": {
+          "id": "86f94965-cf4e-48c4-8c95-0ad33892b98d",
+          "title": "Recettes de cuisine",
+          "slug": "recettes-de-cuisine",
+          "level": 2,
+          "urls": [
+            {
+              "publicId": "58",
+              "path": "/recettes-de-cuisine"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "6216596f-8513-43e4-853c-7629bce91afa",
+      "title": "Recette facile",
+      "slug": "recette-facile",
+      "level": 4,
+      "urls": [
+        {
+          "path": "/recettes-de-cuisine/recettes-thematiques/recette-facile",
+          "publicId": "5356"
+        }
+      ],
+      "parent": {
+        "id": "034b7c5e-06d2-4499-9150-4a253173fc6a",
+        "title": "Recettes thématiques",
+        "slug": "recettes-thematiques",
+        "level": 3,
+        "urls": [
+          {
+            "publicId": "5354",
+            "path": "/recettes-de-cuisine/recettes-thematiques"
+          }
+        ],
+        "parent": {
+          "id": "86f94965-cf4e-48c4-8c95-0ad33892b98d",
+          "title": "Recettes de cuisine",
+          "slug": "recettes-de-cuisine",
+          "level": 2,
+          "urls": [
+            {
+              "publicId": "58",
+              "path": "/recettes-de-cuisine"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "d08b5041-ccc1-4e02-8d0e-aff8bac5d713",
+      "title": "Entrée",
+      "slug": "entree",
+      "level": 3,
+      "urls": [
+        {
+          "path": "/recettes-de-cuisine/entree",
+          "publicId": "134638"
+        }
+      ],
+      "parent": {
+        "id": "86f94965-cf4e-48c4-8c95-0ad33892b98d",
+        "title": "Recettes de cuisine",
+        "slug": "recettes-de-cuisine",
+        "level": 2,
+        "urls": [
+          {
+            "publicId": "58",
+            "path": "/recettes-de-cuisine"
+          }
+        ],
+        "parent": {
+          "id": "91bd0e18-689f-440c-8c8c-c8ad007ce51d",
+          "title": "CAC",
+          "slug": "cac",
+          "level": 1,
+          "urls": null
+        }
+      }
+    }
+  ],
+  "medias": [
+    {
+      "format": null,
+      "focusPoint": null,
+      "providerName": "PMD_BONE_Image",
+      "title": null,
+      "credit": "Marielle-Gault / Prismapix",
+      "url": "http://prd2-bone-image.s3-website-eu-west-1.amazonaws.com/cac/2018/09/25/b5777a2a-5cba-4dfa-be13-0c70d9908305.jpeg",
+      "iframely": "{\"meta\":{\"id\":\"b5777a2a-5cba-4dfa-be13-0c70d9908305\",\"path\":\"\\/cac\\/2018\\/09\\/25\\/b5777a2a-5cba-4dfa-be13-0c70d9908305.jpeg\",\"credit\":\"Marielle-Gault \\/ Prismapix\",\"createdAt\":\"2018-09-25T11:27:52+0200\",\"updatedAt\":\"2018-09-25T11:27:52+0200\",\"namespace\":\"cac\",\"url\":\"http:\\/\\/prd2-bone-image.s3-website-eu-west-1.amazonaws.com\\/cac\\/2018\\/09\\/25\\/b5777a2a-5cba-4dfa-be13-0c70d9908305.jpeg\",\"extension\":\"jpeg\",\"sha1\":\"c33195985f49c42107697e2c01aba6bcce755224\",\"height\":325,\"width\":600,\"fileSize\":98678,\"ratio\":1.85,\"site\":\"PMD_BONE_Image\",\"canonical\":\"http:\\/\\/prd2-bone-image.s3-website-eu-west-1.amazonaws.com\\/cac\\/2018\\/09\\/25\\/b5777a2a-5cba-4dfa-be13-0c70d9908305.jpeg\",\"date\":\"2018-09-25T09:27:52.000Z\"},\"links\":{\"app\":[{\"rel\":[\"app\",\"ssl\",\"html5\"],\"type\":\"text\\/html\",\"html\":\"<img src=\\\"https:\\/\\/img.one.pmdstatic.net\\/fit\\/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2018.2F09.2F25.2Fb5777a2a-5cba-4dfa-be13-0c70d9908305.2Ejpeg\\/600x325\\/quality\\/80\\/thumbnail.jpg\\\" width=\\\"600\\\" height=\\\"325\\\" \\/>\",\"media\":{\"width\":600,\"height\":325}}],\"thumbnail\":[{\"rel\":[\"thumbnail\",\"ssl\"],\"type\":\"image\\/jpeg\",\"href\":\"https:\\/\\/img.one.pmdstatic.net\\/fit\\/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2018.2F09.2F25.2Fb5777a2a-5cba-4dfa-be13-0c70d9908305.2Ejpeg\\/200x108\\/quality\\/80\\/thumbnail.jpg\",\"media\":{\"width\":200,\"height\":108}}]},\"rel\":[\"app\",\"ssl\",\"html5\"],\"html\":\"<img src=\\\"https:\\/\\/img.one.pmdstatic.net\\/fit\\/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2018.2F09.2F25.2Fb5777a2a-5cba-4dfa-be13-0c70d9908305.2Ejpeg\\/600x325\\/quality\\/80\\/thumbnail.jpg\\\" width=\\\"600\\\" height=\\\"325\\\" \\/>\"}",
+      "figure": {
+        "url": "https://img.one.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2018.2F09.2F25.2Fb5777a2a-5cba-4dfa-be13-0c70d9908305.2Ejpeg/200x108/quality/80/thumbnail.jpg",
+        "width": 200,
+        "height": 108,
+        "ratio": 1.85
+      }
+    },
+    {
+      "format": null,
+      "focusPoint": null,
+      "providerName": "PMD_BONE_Image",
+      "title": null,
+      "credit": "Marielle-Gault / Prismapix",
+      "url": "http://prd2-bone-image.s3-website-eu-west-1.amazonaws.com/CAC/2018/09/25/4f2f010e-e92c-4dc6-b84a-7d390e67e75a.jpeg",
+      "iframely": "{\"meta\":{\"id\":\"4f2f010e-e92c-4dc6-b84a-7d390e67e75a\",\"path\":\"\\/CAC\\/2018\\/09\\/25\\/4f2f010e-e92c-4dc6-b84a-7d390e67e75a.jpeg\",\"credit\":\"Marielle-Gault \\/ Prismapix\",\"createdAt\":\"2018-09-25T07:59:04+0200\",\"updatedAt\":\"2018-09-25T11:27:53+0200\",\"namespace\":\"CAC\",\"url\":\"http:\\/\\/prd2-bone-image.s3-website-eu-west-1.amazonaws.com\\/CAC\\/2018\\/09\\/25\\/4f2f010e-e92c-4dc6-b84a-7d390e67e75a.jpeg\",\"extension\":\"jpeg\",\"sha1\":\"e924a0035ffd21547adeb0c24bc10c33c0bb9527\",\"height\":800,\"width\":800,\"fileSize\":193740,\"ratio\":1,\"site\":\"PMD_BONE_Image\",\"canonical\":\"http:\\/\\/prd2-bone-image.s3-website-eu-west-1.amazonaws.com\\/CAC\\/2018\\/09\\/25\\/4f2f010e-e92c-4dc6-b84a-7d390e67e75a.jpeg\",\"date\":\"2018-09-25T09:27:53.000Z\"},\"links\":{\"app\":[{\"rel\":[\"app\",\"ssl\",\"html5\"],\"type\":\"text\\/html\",\"html\":\"<img src=\\\"https:\\/\\/img.one.pmdstatic.net\\/fit\\/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2FCAC.2F2018.2F09.2F25.2F4f2f010e-e92c-4dc6-b84a-7d390e67e75a.2Ejpeg\\/800x800\\/quality\\/80\\/thumbnail.jpg\\\" width=\\\"800\\\" height=\\\"800\\\" \\/>\",\"media\":{\"width\":800,\"height\":800}}],\"thumbnail\":[{\"rel\":[\"thumbnail\",\"ssl\"],\"type\":\"image\\/jpeg\",\"href\":\"https:\\/\\/img.one.pmdstatic.net\\/fit\\/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2FCAC.2F2018.2F09.2F25.2F4f2f010e-e92c-4dc6-b84a-7d390e67e75a.2Ejpeg\\/200x200\\/quality\\/80\\/thumbnail.jpg\",\"media\":{\"width\":200,\"height\":200}}]},\"rel\":[\"app\",\"ssl\",\"html5\"],\"html\":\"<img src=\\\"https:\\/\\/img.one.pmdstatic.net\\/fit\\/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2FCAC.2F2018.2F09.2F25.2F4f2f010e-e92c-4dc6-b84a-7d390e67e75a.2Ejpeg\\/800x800\\/quality\\/80\\/thumbnail.jpg\\\" width=\\\"800\\\" height=\\\"800\\\" \\/>\"}",
+      "figure": {
+        "url": "https://img.one.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2FCAC.2F2018.2F09.2F25.2F4f2f010e-e92c-4dc6-b84a-7d390e67e75a.2Ejpeg/200x200/quality/80/thumbnail.jpg",
+        "width": 200,
+        "height": 200,
+        "ratio": 1
+      }
+    },
+    {
+      "format": null,
+      "focusPoint": null,
+      "providerName": "Brightcove",
+      "title": "CUISINE ACTUELLE - Clafoutis d'aubergines",
+      "credit": null,
+      "url": "https://players.brightcove.net/811631557001/default_default/index.html?videoId=5532114626001",
+      "iframely": "{\"meta\":{\"title\":\"CUISINE ACTUELLE - Clafoutis d'aubergines\",\"id\":\"5532114626001\",\"account_id\":\"811631557001\",\"canonical\":\"https:\\/\\/players.brightcove.net\\/811631557001\\/default_default\\/index.html?videoId=5532114626001\",\"sources\":\"[{\\\"asset_id\\\":\\\"5540647364001\\\",\\\"remote\\\":false,\\\"src\\\":\\\"http:\\/\\/femininppl.videos.prismamediadigital.com\\/media\\/811631557001\\/201708\\/1207\\/811631557001_5540647364001_5532114626001.mp4\\\",\\\"codec\\\":\\\"H264\\\",\\\"container\\\":\\\"MP4\\\",\\\"encoding_rate\\\":1831000,\\\"duration\\\":65472,\\\"height\\\":540,\\\"width\\\":960,\\\"size\\\":15006976,\\\"uploaded_at\\\":\\\"2017-08-14T13:31:21.750Z\\\"},{\\\"asset_id\\\":\\\"5540648693001\\\",\\\"remote\\\":false,\\\"src\\\":\\\"http:\\/\\/femininppl.videos.prismamediadigital.com\\/media\\/811631557001\\/201708\\/1207\\/811631557001_5540648693001_5532114626001.mp4\\\",\\\"codec\\\":\\\"H264\\\",\\\"container\\\":\\\"MP4\\\",\\\"encoding_rate\\\":996000,\\\"duration\\\":65472,\\\"height\\\":360,\\\"width\\\":640,\\\"size\\\":8177822,\\\"uploaded_at\\\":\\\"2017-08-14T13:31:01.608Z\\\"},{\\\"asset_id\\\":\\\"5540647648001\\\",\\\"remote\\\":false,\\\"src\\\":\\\"http:\\/\\/femininppl.videos.prismamediadigital.com\\/media\\/811631557001\\/201708\\/1207\\/811631557001_5540647648001_5532114626001.mp4\\\",\\\"codec\\\":\\\"H264\\\",\\\"container\\\":\\\"MP4\\\",\\\"encoding_rate\\\":514000,\\\"duration\\\":65472,\\\"height\\\":270,\\\"width\\\":480,\\\"size\\\":4230058,\\\"uploaded_at\\\":\\\"2017-08-14T13:30:59.595Z\\\"}]\",\"created_at\":\"2017-08-04T14:36:33.642Z\",\"delivery_type\":\"static_origin\",\"digital_master_id\":\"5540647525001\",\"duration\":65472,\"economics\":\"AD_SUPPORTED\",\"name\":\"CUISINE ACTUELLE - Clafoutis d'aubergines\",\"original_filename\":\"Clafoutis_aubergine_v03.mp4\",\"published_at\":\"2017-08-04T14:36:33.642Z\",\"state\":\"ACTIVE\",\"tags\":\"cac, maizena, creme, thym, syndication, chevre, aubergine, oeuf, facile, clafoutis\",\"updated_at\":\"2017-08-14T13:31:58.267Z\",\"site\":\"Brightcove\",\"date\":\"2017-08-14T13:31:58.267Z\",\"media\":\"player\"},\"links\":{\"player\":[{\"type\":\"text\\/html\",\"rel\":[\"player\",\"html5\",\"ssl\",\"iframely\"],\"href\":\"https:\\/\\/players.brightcove.net\\/811631557001\\/default_default\\/index.html?videoId=5532114626001\",\"html\":\"<iframe width=\\\"100%\\\" height=\\\"100%\\\" src=\\\"https:\\/\\/players.brightcove.net\\/811631557001\\/default_default\\/index.html?videoId=5532114626001\\\"><\\/iframe>\"},{\"href\":\"\\/\\/players.brightcove.net\\/811631557001\\/default_default\\/index.html?videoId=5532114626001&for=embed\",\"rel\":[\"player\",\"html5\",\"ssl\"],\"type\":\"text\\/html\",\"media\":{\"aspect-ratio\":1.7778,\"scrolling\":\"no\"},\"html\":\"<div><div style=\\\"left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.2493%;\\\"><iframe src=\\\"\\/\\/players.brightcove.net\\/811631557001\\/default_default\\/index.html?videoId=5532114626001&amp;for=embed\\\" style=\\\"border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;\\\" allowfullscreen scrolling=\\\"no\\\"><\\/iframe><\\/div><\\/div>\"},{\"href\":\"\\/\\/players.brightcove.net\\/811631557001\\/default_default\\/index.html?videoId=5532114626001&for=embed&autoplay=true\",\"rel\":[\"player\",\"html5\",\"ssl\",\"autoplay\"],\"type\":\"text\\/html\",\"media\":{\"aspect-ratio\":1.7778,\"scrolling\":\"no\"},\"html\":\"<div><div style=\\\"left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.2493%;\\\"><iframe src=\\\"\\/\\/players.brightcove.net\\/811631557001\\/default_default\\/index.html?videoId=5532114626001&amp;for=embed&amp;autoplay=true\\\" style=\\\"border: 0; top: 0; left: 0; width: 100%; height: 100%; position: absolute;\\\" allowfullscreen scrolling=\\\"no\\\"><\\/iframe><\\/div><\\/div>\"}],\"thumbnail\":[{\"type\":\"image\\/jpeg\",\"rel\":[\"thumbnail\"],\"href\":\"http:\\/\\/femininppl.videos.prismamediadigital.com\\/pd\\/811631557001\\/201708\\/1207\\/811631557001_5532114901001_5532114626001-vs.jpg?pubId=811631557001\",\"media\":{\"width\":1280,\"height\":719}},{\"type\":\"image\\/jpeg\",\"rel\":[\"thumbnail\"],\"href\":\"http:\\/\\/femininppl.videos.prismamediadigital.com\\/pd\\/811631557001\\/201708\\/1207\\/811631557001_5532114902001_5532114626001-th.jpg?pubId=811631557001\",\"media\":{\"width\":160,\"height\":90}}],\"icon\":[{\"href\":\"https:\\/\\/players.brightcove.net\\/favicon.ico\",\"type\":\"image\\/icon\",\"rel\":[\"icon\",\"ssl\"]}]},\"rel\":[\"player\",\"html5\",\"ssl\",\"iframely\"],\"html\":\"<iframe width=\\\"100%\\\" height=\\\"100%\\\" src=\\\"https:\\/\\/players.brightcove.net\\/811631557001\\/default_default\\/index.html?videoId=5532114626001\\\"><\\/iframe>\"}",
+      "figure": {
+        "url": "http://femininppl.videos.prismamediadigital.com/pd/811631557001/201708/1207/811631557001_5532114901001_5532114626001-vs.jpg?pubId=811631557001",
+        "width": 1280,
+        "height": 719,
+        "ratio": 1.78
+      }
+    }
+  ],
+  "userReviews": {
+    "average": 0.83,
+    "count": 2948,
+    "commentsCount": 0,
+    "rank": 0.83
+  },
+  "authors": [
+    {
+      "id": "9b8766c1-357e-465d-a690-a666f45abfd1",
+      "userId": null,
+      "slug": "thalie-bardinetprismapix",
+      "avatarUrl": null,
+      "name": "Thalie Bardinet/Prismapix",
+      "firstName": null,
+      "lastName": null,
+      "hasPublicProfile": true,
+      "prismaConnectId": null
+    }
+  ],
+  "category": {
+    "id": "4b3bd2de-f9fb-4688-a574-112e5fe13219",
+    "title": "Aubergine",
+    "slug": "aubergine",
+    "level": 4,
+    "urls": [
+      {
+        "path": "/recettes-de-cuisine/legume/aubergine",
+        "publicId": "134706"
+      }
+    ],
+    "parent": {
+      "id": "d67ea223-07f7-4a93-bd45-2dfe39515b6a",
+      "title": "Légume",
+      "slug": "legume",
+      "level": 3,
+      "urls": [
+        {
+          "publicId": "134700",
+          "path": "/recettes-de-cuisine/legume"
+        }
+      ],
+      "parent": {
+        "id": "86f94965-cf4e-48c4-8c95-0ad33892b98d",
+        "title": "Recettes de cuisine",
+        "slug": "recettes-de-cuisine",
+        "level": 2,
+        "urls": [
+          {
+            "publicId": "58",
+            "path": "/recettes-de-cuisine"
+          }
+        ]
+      }
+    }
+  },
+  "publishedAt": "2011-09-13T12:53:36.000Z",
+  "categoriesFlattens": [
+    {
+      "id": "91bd0e18-689f-440c-8c8c-c8ad007ce51d",
+      "title": "CAC",
+      "slug": "cac",
+      "level": 1,
+      "urls": null
+    },
+    {
+      "id": "d08b5041-ccc1-4e02-8d0e-aff8bac5d713",
+      "title": "Entrée",
+      "slug": "entree",
+      "level": 3,
+      "urls": [
+        {
+          "path": "/recettes-de-cuisine/entree",
+          "publicId": "134638"
+        }
+      ]
+    },
+    {
+      "id": "034b7c5e-06d2-4499-9150-4a253173fc6a",
+      "title": "Recettes thématiques",
+      "slug": "recettes-thematiques",
+      "level": 3,
+      "urls": [
+        {
+          "publicId": "5354",
+          "path": "/recettes-de-cuisine/recettes-thematiques"
+        }
+      ]
+    },
+    {
+      "id": "6216596f-8513-43e4-853c-7629bce91afa",
+      "title": "Recette facile",
+      "slug": "recette-facile",
+      "level": 4,
+      "urls": [
+        {
+          "path": "/recettes-de-cuisine/recettes-thematiques/recette-facile",
+          "publicId": "5356"
+        }
+      ]
+    },
+    {
+      "id": "fa69f7df-8db0-489c-9dc9-68385a6edc01",
+      "title": "Végétarien",
+      "slug": "vegetarien",
+      "level": 4,
+      "urls": [
+        {
+          "path": "/recettes-de-cuisine/recettes-pour-tous/vegetarien",
+          "publicId": "5326"
+        }
+      ]
+    },
+    {
+      "id": "c01f592f-e738-4e8b-964c-a9d7aa77664f",
+      "title": "Recettes pour tous",
+      "slug": "recettes-pour-tous",
+      "level": 3,
+      "urls": [
+        {
+          "publicId": "5319",
+          "path": "/recettes-de-cuisine/recettes-pour-tous"
+        }
+      ]
+    },
+    {
+      "id": "c324ba6a-4cfb-49d0-b07f-8f819770ad88",
+      "title": "Familiale",
+      "slug": "familiale",
+      "level": 4,
+      "urls": [
+        {
+          "path": "/recettes-de-cuisine/recettes-pour-tous/familiale",
+          "publicId": "5323"
+        }
+      ]
+    },
+    {
+      "id": "86f94965-cf4e-48c4-8c95-0ad33892b98d",
+      "title": "Recettes de cuisine",
+      "slug": "recettes-de-cuisine",
+      "level": 2,
+      "urls": [
+        {
+          "publicId": "58",
+          "path": "/recettes-de-cuisine"
+        }
+      ]
+    },
+    {
+      "id": "d67ea223-07f7-4a93-bd45-2dfe39515b6a",
+      "title": "Légume",
+      "slug": "legume",
+      "level": 3,
+      "urls": [
+        {
+          "publicId": "134700",
+          "path": "/recettes-de-cuisine/legume"
+        }
+      ]
+    },
+    {
+      "id": "4b3bd2de-f9fb-4688-a574-112e5fe13219",
+      "title": "Aubergine",
+      "slug": "aubergine",
+      "level": 4,
+      "urls": [
+        {
+          "path": "/recettes-de-cuisine/legume/aubergine",
+          "publicId": "134706"
+        }
+      ]
+    }
+  ],
+  "userreview": {
+    "average": 0.83,
+    "count": 2948,
+    "commentsCount": 0,
+    "rank": 0.83
+  },
+  "breadcrumb": [
+    {
+      "id": "86f94965-cf4e-48c4-8c95-0ad33892b98d",
+      "title": "Recettes de cuisine",
+      "slug": "recettes-de-cuisine",
+      "level": 2,
+      "urls": [
+        {
+          "publicId": "58",
+          "path": "/recettes-de-cuisine"
+        }
+      ]
+    },
+    {
+      "id": "d67ea223-07f7-4a93-bd45-2dfe39515b6a",
+      "title": "Légume",
+      "slug": "legume",
+      "level": 3,
+      "urls": [
+        {
+          "publicId": "134700",
+          "path": "/recettes-de-cuisine/legume"
+        }
+      ]
+    },
+    {
+      "id": "4b3bd2de-f9fb-4688-a574-112e5fe13219",
+      "title": "Aubergine",
+      "slug": "aubergine",
+      "level": 4,
+      "urls": [
+        {
+          "path": "/recettes-de-cuisine/legume/aubergine",
+          "publicId": "134706"
+        }
+      ]
+    }
+  ],
+  "relevance": 13.249999999999998
+}

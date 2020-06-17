@@ -1,0 +1,595 @@
+{
+  "id": "48a4d1ac-0682-4c53-a8c3-1af1355dc608",
+  "slug": "nuggets-de-poulet-en-chapelure-de-mais",
+  "title": "Nuggets de poulet en chapelure de maïs",
+  "source": null,
+  "status": "published",
+  "yield": 4,
+  "cookTime": 600,
+  "waitTime": 0,
+  "prepTime": 1200,
+  "totalTime": 1800,
+  "cookingMethod": "Friture",
+  "calorieLevel": "Elevé",
+  "advice": {
+    "default": {
+      "html": "<p>Vous trouverez la chapelure de maïs au rayon sans gluten des supermarchés et des épiceries bio et diététiques. </p>",
+      "scripts": ""
+    },
+    "amp": {
+      "html": "<p>Vous trouverez la chapelure de maïs au rayon sans gluten des supermarchés et des épiceries bio et diététiques. </p>",
+      "scripts": ""
+    }
+  },
+  "instructions": {
+    "default": {
+      "html": "<p>1 Coupez les filets de <a href=\"https://www.cuisineactuelle.fr/recettes-de-cuisine/viande/poulet\">poulet</a> en cubes. Hachez-les. Salez et poivrez. <br>2 Versez le lait dans une assiette creuse et faites tremper la mie de pain. Une fois imbibée, pressez-la légèrement et incorporez-la au poulet haché. <br>3 Dans une assiette creuse, battez les œufs avec du sel et du poivre. Versez la chapelure dans une autre assiette. <br>4 Faites chauffer le bain de friture. Avec la pâte au poulet haché, façonnez des boulettes légèrement aplaties, roulez-les deux fois dans le mélange aux œufs battus puis dans la chapelure. Plongez les nuggets dans le bain de friture chaud environ 4-5 min par face. Epongez-les rapidement sur du papier absorbant. 5 Servez aussitôt par exemple comme ici, avec une petite salade composée (roquette, tomates) et des quartiers de citron vert, pour la touche mexicaine que rappelle le maïs.</p>",
+      "scripts": ""
+    },
+    "amp": {
+      "html": "<p>1 Coupez les filets de <a href=\"https://www.cuisineactuelle.fr/recettes-de-cuisine/viande/poulet\">poulet</a> en cubes. Hachez-les. Salez et poivrez. <br>2 Versez le lait dans une assiette creuse et faites tremper la mie de pain. Une fois imbibée, pressez-la légèrement et incorporez-la au poulet haché. <br>3 Dans une assiette creuse, battez les œufs avec du sel et du poivre. Versez la chapelure dans une autre assiette. <br>4 Faites chauffer le bain de friture. Avec la pâte au poulet haché, façonnez des boulettes légèrement aplaties, roulez-les deux fois dans le mélange aux œufs battus puis dans la chapelure. Plongez les nuggets dans le bain de friture chaud environ 4-5 min par face. Epongez-les rapidement sur du papier absorbant. 5 Servez aussitôt par exemple comme ici, avec une petite salade composée (roquette, tomates) et des quartiers de citron vert, pour la touche mexicaine que rappelle le maïs.</p>",
+      "scripts": ""
+    }
+  },
+  "rawIngredients": {
+    "default": {
+      "html": "<p>• 400 g de filets de <a href=\"https://www.cuisineactuelle.fr/recettes-de-cuisine/viande/poulet\">poulet</a> <br>• 80 g de chapelure de maïs <br>• 40 g de mie de pain sans gluten <br>• 4 cl de lait <br>• 2 œufs <br>• 1 bain de friture <br>• sel, poivre</p>",
+      "scripts": ""
+    },
+    "amp": {
+      "html": "<p>• 400 g de filets de <a href=\"https://www.cuisineactuelle.fr/recettes-de-cuisine/viande/poulet\">poulet</a> <br>• 80 g de chapelure de maïs <br>• 40 g de mie de pain sans gluten <br>• 4 cl de lait <br>• 2 œufs <br>• 1 bain de friture <br>• sel, poivre</p>",
+      "scripts": ""
+    }
+  },
+  "parsedIngredients": {
+    "ingredients_list": [
+      {
+        "ingredients": [
+          "400 g de filets de poulet",
+          "80 g de chapelure de maïs",
+          "40 g de mie de pain sans gluten",
+          "4 cl de lait",
+          "2 œufs",
+          "1 bain de friture",
+          "sel",
+          "poivre"
+        ],
+        "title": "Ingrédients"
+      }
+    ],
+    "split_ingredients": [
+      {
+        "title": "Ingrédients",
+        "ingredients": [
+          {
+            "ingredient": "Filets de poulet",
+            "additionalInformation": null,
+            "quantity": "400",
+            "unit": "g",
+            "preQuantity": null,
+            "commonIngredient": "Filet de poulet",
+            "referenceIngredient": "Poulet"
+          },
+          {
+            "ingredient": "Chapelure de maïs",
+            "additionalInformation": null,
+            "quantity": "80",
+            "unit": "g",
+            "preQuantity": null,
+            "commonIngredient": "Chapelure",
+            "referenceIngredient": "Chapelure"
+          },
+          {
+            "ingredient": "Mie de pain sans gluten",
+            "additionalInformation": null,
+            "quantity": "40",
+            "unit": "g",
+            "preQuantity": null,
+            "commonIngredient": "Pain de mie sans croûte",
+            "referenceIngredient": "Pain"
+          },
+          {
+            "ingredient": "Lait",
+            "additionalInformation": null,
+            "quantity": "4",
+            "unit": "cl",
+            "preQuantity": null,
+            "commonIngredient": "Lait",
+            "referenceIngredient": "Lait"
+          },
+          {
+            "ingredient": "Oeufs",
+            "additionalInformation": null,
+            "quantity": "2",
+            "unit": "",
+            "preQuantity": null,
+            "commonIngredient": "Oeuf de lump",
+            "referenceIngredient": "Oeuf"
+          },
+          {
+            "ingredient": "Bain de friture",
+            "additionalInformation": null,
+            "quantity": "1",
+            "unit": "",
+            "preQuantity": null,
+            "commonIngredient": "Huile de friture",
+            "referenceIngredient": "Huile"
+          },
+          {
+            "ingredient": "Sel",
+            "additionalInformation": null,
+            "quantity": "_",
+            "unit": "",
+            "preQuantity": null,
+            "commonIngredient": "Sel",
+            "referenceIngredient": "Sel"
+          },
+          {
+            "ingredient": "Poivre",
+            "additionalInformation": null,
+            "quantity": "_",
+            "unit": "",
+            "preQuantity": null,
+            "commonIngredient": "Poivre",
+            "referenceIngredient": "Poivre"
+          }
+        ]
+      }
+    ],
+    "filters": [],
+    "are_ingredients_converted": true
+  },
+  "estimatedCost": {
+    "label": "Bon marché",
+    "value": 0
+  },
+  "difficulty": {
+    "label": "Facile",
+    "value": 0
+  },
+  "createdAt": "2020-04-09T11:59:11.000Z",
+  "updatedAt": "2020-04-09T11:59:11.000Z",
+  "tags": [
+    {
+      "id": "14566799-6f59-46ca-9a4b-eb3f5c66c952",
+      "title": "recettes exotiques",
+      "slug": "recettes-exotiques"
+    },
+    {
+      "id": "69efc26d-1ff0-4982-bfc3-46022cb2c3f4",
+      "title": "gluten",
+      "slug": "gluten"
+    },
+    {
+      "id": "add7ac80-8380-4088-8e35-a32b9a3fd2f3",
+      "title": "Nuggets",
+      "slug": "nuggets"
+    },
+    {
+      "id": "bb848120-a9d9-496d-8d05-23582fd897d4",
+      "title": "sans gluten",
+      "slug": "sans-gluten"
+    },
+    {
+      "id": "c3a06e5f-761e-4c55-99aa-6d00fdf8b5e8",
+      "title": "Mexique",
+      "slug": "mexique"
+    }
+  ],
+  "urls": [
+    {
+      "path": "/recettes/nuggets-de-poulet-en-chapelure-de-mais-193012",
+      "publicId": "193012"
+    }
+  ],
+  "categories": [
+    {
+      "id": "0ee46f8d-680d-426e-94c6-af91e5a0e738",
+      "title": "Diététique",
+      "slug": "dietetique",
+      "level": 4,
+      "urls": [
+        {
+          "path": "/recettes-de-cuisine/recettes-pour-tous/dietetique",
+          "publicId": "5324"
+        }
+      ],
+      "parent": {
+        "id": "c01f592f-e738-4e8b-964c-a9d7aa77664f",
+        "title": "Recettes pour tous",
+        "slug": "recettes-pour-tous",
+        "level": 3,
+        "urls": [
+          {
+            "publicId": "5319",
+            "path": "/recettes-de-cuisine/recettes-pour-tous"
+          }
+        ],
+        "parent": {
+          "id": "86f94965-cf4e-48c4-8c95-0ad33892b98d",
+          "title": "Recettes de cuisine",
+          "slug": "recettes-de-cuisine",
+          "level": 2,
+          "urls": [
+            {
+              "publicId": "58",
+              "path": "/recettes-de-cuisine"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "7d44fe4d-dad0-44b1-ab10-49e23cca147f",
+      "title": "Poulet",
+      "slug": "poulet",
+      "level": 4,
+      "urls": [
+        {
+          "path": "/recettes-de-cuisine/viande/poulet",
+          "publicId": "134783"
+        }
+      ],
+      "parent": {
+        "id": "a1414f5e-2a7b-4d73-9170-90c004c56700",
+        "title": "Viande",
+        "slug": "viande",
+        "level": 3,
+        "urls": [
+          {
+            "publicId": "134782",
+            "path": "/recettes-de-cuisine/viande"
+          }
+        ],
+        "parent": {
+          "id": "86f94965-cf4e-48c4-8c95-0ad33892b98d",
+          "title": "Recettes de cuisine",
+          "slug": "recettes-de-cuisine",
+          "level": 2,
+          "urls": [
+            {
+              "publicId": "58",
+              "path": "/recettes-de-cuisine"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "c324ba6a-4cfb-49d0-b07f-8f819770ad88",
+      "title": "Familiale",
+      "slug": "familiale",
+      "level": 4,
+      "urls": [
+        {
+          "path": "/recettes-de-cuisine/recettes-pour-tous/familiale",
+          "publicId": "5323"
+        }
+      ],
+      "parent": {
+        "id": "c01f592f-e738-4e8b-964c-a9d7aa77664f",
+        "title": "Recettes pour tous",
+        "slug": "recettes-pour-tous",
+        "level": 3,
+        "urls": [
+          {
+            "publicId": "5319",
+            "path": "/recettes-de-cuisine/recettes-pour-tous"
+          }
+        ],
+        "parent": {
+          "id": "86f94965-cf4e-48c4-8c95-0ad33892b98d",
+          "title": "Recettes de cuisine",
+          "slug": "recettes-de-cuisine",
+          "level": 2,
+          "urls": [
+            {
+              "publicId": "58",
+              "path": "/recettes-de-cuisine"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "e227fd70-8800-4a23-af70-ccda7055aa80",
+      "title": "Enfant",
+      "slug": "enfant",
+      "level": 4,
+      "urls": [
+        {
+          "path": "/recettes-de-cuisine/recettes-pour-tous/enfant",
+          "publicId": "5321"
+        }
+      ],
+      "parent": {
+        "id": "c01f592f-e738-4e8b-964c-a9d7aa77664f",
+        "title": "Recettes pour tous",
+        "slug": "recettes-pour-tous",
+        "level": 3,
+        "urls": [
+          {
+            "publicId": "5319",
+            "path": "/recettes-de-cuisine/recettes-pour-tous"
+          }
+        ],
+        "parent": {
+          "id": "86f94965-cf4e-48c4-8c95-0ad33892b98d",
+          "title": "Recettes de cuisine",
+          "slug": "recettes-de-cuisine",
+          "level": 2,
+          "urls": [
+            {
+              "publicId": "58",
+              "path": "/recettes-de-cuisine"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "478598cb-8ea6-484b-8378-c98ce5a20767",
+      "title": "Recette mexicaine",
+      "slug": "recette-mexicaine",
+      "level": 4,
+      "urls": [
+        {
+          "path": "/recettes-de-cuisine/recettes-du-monde/recette-mexicaine",
+          "publicId": "5396"
+        }
+      ],
+      "parent": {
+        "id": "23c2bcd9-2c21-4585-9289-0a03ecc2e765",
+        "title": "Recettes du monde",
+        "slug": "recettes-du-monde",
+        "level": 3,
+        "urls": [
+          {
+            "publicId": "5388",
+            "path": "/recettes-de-cuisine/recettes-du-monde"
+          }
+        ],
+        "parent": {
+          "id": "86f94965-cf4e-48c4-8c95-0ad33892b98d",
+          "title": "Recettes de cuisine",
+          "slug": "recettes-de-cuisine",
+          "level": 2,
+          "urls": [
+            {
+              "publicId": "58",
+              "path": "/recettes-de-cuisine"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "medias": [
+    {
+      "format": null,
+      "focusPoint": null,
+      "providerName": "PMD_BONE_Image",
+      "title": null,
+      "credit": "Kettenhofen / Photocuisine",
+      "url": "http://prd2-bone-image.s3-website-eu-west-1.amazonaws.com/cac/2020/04/09/14a79392-5f57-42fd-bd5c-89fcc7cf0927.jpeg",
+      "iframely": "{\"meta\":{\"path\":\"\\/cac\\/2020\\/04\\/09\\/14a79392-5f57-42fd-bd5c-89fcc7cf0927.jpeg\",\"sha1\":\"3150c5f22e7b38539e55f6227f6870be8396b561\",\"width\":1417,\"height\":2124,\"site\":\"PMD_BONE_Image\",\"ratio\":0.67,\"updatedAt\":\"2020-04-09T09:54:42+0200\",\"date\":\"2020-04-09T07:54:42.000Z\",\"url\":\"http:\\/\\/prd2-bone-image.s3-website-eu-west-1.amazonaws.com\\/cac\\/2020\\/04\\/09\\/14a79392-5f57-42fd-bd5c-89fcc7cf0927.jpeg\",\"canonical\":\"http:\\/\\/prd2-bone-image.s3-website-eu-west-1.amazonaws.com\\/cac\\/2020\\/04\\/09\\/14a79392-5f57-42fd-bd5c-89fcc7cf0927.jpeg\",\"credit\":\"Kettenhofen \\/ Photocuisine\",\"id\":\"14a79392-5f57-42fd-bd5c-89fcc7cf0927\",\"createdAt\":\"2020-04-09T09:54:42+0200\",\"namespace\":\"cac\",\"defaultDescription\":\"Nuggets de poulet en chapelure de maÔs \",\"fileSize\":1875334,\"extension\":\"jpeg\"},\"links\":{\"app\":[{\"rel\":[\"app\",\"ssl\",\"html5\"],\"type\":\"text\\/html\",\"html\":\"<img src=\\\"https:\\/\\/one.img.pmdstatic.net\\/fit\\/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2020.2F04.2F09.2F14a79392-5f57-42fd-bd5c-89fcc7cf0927.2Ejpeg\\/1417x2124\\/quality\\/80\\/thumbnail.jpg\\\" width=\\\"1417\\\" height=\\\"2124\\\" \\/>\",\"media\":{\"width\":1417,\"height\":2124}}],\"thumbnail\":[{\"rel\":[\"thumbnail\",\"ssl\"],\"type\":\"image\\/jpeg\",\"href\":\"https:\\/\\/one.img.pmdstatic.net\\/fit\\/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2020.2F04.2F09.2F14a79392-5f57-42fd-bd5c-89fcc7cf0927.2Ejpeg\\/200x300\\/quality\\/80\\/thumbnail.jpg\",\"media\":{\"width\":200,\"height\":300}}]},\"rel\":[\"app\",\"ssl\",\"html5\"],\"html\":\"<img src=\\\"https:\\/\\/one.img.pmdstatic.net\\/fit\\/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2020.2F04.2F09.2F14a79392-5f57-42fd-bd5c-89fcc7cf0927.2Ejpeg\\/1417x2124\\/quality\\/80\\/thumbnail.jpg\\\" width=\\\"1417\\\" height=\\\"2124\\\" \\/>\"}",
+      "figure": {
+        "url": "https://one.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2020.2F04.2F09.2F14a79392-5f57-42fd-bd5c-89fcc7cf0927.2Ejpeg/200x300/quality/80/thumbnail.jpg",
+        "width": 200,
+        "height": 300,
+        "ratio": 0.67
+      }
+    }
+  ],
+  "userReviews": {
+    "average": 0,
+    "count": 0,
+    "commentsCount": 0,
+    "rank": 0
+  },
+  "authors": [
+    {
+      "id": "386adff5-419f-486a-a399-637b6662bcba",
+      "userId": null,
+      "slug": "quitterie-pasquesoone",
+      "avatarUrl": null,
+      "name": "Quitterie Pasquesoone",
+      "firstName": null,
+      "lastName": null,
+      "hasPublicProfile": true,
+      "prismaConnectId": null
+    }
+  ],
+  "category": {
+    "id": "0ee46f8d-680d-426e-94c6-af91e5a0e738",
+    "title": "Diététique",
+    "slug": "dietetique",
+    "level": 4,
+    "urls": [
+      {
+        "path": "/recettes-de-cuisine/recettes-pour-tous/dietetique",
+        "publicId": "5324"
+      }
+    ],
+    "parent": {
+      "id": "c01f592f-e738-4e8b-964c-a9d7aa77664f",
+      "title": "Recettes pour tous",
+      "slug": "recettes-pour-tous",
+      "level": 3,
+      "urls": [
+        {
+          "publicId": "5319",
+          "path": "/recettes-de-cuisine/recettes-pour-tous"
+        }
+      ],
+      "parent": {
+        "id": "86f94965-cf4e-48c4-8c95-0ad33892b98d",
+        "title": "Recettes de cuisine",
+        "slug": "recettes-de-cuisine",
+        "level": 2,
+        "urls": [
+          {
+            "publicId": "58",
+            "path": "/recettes-de-cuisine"
+          }
+        ]
+      }
+    }
+  },
+  "publishedAt": "2020-04-09T11:59:11.000Z",
+  "categoriesFlattens": [
+    {
+      "id": "23c2bcd9-2c21-4585-9289-0a03ecc2e765",
+      "title": "Recettes du monde",
+      "slug": "recettes-du-monde",
+      "level": 3,
+      "urls": [
+        {
+          "publicId": "5388",
+          "path": "/recettes-de-cuisine/recettes-du-monde"
+        }
+      ]
+    },
+    {
+      "id": "478598cb-8ea6-484b-8378-c98ce5a20767",
+      "title": "Recette mexicaine",
+      "slug": "recette-mexicaine",
+      "level": 4,
+      "urls": [
+        {
+          "path": "/recettes-de-cuisine/recettes-du-monde/recette-mexicaine",
+          "publicId": "5396"
+        }
+      ]
+    },
+    {
+      "id": "e227fd70-8800-4a23-af70-ccda7055aa80",
+      "title": "Enfant",
+      "slug": "enfant",
+      "level": 4,
+      "urls": [
+        {
+          "path": "/recettes-de-cuisine/recettes-pour-tous/enfant",
+          "publicId": "5321"
+        }
+      ]
+    },
+    {
+      "id": "c324ba6a-4cfb-49d0-b07f-8f819770ad88",
+      "title": "Familiale",
+      "slug": "familiale",
+      "level": 4,
+      "urls": [
+        {
+          "path": "/recettes-de-cuisine/recettes-pour-tous/familiale",
+          "publicId": "5323"
+        }
+      ]
+    },
+    {
+      "id": "a1414f5e-2a7b-4d73-9170-90c004c56700",
+      "title": "Viande",
+      "slug": "viande",
+      "level": 3,
+      "urls": [
+        {
+          "publicId": "134782",
+          "path": "/recettes-de-cuisine/viande"
+        }
+      ]
+    },
+    {
+      "id": "7d44fe4d-dad0-44b1-ab10-49e23cca147f",
+      "title": "Poulet",
+      "slug": "poulet",
+      "level": 4,
+      "urls": [
+        {
+          "path": "/recettes-de-cuisine/viande/poulet",
+          "publicId": "134783"
+        }
+      ]
+    },
+    {
+      "id": "86f94965-cf4e-48c4-8c95-0ad33892b98d",
+      "title": "Recettes de cuisine",
+      "slug": "recettes-de-cuisine",
+      "level": 2,
+      "urls": [
+        {
+          "publicId": "58",
+          "path": "/recettes-de-cuisine"
+        }
+      ]
+    },
+    {
+      "id": "c01f592f-e738-4e8b-964c-a9d7aa77664f",
+      "title": "Recettes pour tous",
+      "slug": "recettes-pour-tous",
+      "level": 3,
+      "urls": [
+        {
+          "publicId": "5319",
+          "path": "/recettes-de-cuisine/recettes-pour-tous"
+        }
+      ]
+    },
+    {
+      "id": "0ee46f8d-680d-426e-94c6-af91e5a0e738",
+      "title": "Diététique",
+      "slug": "dietetique",
+      "level": 4,
+      "urls": [
+        {
+          "path": "/recettes-de-cuisine/recettes-pour-tous/dietetique",
+          "publicId": "5324"
+        }
+      ]
+    }
+  ],
+  "userreview": {
+    "average": 0,
+    "count": 0,
+    "commentsCount": 0,
+    "rank": 0
+  },
+  "breadcrumb": [
+    {
+      "id": "86f94965-cf4e-48c4-8c95-0ad33892b98d",
+      "title": "Recettes de cuisine",
+      "slug": "recettes-de-cuisine",
+      "level": 2,
+      "urls": [
+        {
+          "publicId": "58",
+          "path": "/recettes-de-cuisine"
+        }
+      ]
+    },
+    {
+      "id": "c01f592f-e738-4e8b-964c-a9d7aa77664f",
+      "title": "Recettes pour tous",
+      "slug": "recettes-pour-tous",
+      "level": 3,
+      "urls": [
+        {
+          "publicId": "5319",
+          "path": "/recettes-de-cuisine/recettes-pour-tous"
+        }
+      ]
+    },
+    {
+      "id": "0ee46f8d-680d-426e-94c6-af91e5a0e738",
+      "title": "Diététique",
+      "slug": "dietetique",
+      "level": 4,
+      "urls": [
+        {
+          "path": "/recettes-de-cuisine/recettes-pour-tous/dietetique",
+          "publicId": "5324"
+        }
+      ]
+    }
+  ],
+  "relevance": 4.062499999999999
+}
