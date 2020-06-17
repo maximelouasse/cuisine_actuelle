@@ -1,1 +1,5 @@
-<p>list-recipe-page works!</p>
+<ul *ngIf="allRecipe">
+  <li *ngFor="let recipe of allRecipe">
+    {{ recipe.title }}
+  </li>
+</ul>
