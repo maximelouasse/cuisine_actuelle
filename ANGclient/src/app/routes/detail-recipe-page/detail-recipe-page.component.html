@@ -1,1 +1,6 @@
-<p>detail-recipe-page works!</p>
+<a (click)="backClicked()">Retour</a>
+
+<main *ngIf="repiceDetail">
+  {{ repiceDetail.title }}
+  <img style="width: 100%;" src="{{ repiceDetail.medias[0].url }}">
+</main>

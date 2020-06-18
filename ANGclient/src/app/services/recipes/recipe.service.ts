@@ -19,6 +19,13 @@ export class RecipeService {
       .catch(this.handleError);
   };
 
+  // CRUD method: read all items
+  public readOneItem(recipeId): Promise<any> {
+    return this.HttpClient.get(`${environment.apiUrl}/recipe/${recipeId}`).toPromise()
+      .then(data => this.getData(data))
+      .catch(this.handleError);
+  };
+
   /*
   Methods to get API responses
   */

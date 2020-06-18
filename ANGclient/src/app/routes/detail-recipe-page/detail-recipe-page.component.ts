@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
+
+import { RecipeService } from "../../services/recipes/recipe.service";
 
 @Component({
   selector: 'app-detail-recipe-page',
@@ -8,9 +12,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailRecipePageComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private RecipeService: RecipeService,
+    private _location: Location
+  ) { }
+
+  public repiceDetail: any;
 
   ngOnInit(): void {
+    this.activatedRoute.params.subscribe(params => {
+      this.RecipeService.readOneItem(params.id)
+        .then(apiResponse => {
+          this.repiceDetail = apiResponse.data;
+          console.log(this.repiceDetail.medias);
+        })
+        .catch(error => {
+          console.log('ERROR request', error);
+        });
+    });
+  }
+
+  public backClicked = () => {
+    this._location.back();
   }
 
 }

@@ -1,5 +1,6 @@
 <ul *ngIf="allRecipe">
   <li *ngFor="let recipe of allRecipe">
     {{ recipe.title }}
+    <a [routerLink]="['/recipe', recipe.id]" >Détail</a>
   </li>
 </ul>
