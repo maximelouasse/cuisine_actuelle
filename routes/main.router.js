@@ -3,10 +3,12 @@ Imports
 */
     // NodeJS
     const { Router } = require('express');
-    
+
     // Routers
-    const RecipeRouterClass = require('./recipe/recipe.router');
     const FrontRouterClass = require('./front/front.router');
+    const RecipeRouterClass = require('./recipe/recipe.router');
+    const AuthRouterClass = require('./auth/auth.router');
+    const UserRouterClass = require('./user/user.router');
 //
 
 /*
@@ -18,8 +20,10 @@ Define routers
     mainRouter.use('/api', apiRouter);
 
     // Child
-    const recipeRouter = new RecipeRouterClass();
     const frontRouter = new FrontRouterClass();
+    const recipeRouter = new RecipeRouterClass();
+    const authRouter = new AuthRouterClass();
+    const userRouter = new UserRouterClass();
 //
 
 /*
@@ -27,6 +31,8 @@ Configure routes
 */
     // Set API router
     apiRouter.use('/recipe', recipeRouter.init());
+    apiRouter.use('/auth', authRouter.init());
+    apiRouter.use('/user', userRouter.init());
     
     // Set front router
     mainRouter.use('/', frontRouter.init());

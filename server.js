@@ -9,6 +9,7 @@ Imports
     const ejs = require('ejs');
 
     // Inner
+    const mongoDB = require('./services/db.service');
     const { mainRouter } = require('./routes/main.router');
 
 //
@@ -44,10 +45,18 @@ Server Configuration
         }
 
         launch() {
-            // Launch server
-            server.listen(port, () => console.log({
-                server: `Server is running on port ${port}` 
-            }))
+            // Connnect MongoDB
+            mongoDB.initClient()
+            .then( db => {
+                // Launch server
+                server.listen(port, () => console.log({ 
+                    db: db, 
+                    server: `Server is running on port ${port}` 
+                }))
+            })
+            .catch( err => {
+                console.log(err)
+            })
         }
     }
 //
