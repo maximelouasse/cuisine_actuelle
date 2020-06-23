@@ -1,7 +1,7 @@
 <main>
 
 
-  <img class="retour" (click)="goToStep('prev')" src="/assets/images/profil-settings/retour.png" alt="">
+  <img class="retour" (click)="goToStep('prev')" src="/assets/images/profil-settings/retour.png" alt="" *ngIf="activeStepIndex < 6">
 
   <p class="step" *ngIf="activeStepIndex < 6">{{ activeStepIndex + 1 }}/6</p>
   <h2 class="form-heading">{{ stepItems[activeStepIndex].titleStep }}</h2>
@@ -29,10 +29,12 @@
               </ng-container>
 
               <ng-container *ngSwitchCase="'checkbox'">
-                <div class="checkbox" *ngFor="let data of currentFormContent[i][field].data; trackBy: trackByFn">
-                  <input type="checkbox" [id]="data.id" [formControlName]="field" [value]="data.value">
-                  <img [src]=data.img alt="">
-                  {{ data.label }}
+                <div class="checkbox-list">
+                  <div *ngFor="let data of currentFormContent[i][field].data; trackBy: trackByFn">
+                    <input type="checkbox" [id]="data.id" [formControlName]="field" [value]="data.value">
+                    <img [src]=data.img alt="">
+                    {{ data.label }}
+                  </div>
                 </div>
               </ng-container>
 
@@ -42,7 +44,7 @@
               </ng-container>
 
               <ng-container *ngSwitchDefault>
-                <div class="text">
+                <div class="text" *ngIf="activeStepIndex < 6">
                   <img src="assets/images/profil-settings/search.png" alt="">
                   <input [type]="currentFormContent[i][field].type" [formControlName]="field" [id]="field" [placeholder]="currentFormContent[i][field].placeholder" />
                 </div>
@@ -63,53 +65,88 @@
 
         <div class="preview-container" *ngIf="activeStepIndex === stepItems.length - 1">
 
-          <img src="" alt="">
+          <div class="photo_profil">
+            <img src="/assets/images/profil-settings/profil.png" alt="">
+            <img src="/assets/images/profil-settings/edit.png" alt="">
+          </div>
+
 
           <h2>Bonjour</h2>
 
           <h3>Informations</h3>
 
-          <label for="">Prénom</label>
-          <input type="text" placeholder="Renseignez votre prénom">
+          <label for="prenom">Prénom</label>
+          <input type="text" name="prenom" id="prenom" placeholder="Renseignez votre prénom">
 
           <label for="">Email</label>
-          <input type="email">
+          <input type="email" name="email" id="email" placeholder="Renseignez votre email">
 
           <hr>
 
           <h3>Vos préférences</h3>
 
-          <label for="">Foyer <span>{{ formData['enfants'] }} personnes</span></label>
-          <select name="" id="">
-            <option value=""></option>
+          <label>Foyer <span>{{ formData['enfants'] }} personnes</span></label>
+          <select name="adultes" id="adultes">
+            <option *ngFor="let data of currentFormContent[0].adultes.data;" [id]="data.id" [value]="data.value">{{ data.value }} adulte(s)</option>
           </select>
 
-          <select name="" id="">
-            <option value=""></option>
+          <select name="enfants" id="enfants">
+            <option *ngFor="let data of currentFormContent[0].enfants.data;" [id]="data.id" [value]="data.value">{{ data.value }} enfant(s)</option>
           </select>
 
           <label for="">Allergies <span>Aucune</span></label>
+          <div class="checkbox-list">
+            <div *ngFor="let data of currentFormContent[1].allergies.data; trackBy: trackByFn">
+              <input type="checkbox" [id]="data.id" name="allergies" [value]="data.value">
+              <label [for]="data.id">
+                <img [src]=data.img alt="">
+                {{ data.label }}
+              </label>
+            </div>
+          </div>
 
-          <label for="">Régimes <span>Fléxitarien</span></label>
+          <label for="">Régimes <span>Aucune</span></label>
+          <div class="checkbox-list">
+            <div *ngFor="let data of currentFormContent[2].regime.data; trackBy: trackByFn">
+              <input type="checkbox" [id]="data.id" name="regime" [value]="data.value">
+              <label [for]="data.id">
+                <img [src]=data.img alt="">
+                {{ data.label }}
+              </label>
+            </div>
+          </div>
 
           <hr>
 
           <h3>Mangez local !</h3>
 
+          <div class="pub-service">
+            <p>Nouveau</p>
+            <img src="/assets/images/profil-settings/pubservice.png" alt="">
+            <p>Acheter vos ingrédients chez les producteurs locaux !</p>
+            <a>Découvir le service</a>
+          </div>
+
+          <p>Renseignez une adresse pour vous faire livrer des ingrédients directement depuis vos producteurs locaux</p>
+
+          <label for="adresse">Adresse</label>
+          <input type="text" name="adresse" id="adresse" placeholder="Votre adresse complète">
+
+          <label for="code_postal">Code postal</label>
+          <input type="text" name="code_postal" id="code_postal" placeholder="9200">
 
 
-
-          <ul>
+          <!-- <ul>
             <li class="form-details-list" *ngFor="let field of masterFormFields; trackBy: trackByFn">
               <span class="text-bold">{{ field }}</span>
               <span>{{ formData[field] || 'N/A' }}</span>
             </li>
-          </ul>
+          </ul> -->
         </div>
 
         <div class="button-container">
           <button *ngIf="activeStepIndex === stepItems.length - 1" type="button"
-            (click)="onFormSubmit()">Submit</button>
+            (click)="onFormSubmit()">Enregistrer</button>
           <button type="button" [disabled]="activeStepIndex === stepItems.length - 1 || masterForm[i].invalid"
             (click)="goToStep('next')" *ngIf="activeStepIndex < 6">Suivant</button>
         </div>
