@@ -25,7 +25,7 @@ export class DetailRecipePageComponent implements OnInit {
       this.RecipeService.readOneItem(params.id)
         .then(apiResponse => {
           this.repiceDetail = apiResponse.data;
-          console.log(this.repiceDetail.medias);
+          //console.log(this.repiceDetail.medias);
         })
         .catch(error => {
           console.log('ERROR request', error);

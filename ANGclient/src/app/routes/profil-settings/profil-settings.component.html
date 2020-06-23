@@ -1,0 +1,119 @@
+<main>
+
+
+  <img class="retour" (click)="goToStep('prev')" src="/assets/images/profil-settings/retour.png" alt="">
+
+  <p class="step" *ngIf="activeStepIndex < 6">{{ activeStepIndex + 1 }}/6</p>
+  <h2 class="form-heading">{{ stepItems[activeStepIndex].titleStep }}</h2>
+  <p>
+    {{ stepItems[activeStepIndex].description }}
+  </p>
+
+  <ng-container *ngFor="let form of masterForm; let i = index; trackBy: trackByFn">
+    <form action="" [formGroup]="masterForm[i]" *ngIf="i === activeStepIndex || masterForm.length === 1">
+      <div class="">
+        <div class="fields-container">
+          <div *ngFor="let field of formFields[i]; trackBy: trackByFn" [ngSwitch]="currentFormContent[i][field].type">
+            <div class="full-width">
+
+              <p class="field-label text-bold" *ngIf="field == 'adultes' || field == 'enfants'">{{ field }}</p>
+
+              <ng-container *ngSwitchCase="'radio'">
+                  <div class="radio" *ngFor="let data of currentFormContent[i][field].data; trackBy: trackByFn">
+                    <input type="radio" [id]="data.id" [formControlName]="field" [value]="data.value">
+                    <label [for]="data.id">
+                      <img [src]=data.img alt="">
+                      {{ data.label }}
+                    </label>
+                  </div>
+              </ng-container>
+
+              <ng-container *ngSwitchCase="'checkbox'">
+                <div class="checkbox" *ngFor="let data of currentFormContent[i][field].data; trackBy: trackByFn">
+                  <input type="checkbox" [id]="data.id" [formControlName]="field" [value]="data.value">
+                  <img [src]=data.img alt="">
+                  {{ data.label }}
+                </div>
+              </ng-container>
+
+              <ng-container *ngSwitchCase="'textarea'">
+                <textarea [id]="field" [formControlName]="field"
+                  [placeholder]="currentFormContent[i][field].placeholder"></textarea>
+              </ng-container>
+
+              <ng-container *ngSwitchDefault>
+                <div class="text">
+                  <img src="assets/images/profil-settings/search.png" alt="">
+                  <input [type]="currentFormContent[i][field].type" [formControlName]="field" [id]="field" [placeholder]="currentFormContent[i][field].placeholder" />
+                </div>
+
+              </ng-container>
+            </div>
+
+            <p class="validation-error" *ngIf="
+                (masterForm[i].get(field).dirty ||
+                masterForm[i].get(field).touched) &&
+                masterForm[i].get(field).invalid &&
+                masterForm[i].get(field).errors
+              ">
+              {{ getValidationMessage(i, field) }}
+            </p>
+          </div>
+        </div>
+
+        <div class="preview-container" *ngIf="activeStepIndex === stepItems.length - 1">
+
+          <img src="" alt="">
+
+          <h2>Bonjour</h2>
+
+          <h3>Informations</h3>
+
+          <label for="">Prénom</label>
+          <input type="text" placeholder="Renseignez votre prénom">
+
+          <label for="">Email</label>
+          <input type="email">
+
+          <hr>
+
+          <h3>Vos préférences</h3>
+
+          <label for="">Foyer <span>{{ formData['enfants'] }} personnes</span></label>
+          <select name="" id="">
+            <option value=""></option>
+          </select>
+
+          <select name="" id="">
+            <option value=""></option>
+          </select>
+
+          <label for="">Allergies <span>Aucune</span></label>
+
+          <label for="">Régimes <span>Fléxitarien</span></label>
+
+          <hr>
+
+          <h3>Mangez local !</h3>
+
+
+
+
+          <ul>
+            <li class="form-details-list" *ngFor="let field of masterFormFields; trackBy: trackByFn">
+              <span class="text-bold">{{ field }}</span>
+              <span>{{ formData[field] || 'N/A' }}</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="button-container">
+          <button *ngIf="activeStepIndex === stepItems.length - 1" type="button"
+            (click)="onFormSubmit()">Submit</button>
+          <button type="button" [disabled]="activeStepIndex === stepItems.length - 1 || masterForm[i].invalid"
+            (click)="goToStep('next')" *ngIf="activeStepIndex < 6">Suivant</button>
+        </div>
+      </div>
+    </form>
+  </ng-container>
+</main>

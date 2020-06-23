@@ -1,0 +1,62 @@
+<header>
+  <!-- Menu burger -->
+  <figure>
+    <img src="/assets/images/header/burger.png" alt="">
+    <figcaption>Menu</figcaption>
+  </figure>
+
+  <!-- Logo -->
+  <a routerLink="/">
+    <img src="/assets/images/header/logo.png" alt="">
+  </a>
+
+  <!-- User -->
+  <a (click)="checkPopupLoginRegister()">
+    <img src="/assets/images/header/avatar.png" alt="">
+  </a>
+</header>
+
+<div class="popup popup-login-register" [ngClass]="{'open': seePopupLoginRegsiter}">
+  <div>
+    <!-- Close popup -->
+    <figure (click)="checkPopupLoginRegister()" class="close_popup">
+      <img src="/assets/images/popup/close.png" alt="">
+      <figcaption>Fermer</figcaption>
+    </figure>
+
+    <!-- Logo -->
+    <a routerLink="/">
+      <img class="logo" src="/assets/images/popup/logo.png" alt="">
+    </a>
+
+    <p>CONNECT</p>
+
+    <div class="menu_form_login_register">
+      <p class="active">INSCRIPTION</p>
+      <span></span>
+      <p>CONNEXION</p>
+    </div>
+
+    <form>
+      <input type="email" placeholder="Votre adresse email">
+
+      <p>
+        <input type="checkbox" id="condition">
+        <label for="condition" aria-describedby="label">J’accepte <a>les conditions générales d’utilisation et la charte de protection des données.</a></label>
+      </p>
+
+      <button type="submit">Créer un compte</button>
+    </form>
+
+    <button class="facebook">
+      <img src="/assets/images/popup/facebook.png" alt="">
+      Se connecter avec Facebook
+    </button>
+    <button class="google">
+      <img src="/assets/images/popup/google.png" alt="">
+      Se connecter avec Google
+    </button>
+
+    <a class="link_prisma">Découvrir Prisma Connect</a>
+  </div>
+</div>
