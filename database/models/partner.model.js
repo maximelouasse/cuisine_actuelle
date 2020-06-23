@@ -1,8 +1,37 @@
 const mongoose = require('mongoose');
 
 const PartnerSchema = new mongoose.Schema({
-    name: {
+    store_name: {
         type: String
+    },
+    stores: {
+        type: [{
+            location: {
+                type: {
+                    type: String,
+                    required: true
+                },
+                coordinates: {
+                    type: [Number],
+                    required: true
+                }
+            },
+            address: {
+                type: String
+            },
+            city: {
+                type: String
+            },
+            zipcode: {
+                type: String
+            },
+            dept_name: {
+                type: String
+            },
+            dept: {
+                type: String
+            }
+        }]
     },
     main_logo_url: {
         type: String

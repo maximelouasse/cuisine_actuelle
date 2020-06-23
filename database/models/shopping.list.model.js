@@ -1,18 +1,22 @@
 const mongoose = require('mongoose');
 
 const ShoppingListSchema = new mongoose.Schema({
-    id_user: {
+    user: {
         type: mongoose.Schema.Types.ObjectId,
            ref: 'User'
         },
     ingredients: {
         type: [{
-            id_product: {
+            product: {
                 type: mongoose.Schema.Types.ObjectId,
                 ref: 'Product'
             },
+            quantity: {
+                type: Number
+            },
             checked: {
-                type: Boolean
+                type: Boolean,
+                default: true
             }
         }]
     }

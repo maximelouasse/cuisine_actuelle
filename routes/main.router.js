@@ -9,6 +9,10 @@ Imports
     const RecipeRouterClass = require('./recipe/recipe.router');
     const AuthRouterClass = require('./auth/auth.router');
     const UserRouterClass = require('./user/user.router');
+    const AddressRouterClass = require('./address/address.router');
+    const ProductRouterClass = require('./product/product.router');
+    const PartnerRouterClass = require('./partner/partner.router');
+    const ShoppingListRouterClass = require('./shopping-list/shopping.list.router');
 //
 
 /*
@@ -24,6 +28,10 @@ Define routers
     const recipeRouter = new RecipeRouterClass();
     const authRouter = new AuthRouterClass();
     const userRouter = new UserRouterClass();
+    const addressRouter = new AddressRouterClass();
+    const productRouter = new ProductRouterClass();
+    const partnerRouter = new PartnerRouterClass();
+    const shoppingListRouter = new ShoppingListRouterClass();
 //
 
 /*
@@ -33,6 +41,10 @@ Configure routes
     apiRouter.use('/recipe', recipeRouter.init());
     apiRouter.use('/auth', authRouter.init());
     apiRouter.use('/user', userRouter.init());
+    apiRouter.use('/address', addressRouter.init());
+    apiRouter.use('/product', productRouter.init());
+    apiRouter.use('/partner', partnerRouter.init());
+    apiRouter.use('/shopping-list', shoppingListRouter.init());
     
     // Set front router
     mainRouter.use('/', frontRouter.init());

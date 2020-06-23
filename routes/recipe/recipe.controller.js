@@ -7,9 +7,9 @@ Imports
     // Files
     const recipesFolder = './recipes';
 
-    const listFilterType = { apero: "Apéro", entree: "Entrée", plat: "Plat", dessert: "Dessert", sauce: "Sauce", boisson: "Boissons", poisson: "Poisson", viande: "Viande" };
+    const listFilterType = [["apero", "Apéro"], ["entree", "Entrée"], ["plat", "Plat"], ["dessert", "Dessert"], ["sauce", "Sauce"], ["boisson", "Boissons"], ["poisson", "Poisson"], ["viande", "Viande"]];
 
-    const listFilterEvent = { saint_valentin: "Saint-Valentin", teo_time: "Recette Teo Time", reception: "Réception", paques: "Pâques", noel: "Recette de Noël", pique_nique: "Panier pique-nique", halloween: "Halloween", mardi_gras: "Mardi gras", gouter: "Goûter", chandeleur: "Chandeleur", buffet: "Buffet", brunch: "Brunch et Petit déjeuner", barbecue: "Barbecue et grillades", apero: "Apéros dinatoire", nouvel_an: "Nouvel An" };
+    const listFilterEvent = [["saint_valentin", "Saint-Valentin"], ["teo_time", "Recette Teo Time"], ["reception", "Réception"], ["paques", "Pâques"], ["noel", "Recette de Noël"], ["pique_nique", "Panier pique-nique"], ["halloween", "Halloween"], ["mardi_gras", "Mardi gras"], ["gouter", "Goûter"], ["chandeleur", "Chandeleur"], ["buffet", "Buffet"], ["brunch", "Brunch et Petit déjeuner"], ["barbecue", "Barbecue et grillades"], ["apero", "Apéros dinatoire"], ["nouvel_an", "Nouvel An" ]];
 
     const listFilterDiet = { classique: "Classique", vegetarien: "Végétarien", vegan: "Vegan", no_glucide: "Faible teneur en glucide", keto: "Keto", flexitarian: "Flexitarian", pescetarien: "Pescetarien", palea: "Paleo", no_gluten: "Sans gluten", no_lactose: "Sans lactose" };
 
@@ -117,7 +117,7 @@ Methods
                 } else {
                     resultDiet = true;
                 }
-
+                
                 // OK
                 if(typeof filters.not_ingredients != undefined && filters.not_ingredients.length > 0) {
                     resultNotIngredients = filterIngredients(recipeData, filters.not_ingredients);
@@ -134,6 +134,8 @@ Methods
                     resultPreferences = filterPreferences(recipeData, filters.preferences);
                 }
                 resultPreferences = true;
+                
+                console.log(resultIngredients, resultType, resultTime, resultEvent, resultLevel, resultPreferences, !resultAllergies, resultDiet, !resultNotIngredients);
 
                 if(resultIngredients && resultType && resultTime && resultEvent && resultLevel && resultPreferences && !resultAllergies && resultDiet && !resultNotIngredients) {
                     listRecipe.push(recipeData);
@@ -191,9 +193,9 @@ Methods
         let result = false;
 
         recipeCategories.forEach(element => {
-            console.log(typeof listFilterDiet[element.slug] == undefined);
+            //console.log(typeof listFilterDiet[element.slug] == undefined);
             if(typeof listFilterDiet[element.slug] != undefined) {
-                console.log(listFilterDiet[element.slug]);
+                //console.log(listFilterDiet[element.slug]);
             }
         });
     }
