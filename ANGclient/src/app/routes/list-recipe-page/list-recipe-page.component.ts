@@ -6,7 +6,7 @@ import { ObservablesService } from "../../services/observable/observable.service
 @Component({
   selector: 'app-list-recipe-page',
   templateUrl: './list-recipe-page.component.html',
-  styleUrls: ['./list-recipe-page.component.css']
+  styleUrls: []
 })
 export class ListRecipePageComponent implements OnInit {
 
@@ -24,6 +24,10 @@ export class ListRecipePageComponent implements OnInit {
    */
     public convertSecondToMinute = (second: number) => {
       return Math.floor(second / 60);
+    }
+
+    public isMultiple = (value, multiple) => {
+      return Number(value) % multiple;
     }
   //
 

@@ -407,5 +407,182 @@ body#profil-settings {
   }
 }
 
+// List Recipe Page
+body#list-recipe {
+  .bloc-filter-recipe {
+    text-align: center;
+    padding: 20px;
+    background-color: $orange;
+    margin-bottom: 25px;
 
+    div.input-filter {
+      position: relative;
 
+      img {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      & > img {
+        left: 20px;
+      }
+
+      div.icon-filter {
+        position: absolute;
+        width: 50px;
+        height: 100%;
+        background-color: $pink;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0px;
+        border-radius: 11.1111px;
+
+        & > img {
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      input {
+        padding-left: 60px;
+        background-color: #FFF;
+      }
+    }
+
+    button {
+      font-family: "Poppins-Medium";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 19px;
+      margin-top: 14px;
+      padding: 4px 8px;
+      width: 40%;
+      color: $pink;
+      background-color: transparent;
+      border: 1px solid $pink;
+      border-radius: 100px;
+    }
+  }
+
+  .bloc-list-recipe {
+    padding: 0 20px;
+
+    & > div {
+      position: relative;
+      margin-bottom: 10px;
+
+      h3 {
+        display: inline-block;
+        font-family: 'Poppins-SemiBold';
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.5px;
+        width: 70%;
+      }
+
+      span {
+        display: inline-block;
+        position: absolute;
+        width: 30%;
+        right: 0;
+        font-family: 'Poppins-Medium';
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 19px;
+        text-align: right;
+        color: #FD595C;
+      }
+    }
+
+    .list-recipe li {
+      display: inline-block;
+      width: 100%;
+      background: #FFFFFF;
+      box-shadow: 0px 1px 1px rgba(153, 153, 153, 0.5);
+      border-radius: 10px;
+      margin-bottom: 11px;
+
+      a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+
+        & > div {
+          display: inline-block;
+          width: calc((100% / 2) - 20px);
+          vertical-align: middle;
+
+          &.recipe-image {
+            position: relative;
+            display: inline-block;
+            width: 50%;
+            padding-bottom: 100px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50%;
+            border-radius: 7px 0 0 7px;
+
+            div {
+              position: relative;
+              background-color: $orange;
+              width: 30px;
+              height: 30px;
+              top: 7px;
+              left: 11px;
+              border-radius: 10px;
+
+              img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+            }
+          }
+
+          &.recipe-description {
+            padding-left: 20px;
+
+            h3 {
+              font-family: 'Poppins-Medium';
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 19px;
+              letter-spacing: 0.200667px;
+              color: #222C31;
+            }
+
+            span {
+              display: inline-block;
+              font-family: 'Poppins-Regular';
+              font-weight: normal;
+              font-size: 10px;
+              line-height: 15px;
+              letter-spacing: 0.143333px;
+              color: rgba(0, 0, 0, 0.4);
+              vertical-align: text-top;
+            }
+
+            span:last-of-type {
+              margin-left: 6px;
+            }
+          }
+        }
+
+        p.sponsored {
+          text-align: center;
+          background-color: #FA8A73;
+          color: #FFF;
+          font-family: 'Poppins-Regular';
+          font-weight: normal;
+          font-size: 10px;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}

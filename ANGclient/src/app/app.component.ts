@@ -31,9 +31,13 @@ export class AppComponent {
           this.renderer.setProperty(document.body, 'id', this.previousUrl);
         }
         let currentUrlSlug = event.url.slice(1);
+
         if (currentUrlSlug) {
           //this.renderer.addClass(document.body, currentUrlSlug);
           this.renderer.setProperty(document.body, 'id', currentUrlSlug);
+        } else {
+          currentUrlSlug = 'list-recipe';
+          this.renderer.setProperty(document.body, 'id', 'list-recipe');
         }
         this.previousUrl = currentUrlSlug;
       }

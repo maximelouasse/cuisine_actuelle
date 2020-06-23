@@ -1,0 +1,677 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("/assets/fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("/assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("/assets/fonts/Poppins-SemiBold.ttf");
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: 'Poppins-Regular';
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input[type=email], input[type=text] {
+  width: 100%;
+  background-color: #F6F6F6;
+  border-radius: 6px;
+  padding: 17px 16px;
+  border: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input[type=email]::-webkit-input-placeholder, input[type=text]::-webkit-input-placeholder {
+  color: #9B9B9B;
+  font-size: 1.4rem;
+  font-family: "Poppins-Regular";
+}
+
+input[type=email]:-ms-input-placeholder, input[type=text]:-ms-input-placeholder {
+  color: #9B9B9B;
+  font-size: 1.4rem;
+  font-family: "Poppins-Regular";
+}
+
+input[type=email]::-ms-input-placeholder, input[type=text]::-ms-input-placeholder {
+  color: #9B9B9B;
+  font-size: 1.4rem;
+  font-family: "Poppins-Regular";
+}
+
+input[type=email]::placeholder, input[type=text]::placeholder {
+  color: #9B9B9B;
+  font-size: 1.4rem;
+  font-family: "Poppins-Regular";
+}
+
+button {
+  width: 100%;
+  background-color: #FF5757;
+  border-radius: 6px;
+  border: none;
+  color: #FFFFFF;
+  padding: 15px 0;
+  font-family: "Poppins-SemiBold";
+}
+
+header {
+  height: 50px;
+  background-color: #FF5757;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
+
+header figcaption {
+  font-size: 0.9rem;
+  color: #FFFFFF;
+}
+
+div.popup {
+  width: 100%;
+  height: 100vh;
+  background-color: #FF5757;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 50px;
+  display: none;
+}
+
+div.popup.open {
+  display: block;
+}
+
+div.popup > div {
+  padding: 0 20px;
+  background-color: #FFFFFF;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  height: 100vh;
+  text-align: center;
+}
+
+div.popup > div figure.close_popup {
+  position: absolute;
+  right: 20px;
+  margin-top: 20px;
+}
+
+div.popup > div figure.close_popup figcaption {
+  font-size: 1rem;
+  font-family: "Poppins-SemiBold";
+  margin-top: 5px;
+}
+
+div.popup-login-register > div img.logo {
+  margin-top: 50px;
+}
+
+div.popup-login-register > div > p {
+  margin-top: 20px;
+  font-size: 1.6rem;
+  letter-spacing: 0.1em;
+}
+
+div.popup-login-register > div div.menu_form_login_register {
+  margin: 20px 0;
+}
+
+div.popup-login-register > div div.menu_form_login_register p, div.popup-login-register > div div.menu_form_login_register span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div.popup-login-register > div div.menu_form_login_register span {
+  height: 30px;
+  border-right: 1px solid #888E9C;
+  margin: 0 20px;
+}
+
+div.popup-login-register > div div.menu_form_login_register p {
+  font-family: "Poppins-SemiBold";
+  font-size: 1.3rem;
+  letter-spacing: 0.1em;
+  position: relative;
+}
+
+div.popup-login-register > div div.menu_form_login_register p.active:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background-color: #FF5757;
+  margin-top: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+div.popup-login-register > div form {
+  /* on prépare le label */
+  /* Aspect de la coche */
+  /* Aspect non cochée */
+  /* Aspect cochée */
+  /* Disabled checkbox */
+  /* Disabled checked */
+}
+
+div.popup-login-register > div form p {
+  position: relative;
+}
+
+div.popup-login-register > div form label a {
+  text-decoration: underline;
+}
+
+div.popup-login-register > div form input[type=email] {
+  margin-bottom: 10px;
+}
+
+div.popup-login-register > div form [type=checkbox]:not(:checked),
+div.popup-login-register > div form [type=checkbox]:checked {
+  /* Cache la checkbox sans
+          la désactiver pour les
+          lecteurs d'écran */
+  position: absolute;
+  left: 0;
+  opacity: 0.01;
+}
+
+div.popup-login-register > div form [type=checkbox]:not(:checked) + label,
+div.popup-login-register > div form [type=checkbox]:checked + label {
+  position: relative;
+  /* permet de positionner les pseudo-éléments */
+  padding-left: 60px;
+  /* fait un peu d'espace pour notre case à venir */
+  line-height: 1.7;
+  cursor: pointer;
+  /* affiche un curseur adapté */
+  float: left;
+  text-align: left;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+div.popup-login-register > div form [type=checkbox]:not(:checked) + label:before,
+div.popup-login-register > div form [type=checkbox]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #FD595C;
+  background: #FFF;
+  border-radius: .2em;
+  margin-left: 20px;
+}
+
+div.popup-login-register > div form [type=checkbox]:not(:checked) + label:after,
+div.popup-login-register > div form [type=checkbox]:checked + label:after {
+  content: '✕';
+  position: absolute;
+  top: 11px;
+  left: 23px;
+  font-size: 1.6rem;
+  color: #FD595C;
+  line-height: 0;
+}
+
+div.popup-login-register > div form [type=checkbox]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0) rotate(45deg);
+          transform: scale(0) rotate(45deg);
+}
+
+div.popup-login-register > div form [type=checkbox]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1) rotate(0);
+          transform: scale(1) rotate(0);
+}
+
+div.popup-login-register > div form [type=checkbox]:disabled:not(:checked) + label:before,
+div.popup-login-register > div form [type=checkbox]:disabled:checked + label:before {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #bbb;
+  background-color: #e9e9e9;
+}
+
+div.popup-login-register > div form [type=checkbox]:disabled:checked + label:after {
+  color: #777;
+}
+
+div.popup-login-register > div form [type=checkbox]:disabled + label {
+  color: #aaa;
+}
+
+div.popup-login-register > div form button[type=submit] {
+  margin: 25px 0;
+}
+
+div.popup-login-register > div button.facebook, div.popup-login-register > div button.google {
+  margin-bottom: 10px;
+  font-family: "Poppins-Medium";
+  font-size: 1.3rem;
+  background-color: #FFFFFF;
+  color: #3F3F3F;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.13);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.13);
+  position: relative;
+  text-align: left;
+  padding-left: 80px;
+}
+
+div.popup-login-register > div button.facebook img, div.popup-login-register > div button.google img {
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 35px;
+}
+
+div.popup-login-register > div button.facebook.google img, div.popup-login-register > div button.google.google img {
+  left: 25px;
+}
+
+div.popup-login-register > div a.link_prisma {
+  text-decoration: underline;
+  font-size: 1.1rem;
+  margin-top: 20px;
+  display: block;
+}
+
+body#welcome div.illustration {
+  background: url("/assets/images/welcome/illustration.png");
+  width: 100%;
+  height: 195px;
+}
+
+body#welcome main {
+  padding: 0 20px;
+  text-align: center;
+}
+
+body#welcome main h1 {
+  font-size: 2.5rem;
+  font-family: "Poppins-SemiBold";
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+body#welcome main p {
+  color: #50555C;
+  line-height: 21px;
+}
+
+body#welcome main a {
+  color: #FF5757;
+  font-family: "Poppins-SemiBold";
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+body#welcome main button {
+  margin-bottom: 10px;
+}
+
+body#welcome main button:last-of-type {
+  border: 1px solid #FF5757;
+  background-color: #FFFFFF;
+  color: #FF5757;
+}
+
+body#profil-settings main {
+  padding: 0 20px;
+  text-align: center;
+  position: relative;
+}
+
+body#profil-settings main img.retour {
+  position: absolute;
+  top: -15px;
+  left: 20px;
+}
+
+body#profil-settings main h2 {
+  font-size: 2.5rem;
+  font-family: "Poppins-SemiBold";
+  margin-top: 20px;
+}
+
+body#profil-settings main p {
+  line-height: 23px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
+body#profil-settings main p.step {
+  margin-top: 35px;
+  font-size: 1.6rem;
+}
+
+body#profil-settings main form p {
+  font-size: 1.6rem;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+body#profil-settings main form div.radio {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+body#profil-settings main form div.radio input {
+  visibility: hidden;
+  position: absolute;
+}
+
+body#profil-settings main form div.radio img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+body#profil-settings main form div.checkbox {
+  display: inline-block;
+  text-align: center;
+  width: 27%;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.13);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.13);
+  border-radius: 10px;
+  padding: 20px 5px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1.1rem;
+  color: #999999;
+  margin: 0 7px;
+  margin-bottom: 14px;
+}
+
+body#profil-settings main form div.checkbox input {
+  visibility: hidden;
+  position: absolute;
+}
+
+body#profil-settings main form div.checkbox img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+body#profil-settings main form div.text {
+  position: relative;
+}
+
+body#profil-settings main form div.text img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 20px;
+}
+
+body#profil-settings main form div.text input {
+  padding-left: 60px;
+}
+
+body#profil-settings main form button {
+  margin-top: 30px;
+}
+
+body#list-recipe .bloc-filter-recipe {
+  text-align: center;
+  padding: 20px;
+  background-color: #FFF4E8;
+  margin-bottom: 25px;
+}
+
+body#list-recipe .bloc-filter-recipe div.input-filter {
+  position: relative;
+}
+
+body#list-recipe .bloc-filter-recipe div.input-filter img {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body#list-recipe .bloc-filter-recipe div.input-filter > img {
+  left: 20px;
+}
+
+body#list-recipe .bloc-filter-recipe div.input-filter div.icon-filter {
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  background-color: #FF5757;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0px;
+  border-radius: 11.1111px;
+}
+
+body#list-recipe .bloc-filter-recipe div.input-filter div.icon-filter > img {
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body#list-recipe .bloc-filter-recipe div.input-filter input {
+  padding-left: 60px;
+  background-color: #FFF;
+}
+
+body#list-recipe .bloc-filter-recipe button {
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  margin-top: 14px;
+  padding: 4px 8px;
+  width: 40%;
+  color: #FF5757;
+  background-color: transparent;
+  border: 1px solid #FF5757;
+  border-radius: 100px;
+}
+
+body#list-recipe .bloc-list-recipe {
+  padding: 0 20px;
+}
+
+body#list-recipe .bloc-list-recipe > div {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+body#list-recipe .bloc-list-recipe > div h3 {
+  display: inline-block;
+  font-family: 'Poppins-SemiBold';
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  width: 70%;
+}
+
+body#list-recipe .bloc-list-recipe > div span {
+  display: inline-block;
+  position: absolute;
+  width: 30%;
+  right: 0;
+  font-family: 'Poppins-Medium';
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  text-align: right;
+  color: #FD595C;
+}
+
+body#list-recipe .bloc-list-recipe .list-recipe li {
+  display: inline-block;
+  width: 100%;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 1px 1px rgba(153, 153, 153, 0.5);
+          box-shadow: 0px 1px 1px rgba(153, 153, 153, 0.5);
+  border-radius: 10px;
+  margin-bottom: 11px;
+}
+
+body#list-recipe .bloc-list-recipe .list-recipe li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+body#list-recipe .bloc-list-recipe .list-recipe li a > div {
+  display: inline-block;
+  width: calc((100% / 2) - 20px);
+  vertical-align: middle;
+}
+
+body#list-recipe .bloc-list-recipe .list-recipe li a > div.recipe-image {
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  padding-bottom: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  border-radius: 7px 0 0 7px;
+}
+
+body#list-recipe .bloc-list-recipe .list-recipe li a > div.recipe-image div {
+  position: relative;
+  background-color: #FFF4E8;
+  width: 30px;
+  height: 30px;
+  top: 7px;
+  left: 11px;
+  border-radius: 10px;
+}
+
+body#list-recipe .bloc-list-recipe .list-recipe li a > div.recipe-image div img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body#list-recipe .bloc-list-recipe .list-recipe li a > div.recipe-description {
+  padding-left: 20px;
+}
+
+body#list-recipe .bloc-list-recipe .list-recipe li a > div.recipe-description h3 {
+  font-family: 'Poppins-Medium';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.200667px;
+  color: #222C31;
+}
+
+body#list-recipe .bloc-list-recipe .list-recipe li a > div.recipe-description span {
+  display: inline-block;
+  font-family: 'Poppins-Regular';
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.143333px;
+  color: rgba(0, 0, 0, 0.4);
+  vertical-align: text-top;
+}
+
+body#list-recipe .bloc-list-recipe .list-recipe li a > div.recipe-description span:last-of-type {
+  margin-left: 6px;
+}
+
+body#list-recipe .bloc-list-recipe .list-recipe li a p.sponsored {
+  text-align: center;
+  background-color: #FA8A73;
+  color: #FFF;
+  font-family: 'Poppins-Regular';
+  font-weight: normal;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+/*# sourceMappingURL=styles.css.map */

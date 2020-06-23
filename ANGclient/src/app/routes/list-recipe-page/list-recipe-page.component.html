@@ -1,31 +1,62 @@
-<ul *ngIf="allRecipe" class="list-recipe">
-  <li *ngFor="let recipe of allRecipe">
-    <!--
-        Image => medias[0].url
-        Nom de la recette => title
-        Nombre d'étoile =>
-        Temps de prépartaion => prepTime
-    -->
-    <a [routerLink]="['/recipe', recipe.id]" >
-      <div class="recipe-image" style.background-image="url({{ recipe.medias[0].url }})">
-
+<main>
+  <div class="bloc-filter-recipe">
+    <div class="input-filter">
+      <img src="assets/images/profil-settings/search.png" alt="">
+      <input type="text" name="" id="" placeholder="Recherchez une recette">
+      <div class="icon-filter">
+        <img src="assets/images/list-recipe/filter-icon.png" alt="">
       </div>
-      <div class="recipe-description">
-        <h3>{{ recipe.title }}</h3>
-        <span><img src="../../../assets/img/clock.png" alt=""></span><span>{{ convertSecondToMinute(recipe.prepTime) }} m</span>
-      </div>
-    </a>
-  </li>
-</ul>
+    </div>
+    <button>Idées de menus</button>
+  </div>
 
-<!--<ul *ngIf="listFilterType">
-  <li *ngFor="let filter of listFilterType">
-    {{ filter[0] }}, {{ filter[1] }}
-  </li>
-</ul>-->
+  <div class="bloc-list-recipe">
+    <div>
+      <h3>Recettes suggérées</h3>
+      <span>Trier par :</span>
+    </div>
 
-<!--<ul *ngIf="listFilterEvent">
-  <li *ngFor="let filter of listFilterEvent">
-    {{ filter[0] }}, {{ filter[1] }}
-  </li>
-</ul>-->
+    <ul *ngIf="allRecipe" class="list-recipe">
+      <li *ngFor="let recipe of allRecipe | keyvalue">
+        <!--
+            Image => medias[0].url
+            Nom de la recette => title
+            Nombre d'étoile =>
+            Temps de prépartaion => prepTime
+        -->
+        <a [routerLink]="['/recipe', recipe.value.id]" >
+          <div class="recipe-image" style.background-image="url({{ recipe.value.medias[0].url }})">
+            <div>
+              <img src="assets/images/list-recipe/save-icon.png" alt="">
+            </div>
+          </div>
+          <div class="recipe-description">
+            <h3>{{ recipe.value.title }}</h3>
+            <span><img src="assets/images/list-recipe/clock-icon.png" alt=""></span>
+            <span>{{ convertSecondToMinute(recipe.value.prepTime) }} m</span>
+          </div>
+          <p *ngIf="isMultiple(recipe.key, 2) == 0" class="sponsored">
+            Sponsorisé
+          </p>
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <img src="assets/images/list-recipe/ad.png" alt="">
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!--<ul *ngIf="listFilterType">
+    <li *ngFor="let filter of listFilterType">
+      {{ filter[0] }}, {{ filter[1] }}
+    </li>
+  </ul>-->
+
+  <!--<ul *ngIf="listFilterEvent">
+    <li *ngFor="let filter of listFilterEvent">
+      {{ filter[0] }}, {{ filter[1] }}
+    </li>
+  </ul>-->
+</main>
