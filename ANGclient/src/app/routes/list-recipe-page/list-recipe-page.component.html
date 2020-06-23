@@ -1,6 +1,31 @@
-<ul *ngIf="allRecipe">
+<ul *ngIf="allRecipe" class="list-recipe">
   <li *ngFor="let recipe of allRecipe">
-    {{ recipe.title }}
-    <a [routerLink]="['/recipe', recipe.id]" >Détail</a>
+    <!--
+        Image => medias[0].url
+        Nom de la recette => title
+        Nombre d'étoile =>
+        Temps de prépartaion => prepTime
+    -->
+    <a [routerLink]="['/recipe', recipe.id]" >
+      <div class="recipe-image" style.background-image="url({{ recipe.medias[0].url }})">
+
+      </div>
+      <div class="recipe-description">
+        <h3>{{ recipe.title }}</h3>
+        <span><img src="../../../assets/img/clock.png" alt=""></span><span>{{ convertSecondToMinute(recipe.prepTime) }} m</span>
+      </div>
+    </a>
   </li>
 </ul>
+
+<!--<ul *ngIf="listFilterType">
+  <li *ngFor="let filter of listFilterType">
+    {{ filter[0] }}, {{ filter[1] }}
+  </li>
+</ul>-->
+
+<!--<ul *ngIf="listFilterEvent">
+  <li *ngFor="let filter of listFilterEvent">
+    {{ filter[0] }}, {{ filter[1] }}
+  </li>
+</ul>-->
