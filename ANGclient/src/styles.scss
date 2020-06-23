@@ -121,6 +121,7 @@ div.popup {
 
 // Popup login register
 div.popup-login-register {
+  z-index: 2;
   & > div {
     img.logo {
       margin-top: 50px;
@@ -364,28 +365,32 @@ body#profil-settings {
           margin-bottom: 10px;
         }
       }
-      div.checkbox {
-        display: inline-block;
-        text-align: center;
-        width: 27%;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.13);
-        border-radius: 10px;
-        padding: 20px 5px;
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-        font-size: 1.1rem;
-        color: #999999;
-        margin: 0 7px;
-        margin-bottom: 14px;
-        input {
-          visibility: hidden;
-          position: absolute;
-        }
-        img {
-          display: block;
-          margin: 0 auto;
-          margin-bottom: 10px;
+      div.checkbox-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        div {
+          text-align: center;
+          width: 27%;
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.13);
+          border-radius: 10px;
+          padding: 20px 5px;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          font-size: 1.1rem;
+          color: #999999;
+          margin: 0 7px;
+          margin-bottom: 14px;
+          input {
+            visibility: hidden;
+            position: absolute;
+          }
+          img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 10px;
+          }
         }
       }
       div.text {
@@ -401,7 +406,120 @@ body#profil-settings {
         }
       }
       button {
+        margin: 30px 0;
+      }
+    }
+    div.preview-container {
+      text-align: left;
+      div.photo_profil {
+        text-align: center;
+        position: relative;
+        img:last-of-type {
+          position: absolute;
+          bottom: -10px;
+          left:50%;
+          transform: translateX(-50%);
+          background-color: #F6F6F6;
+          border-radius: 10px;
+          padding: 10px;
+        }
+      }
+      h2 {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      h3 {
+        font-size: 1.6rem;
+        color: $pink;
+        font-family: "Poppins-SemiBold";
+      }
+      hr {
+        border-top: 1px solid #F6F6F6;
+        margin: 20px 0;
+      }
+      label {
+        font-family: "Poppins-SemiBold";
+        font-size: 1.2rem;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        display: block;
+      }
+      span {
+        color: $pink;
+        margin-left: 10px;
+        font-family: "Poppins-SemiBold";
+        font-size: 1.2rem;
+      }
+      select {
+        width: 100%;
+        background-color: #F6F6F6;
+        border-radius: 6px;
+        padding: 17px 16px;
+        border: none;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        font-size: 1.4rem;
+        font-family: "Poppins-Regular";
+        margin-bottom: 5px;
+      }
+      div.checkbox-list {
+        justify-content: space-between;
+        div {
+          width: 30%;
+          margin: 0;
+          margin-bottom: 15px;
+        }
+      }
+      div.pub-service {
+        background: $gradient-pink-to-orange;
+        border-radius: 10px;
+        padding: 20px 10px;
+        position: relative;
         margin-top: 30px;
+        p:first-of-type {
+          position: absolute;
+          left: 10px;
+          top: -40px;
+          background-color: #5D8F68;
+          border-radius: 20px;
+          color: $white;
+          font-family: "Poppins-SemiBold";
+          font-size: 1rem;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          padding: 5px 10px;
+          line-height: 15px;
+        }
+        p:last-of-type {
+          color: $white;
+          font-size: 1.6rem;
+          font-family: "Poppins-SemiBold";
+          margin: 0;
+          margin-left: 75px;
+          text-transform: none;
+          margin-bottom: 45px;
+        }
+        a {
+          float: right;
+          color: $white;
+          border: 1px solid $white;
+          padding: 10px;
+          margin-right: 10px;
+          margin-top: -30px;
+          border-radius: 20px;
+          font-size: 1rem;
+          font-family: "Poppins-Medium";
+        }
+        img {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+      }
+      p:last-of-type {
+        font-size: 1.2rem;
+        text-transform: none;
       }
     }
   }

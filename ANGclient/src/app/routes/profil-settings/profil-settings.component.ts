@@ -273,6 +273,21 @@ export class ProfilSettingsComponent implements OnInit {
     },
   };
 
+  public DATA_STEP_FINAL = {
+    prenom: {
+      type: 'text',
+      validations: {},
+      errors: {},
+      placeholder: "Renseignez votre prénom",
+    },
+    email: {
+      type: 'email',
+      validations: {},
+      errors: {},
+      placeholder: "Resneignez votre adresse email",
+    }
+  }
+
   public STEP_ITEMS = [
     {
       titleStep: 'Votre foyer',
@@ -304,7 +319,7 @@ export class ProfilSettingsComponent implements OnInit {
       description: 'Avez-vous des préférences culinaires ?',
       data: this.DATA_STEP_6,
     },
-    { titleStep: '', description: '', data: {} },
+    { titleStep: '', description: '', data: this.DATA_STEP_FINAL },
   ];
 
   constructor(
@@ -312,7 +327,7 @@ export class ProfilSettingsComponent implements OnInit {
     private router: Router) {}
 
   ngOnInit(): void {
-    this.activeStepIndex = 5;
+    this.activeStepIndex = 0;
     this.masterForm = [];
     this.currentFormContent = [];
     this.formFields = [];
@@ -385,6 +400,7 @@ export class ProfilSettingsComponent implements OnInit {
   }
 
   onFormSubmit(): void {
+    this.setFormPreview();
     // emit aggregate form data to parent component, where we POST
     this.formSubmit.emit(this.formData);
   }
