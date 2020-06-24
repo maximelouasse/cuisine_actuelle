@@ -29,70 +29,71 @@ export class ProfilSettingsComponent implements OnInit {
 
   public adultesData = [
     {
-      id: 1,
+      id: 'adulte-1',
       value: 1,
-      img: '/assets/images/profil-settings/foyer/adulte_unchecked.png',
+      img: '/assets/images/profil-settings/foyer/adulte.png',
       label: '',
     },
     {
-      id: 2,
+      id: 'adulte-2',
       value: 2,
-      img: '/assets/images/profil-settings/foyer/adulte_unchecked.png',
+      img: '/assets/images/profil-settings/foyer/adulte.png',
       label: '',
     },
     {
-      id: 3,
+      id: 'adulte-3',
       value: 3,
-      img: '/assets/images/profil-settings/foyer/adulte_unchecked.png',
+      img: '/assets/images/profil-settings/foyer/adulte.png',
       label: '',
     },
     {
-      id: 4,
+      id: 'adulte-4',
       value: 4,
-      img: '/assets/images/profil-settings/foyer/adulte_unchecked.png',
+      img: '/assets/images/profil-settings/foyer/adulte.png',
       label: '',
     },
     {
-      id: 5,
+      id: 'adulte-5',
       value: 5,
-      img: '/assets/images/profil-settings/foyer/adulte_unchecked.png',
+      img: '/assets/images/profil-settings/foyer/adulte.png',
       label: '',
     },
   ];
 
   public enfantsData = [
     {
-      id: 1,
+      id: 'enfant-1',
       value: 1,
-      img: '/assets/images/profil-settings/foyer/enfant_unchecked.png',
+      img: '/assets/images/profil-settings/foyer/enfant.png',
       label: '',
     },
     {
-      id: 2,
+      id: 'enfant-2',
       value: 2,
-      img: '/assets/images/profil-settings/foyer/enfant_unchecked.png',
+      img: '/assets/images/profil-settings/foyer/enfant.png',
       label: '',
     },
     {
-      id: 3,
+      id: 'enfant-3',
       value: 3,
-      img: '/assets/images/profil-settings/foyer/enfant_unchecked.png',
+      img: '/assets/images/profil-settings/foyer/enfant.png',
       label: '',
     },
     {
-      id: 4,
+      id: 'enfant-4',
       value: 4,
-      img: '/assets/images/profil-settings/foyer/enfant_unchecked.png',
+      img: '/assets/images/profil-settings/foyer/enfant.png',
       label: '',
     },
     {
-      id: 5,
+      id: 'enfant-5',
       value: 5,
-      img: '/assets/images/profil-settings/foyer/enfant_unchecked.png',
+      img: '/assets/images/profil-settings/foyer/enfant.png',
       label: '',
     },
   ];
 
+  public allergiesCurrentData: Array<string>;
   public allergiesData = [
     {
       id: 'fruit_a_coque',
@@ -113,31 +114,96 @@ export class ProfilSettingsComponent implements OnInit {
       img: '/assets/images/profil-settings/allergies/gluten.png',
     },
     {
-      id: 'fruit_de_mer',
-      value: 'fruit_de_mer',
-      label: 'Fruit de mer',
-      img: '/assets/images/profil-settings/allergies/fruit_de_mer.png',
+      id: 'crustaces',
+      value: 'crustaces',
+      label: 'crustaces',
+      img: '/assets/images/profil-settings/allergies/crustaces.png',
+    },
+    {
+      id: 'oeufs',
+      value: 'oeufs',
+      label: 'oeufs',
+      img: '/assets/images/profil-settings/allergies/oeufs.png',
+    },
+    {
+      id: 'poissons',
+      value: 'poissons',
+      label: 'poissons',
+      img: '/assets/images/profil-settings/allergies/poissons.png',
+    },
+    {
+      id: 'arachides',
+      value: 'arachides',
+      label: 'arachides',
+      img: '/assets/images/profil-settings/allergies/arachides.png',
+    },
+    {
+      id: 'soja',
+      value: 'soja',
+      label: 'soja',
+      img: '/assets/images/profil-settings/allergies/soja.png',
+    },
+    {
+      id: 'celeri',
+      value: 'celeri',
+      label: 'celeri',
+      img: '/assets/images/profil-settings/allergies/celeri.png',
+    },
+    {
+      id: 'moutarde',
+      value: 'moutarde',
+      label: 'moutarde',
+      img: '/assets/images/profil-settings/allergies/moutarde.png',
+    },
+    {
+      id: 'sesame',
+      value: 'sesame',
+      label: 'sesame',
+      img: '/assets/images/profil-settings/allergies/sesame.png',
+    },
+    {
+      id: 'anhydride',
+      value: 'anhydride',
+      label: 'anhydride',
+      img: '/assets/images/profil-settings/allergies/anhydride.png',
+    },
+    {
+      id: 'lupin',
+      value: 'lupin',
+      label: 'lupin',
+      img: '/assets/images/profil-settings/allergies/lupin.png',
+    },
+    {
+      id: 'mollusques',
+      value: 'mollusques',
+      label: 'mollusques',
+      img: '/assets/images/profil-settings/allergies/mollusques.png',
     },
   ];
 
+  public regimeCurrentData: Array<string>;
   public regimeData = [
     {
       id: 'vegetarien',
+      value: 'vegetarien',
       label: 'Végétarien',
       img: '/assets/images/profil-settings/regime/vegetarien.png',
     },
     {
       id: 'vegetalien',
+      value: 'vegetalien',
       label: 'Végétalien',
       img: '/assets/images/profil-settings/regime/vegetalien.png',
     },
     {
       id: 'sans_porc',
+      value: 'sans_porc',
       label: 'Sans porc',
       img: '/assets/images/profil-settings/regime/sans_porc.png',
     },
     {
       id: 'flexitarisme',
+      value: 'flexitarisme',
       label: 'Flexitarisme',
       img: '/assets/images/profil-settings/regime/flexitarisme.png',
     },
@@ -164,46 +230,55 @@ export class ProfilSettingsComponent implements OnInit {
     },
   ];
 
+  public categorieCurrentData: Array<string>;
   public categorieData = [
     {
       id: 'pizza',
+      value: 'pizza',
       label: 'Pizza',
       img: '/assets/images/profil-settings/categorie/pizza.png',
     },
     {
       id: 'healthy',
+      value: 'healthy',
       label: 'Healthy',
       img: '/assets/images/profil-settings/categorie/healthy.png',
     },
     {
       id: 'asiatique',
+      value: 'asiatique',
       label: 'Asiatique',
       img: '/assets/images/profil-settings/categorie/asiatique.png',
     },
     {
       id: 'sushi',
+      value: 'sushi',
       label: 'Sushi',
       img: '/assets/images/profil-settings/categorie/sushi.png',
     },
     {
       id: 'italien',
+      value: 'italien',
       label: 'Italien',
       img: '/assets/images/profil-settings/categorie/italien.png',
     },
     {
       id: 'indien',
+      value: 'indien',
       label: 'Indien',
       img: '/assets/images/profil-settings/categorie/indien.png',
     },
     {
       id: 'desserts',
+      value: 'desserts',
       label: 'Desserts',
       img: '/assets/images/profil-settings/categorie/desserts.png',
     },
     {
       id: 'mexicain',
+      value: 'mexicain',
       label: 'Mexicain',
-      img: '/assets/images/profil-settings/niveau/mexicain.png',
+      img: '/assets/images/profil-settings/categorie/mexicain.png',
     },
   ];
 
@@ -333,6 +408,10 @@ export class ProfilSettingsComponent implements OnInit {
     this.formFields = [];
     this.stepItems = this.STEP_ITEMS;
 
+    this.allergiesCurrentData = [];
+    this.regimeCurrentData = [];
+    this.categorieCurrentData = [];
+
     // NOTE: this can be cofigured to create a single form when needed
     this.stepItems.forEach((data, i) => {
       // holds name, validators, placeholder of all steps
@@ -387,10 +466,48 @@ export class ProfilSettingsComponent implements OnInit {
 
     this.activeStepIndex = step === 'prev' ? this.activeStepIndex - 1 : this.activeStepIndex + 1;
 
+    console.log(this.masterForm);
+
     this.setFormPreview();
   }
 
+
+
+  getSelectedInputs(whatInput, value, isChecked): void {
+    console.log(whatInput);
+    if (whatInput == 'allergies') {
+      if (isChecked) {
+        this.allergiesCurrentData.push(value);
+      } else {
+        let index = this.allergiesCurrentData.indexOf(value);
+        this.allergiesCurrentData.splice(index, 1);
+      }
+    }
+
+    if (whatInput == 'regime') {
+      if (isChecked) {
+        this.regimeCurrentData.push(value);
+      } else {
+        let index = this.regimeCurrentData.indexOf(value);
+        this.regimeCurrentData.splice(index, 1);
+      }
+    }
+
+    if (whatInput == 'categorie') {
+      if (isChecked) {
+        this.categorieCurrentData.push(value);
+      } else {
+        let index = this.categorieCurrentData.indexOf(value);
+        this.categorieCurrentData.splice(index, 1);
+      }
+    }
+
+    console.log(this.regimeCurrentData);
+
+  }
+
   setFormPreview(): void {
+
     this.formData = this.masterForm.reduce(
       (masterForm, currentForm) => ({ ...masterForm, ...currentForm.value }),
       {}
