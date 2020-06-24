@@ -20,7 +20,7 @@
 
               <ng-container *ngSwitchCase="'radio'">
                   <div class="radio" *ngFor="let data of currentFormContent[i][field].data; trackBy: trackByFn">
-                    <input type="radio" [id]="data.id" [formControlName]="field" [value]="data.value">
+                    <input type="radio" [id]="data.id" [formControlName]="field" [value]="data.value" >
                     <label [for]="data.id">
                       <img [src]=data.img alt="">
                       {{ data.label }}
@@ -29,12 +29,27 @@
               </ng-container>
 
               <ng-container *ngSwitchCase="'checkbox'">
-                <div class="checkbox-list">
-                  <div *ngFor="let data of currentFormContent[i][field].data; trackBy: trackByFn">
-                    <input type="checkbox" [id]="data.id" [formControlName]="field" [value]="data.value">
-                    <img [src]=data.img alt="">
+                <div class="checkbox-list" *ngIf="field !== 'categorieCheckbox'">
+                  <label [for]="data.id" *ngFor="let data of currentFormContent[i][field].data; trackBy: trackByFn">
+                    <input type="checkbox" [id]="data.id" [formControlName]="field" [value]="data.value" (change)="getSelectedInputs(field, data.value, $event.target.checked);">
+                    <div class="content">
+                      <div>
+                        <img [src]=data.img alt="">
+                        {{ data.label }}
+                      </div>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="checkbox-list {{field}}" *ngIf="field === 'categorieCheckbox'">
+                  <label [for]="data.id" *ngFor="let data of currentFormContent[i][field].data; trackBy: trackByFn">
+                    <input type="checkbox" [id]="data.id" [formControlName]="field" [value]="data.value"
+                      (change)="getSelectedInputs(field, data.value, $event.target.checked);">
+                    <div class="content">
+                      <img [src]=data.img alt="">
+                    </div>
                     {{ data.label }}
-                  </div>
+                  </label>
                 </div>
               </ng-container>
 
@@ -85,35 +100,43 @@
 
           <h3>Vos préférences</h3>
 
-          <label>Foyer <span>{{ formData['enfants'] }} personnes</span></label>
+          <label>Foyer <span>{{ formData['adultes'] + formData['enfants'] }} personnes</span></label>
           <select name="adultes" id="adultes">
-            <option *ngFor="let data of currentFormContent[0].adultes.data;" [id]="data.id" [value]="data.value">{{ data.value }} adulte(s)</option>
+            <option [id]="data.id" [value]="data.value" *ngFor="let data of currentFormContent[0].adultes.data;" [selected]="data.value == formData['adultes']">
+              {{ data.value }} adulte(s)
+            </option>
           </select>
 
           <select name="enfants" id="enfants">
-            <option *ngFor="let data of currentFormContent[0].enfants.data;" [id]="data.id" [value]="data.value">{{ data.value }} enfant(s)</option>
+            <option *ngFor="let data of currentFormContent[0].enfants.data;" [id]="data.id" [value]="data.value" [selected]="data.value == formData['enfants']">
+              {{ data.value }} enfant(s)
+            </option>
           </select>
 
           <label for="">Allergies <span>Aucune</span></label>
           <div class="checkbox-list">
-            <div *ngFor="let data of currentFormContent[1].allergies.data; trackBy: trackByFn">
-              <input type="checkbox" [id]="data.id" name="allergies" [value]="data.value">
-              <label [for]="data.id">
-                <img [src]=data.img alt="">
-                {{ data.label }}
-              </label>
-            </div>
+            <label *ngFor="let data of currentFormContent[1].allergies.data; trackBy: trackByFn">
+              <input type="checkbox" [id]="data.id" name="allergies" [value]="data.value" [checked]="allergiesCurrentData.includes(data.value)">
+              <div class="content">
+                <div>
+                  <img [src]=data.img alt="">
+                  {{ data.label }}
+                </div>
+              </div>
+            </label>
           </div>
 
           <label for="">Régimes <span>Aucune</span></label>
           <div class="checkbox-list">
-            <div *ngFor="let data of currentFormContent[2].regime.data; trackBy: trackByFn">
-              <input type="checkbox" [id]="data.id" name="regime" [value]="data.value">
-              <label [for]="data.id">
-                <img [src]=data.img alt="">
-                {{ data.label }}
-              </label>
-            </div>
+            <label *ngFor="let data of currentFormContent[2].regime.data; trackBy: trackByFn">
+              <input type="checkbox" [id]="data.id" name="regime" [value]="data.value" [checked]="regimeCurrentData.includes(data.value)">
+              <div class="content">
+                <div>
+                  <img [src]=data.img alt="">
+                  {{ data.label }}
+                </div>
+              </div>
+            </label>
           </div>
 
           <hr>
