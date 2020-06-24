@@ -41,63 +41,72 @@
             "quantity": "2",
             "unit": "",
             "commonIngredient": "Aubergine",
-            "referenceIngredient": "Aubergine"
+            "referenceIngredient": "Aubergine",
+            "image": "aubergine.png"
           },
           {
             "ingredient": "Fromage de chèvre",
             "quantity": "150",
             "unit": "g",
             "commonIngredient": "Fromage de chèvre",
-            "referenceIngredient": "Fromage de chèvre"
+            "referenceIngredient": "Fromage de chèvre",
+            "image": "fromage-de-chevre.png"
           },
           {
             "ingredient": "Gros oeufs",
             "quantity": "3",
             "unit": "",
             "commonIngredient": "Gros oeuf",
-            "referenceIngredient": "Oeuf"
+            "referenceIngredient": "Oeuf",
+            "image": "oeuf.png"
           },
           {
             "ingredient": "Maïzena",
             "quantity": "1",
             "unit": "cuil. à café",
             "commonIngredient": "Maïzena",
-            "referenceIngredient": "Fécule de Maïs"
+            "referenceIngredient": "Fécule de Maïs",
+            "image": "maizena.png"
           },
           {
             "ingredient": "Crème liquide",
             "quantity": "20",
             "unit": "cl",
             "commonIngredient": "Crème liquide",
-            "referenceIngredient": "Crème laitière"
+            "referenceIngredient": "Crème laitière",
+            "image": "creme.png"
           },
           {
             "ingredient": "Thym",
             "quantity": "2",
             "unit": "pincées",
             "commonIngredient": "Thym",
-            "referenceIngredient": "Thym"
+            "referenceIngredient": "Thym",
+            "image": "thym.png"
           },
           {
             "ingredient": "Huile d’olive",
             "quantity": "4",
             "unit": "cuil. à soupe",
             "commonIngredient": "Huile d'olive",
-            "referenceIngredient": "Huile"
+            "referenceIngredient": "Huile",
+            "image": "huile.png"
           },
           {
             "ingredient": "Sel",
             "quantity": "_",
             "unit": "",
             "commonIngredient": "Sel",
-            "referenceIngredient": "Sel"
+            "referenceIngredient": "Sel",
+            "image": "sel.png"
           },
           {
             "ingredient": "Poivre",
             "quantity": "_",
             "unit": "",
             "commonIngredient": "Poivre",
-            "referenceIngredient": "Poivre"
+            "referenceIngredient": "Poivre",
+            "image": "poivre.png"
           }
         ]
       }

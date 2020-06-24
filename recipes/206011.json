@@ -1,0 +1,183 @@
+{
+    "id": "206011",
+    "slug": "pates-a-la-carbonara-sans-oeuf-206011",
+    "title": "Pâtes à la carbonara sans oeuf",
+    "yield": 4,
+    "cookTime": 600,
+    "waitTime": 0,
+    "prepTime": 900,
+    "totalTime": 1700,
+    "calorieLevel": "Moyen",
+    "instructions": {
+        "split_instructions": [
+            "Portez une grande marmitte d'eau à ébullition. Parsemez d'une bonne pincée de gros sel puis faites cuire les pâtes selon le temps indiqué sur le paquet (al dente).",
+            "Versez l'huile d'olive dans une petite poêle et faites dorer les lardons (ou la pancetta effilochée). Une fois les lardons bien grillés, versez la crème dans la poêle.",
+            "Ajoutez le parmesan, plusieurs tours de poivre du moulin et le basilic finement ciselé. Incorporez 1 cuil. à soupe d'eau de cuisson des pâtes.",
+            "Egouttez les spaghetti, mélangez-les avec la sauce et servez aussitôt."
+        ]
+    },
+    "parsedIngredients": {
+      "split_ingredients": [
+        {
+          "title": "Ingrédients",
+          "ingredients": [
+            {
+              "ingredient": "Spaghetti",
+              "quantity": "500",
+              "unit": "g",
+              "commonIngredient": "Pâtes",
+              "referenceIngredient": "Pâtes",
+              "image": "spaghetti.png"
+            },
+            {
+              "ingredient": "Lardons(ou de pancetta)",
+              "quantity": "200",
+              "unit": "g",
+              "commonIngredient": "Lardons",
+              "referenceIngredient": "Lardons",
+              "image": "lardon.png"
+            },
+            {
+              "ingredient": "Crème liquide",
+              "quantity": "15",
+              "unit": "cl",
+              "commonIngredient": "Crème liquide",
+              "referenceIngredient": "Crème laitière",
+              "image": "crème.png"
+            },
+            {
+              "ingredient": "Parmesan râpé",
+              "quantity": "60",
+              "unit": "g",
+              "commonIngredient": "Fromage",
+              "referenceIngredient": "Parmesan",
+              "image": "parmesan.png"
+            },
+            {
+              "ingredient": "Huile d'olive",
+              "quantity": "1",
+              "unit": "cuil. à soupe",
+              "commonIngredient": "Huile d'olive",
+              "referenceIngredient": "Huile d'olive",
+              "image": "huile.png"
+            },
+            {
+              "ingredient": "Brins de basilic",
+              "quantity": "8",
+              "unit": null,
+              "commonIngredient": "Basilic",
+              "referenceIngredient": "Basilic",
+              "image": "basilic.png"
+            },
+            {
+              "ingredient": "Gros sell",
+              "quantity": null,
+              "unit": "",
+              "commonIngredient": "Sel",
+              "referenceIngredient": "Sel",
+              "image": "sel.png"
+            },
+            {
+              "ingredient": "Poivre au moulin",
+              "quantity": "_",
+              "unit": "",
+              "commonIngredient": "Poivre",
+              "referenceIngredient": "Poivre",
+              "image": "poivre.png"
+            }
+          ]
+        }
+      ],
+      "ingredients_list": [
+        {
+          "ingredients": [
+            "500g Spaghetti",
+            "200g Lardons(ou de pancetta)",
+            "15cl Crème liquide",
+            "60g Parmesan râpé",
+            "1cuil. à soupe Huile d'olive",
+            "8Brins de basilic",
+            "Gros sel",
+            "Poivre du moulin"
+          ],
+          "title": "Ingrédients"
+        }
+      ]
+    },
+    "estimatedCost": {
+      "label": "Bon marché",
+      "value": 0
+    },
+    "difficulty": {
+      "label": "Facile",
+      "value": 0
+    },
+    "tags": [
+      {
+        "title": "Pâtes",
+        "slug": "pâtes"
+      },
+      {
+        "title": "Familiale",
+        "slug": "familiale"
+      },
+      {
+        "title": "Réception",
+        "slug": "reception"
+      },
+      {
+        "title": "Buffet",
+        "slug": "buffet"
+      },
+      {
+        "title": "Pas cher",
+        "slug": "pas cher"
+      },
+      {
+        "title": "Débutant",
+        "slug": "débutant"
+      },
+      {
+        "title": "Enfant",
+        "slug": "enfant"
+      },
+      {
+        "title": "Recettes pour ados",
+        "slug": "recette pour ados"
+      },
+      {
+        "title": "Familiale",
+        "slug": "recette traditionnelle"
+      },
+      {
+        "title": "Recette Facile",
+        "slug": "recette facile"
+      },
+      {
+        "title": "Recette Italienne",
+        "slug": "recette italienne"
+      },
+      {
+        "title": "Plat",
+        "slug": "plat"
+      },
+      {
+        "title": "Oeufs",
+        "slug": "oeufs"
+      },
+      {
+        "title": "Carbonara",
+        "slug": "carbonara"
+      }
+    ],
+    "medias": [
+      {
+        "title": null,
+        "url": "https://cac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2FCAC.2Fvar.2Fcui.2Fstorage.2Fimages.2Fdossiers-gourmands.2Ftendance-cuisine.2Fnos-recettes-speciales-radines-171742.2F1455276-1-fre-FR.2Fnos-recettes-speciales-radines.2Ejpg/748x372/quality/90/crop-from/center/pates-a-la-carbonara-sans-oeuf.jpeg"
+      }
+    ],
+    "userReviews": {
+        "average": 4.7,
+        "count": 762
+    }
+}

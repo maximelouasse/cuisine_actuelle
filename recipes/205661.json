@@ -1,0 +1,165 @@
+{
+    "id": "205661",
+    "slug": "genoise-sans-oeuf-205661",
+    "title": "Génoise sans oeuf",
+    "yield": 4,
+    "cookTime": 1200,
+    "waitTime": 0,
+    "prepTime": 900,
+    "totalTime": 2100,
+    "calorieLevel": "Moyen",
+    "instructions": {
+        "split_instructions": [
+            "Préchauffez le four à 180 °C. Dans une jatte, réunissez le sucre, la farine et la levure.",
+            "Coupez le beurre en parcelles puis faites-le fondre doucement dans une petite casserole avec le lait chaud. Hors du feu, ajoutez la crème.",
+            "Versez le mélange tiède dans la jatte, mélangez rapidement puis versez la pâte dans un moule antiadhésif.",
+            "Enfournez aussitôt pour 15 à 20 min. Dégustez la génoise refroidie avec de la confiture, ou utilisez-la pour préparer une pâtisserie (fraisier, roulé...)"
+        ]
+    },
+    "parsedIngredients": {
+      "split_ingredients": [
+        {
+          "title": "Ingrédients",
+          "ingredients": [
+            {
+              "ingredient": "Farine",
+              "quantity": "200",
+              "unit": "g",
+              "commonIngredient": "Farine",
+              "referenceIngredient": "Farine",
+              "image": "farine.png"
+            },
+            {
+              "ingredient": "Sucre roux",
+              "quantity": "100",
+              "unit": "g",
+              "commonIngredient": "Sucre roux",
+              "referenceIngredient": "Sucre",
+              "image": "sucre.png"
+            },
+            {
+              "ingredient": "Beurre demi-sel",
+              "quantity": "50",
+              "unit": "g",
+              "commonIngredient": "Beurre",
+              "referenceIngredient": "Beurre",
+              "image": "beurre.png"
+            },
+            {
+              "ingredient": "Crème fleurette",
+              "quantity": "20",
+              "unit": "cl",
+              "commonIngredient": "Crème fleurette",
+              "referenceIngredient": "Crème",
+              "image": "creme.png"
+            },
+            {
+              "ingredient": "Lait",
+              "quantity": "10",
+              "unit": "cl",
+              "commonIngredient": "Lait",
+              "referenceIngredient": "Lait",
+              "image": "lait.png"
+            },
+            {
+              "ingredient": "Levure",
+              "quantity": "0.5",
+              "unit": "sachet",
+              "commonIngredient": "Levure",
+              "referenceIngredient": "Levure",
+              "image": "levure.png"
+            }
+          ]
+        }
+      ],
+      "ingredients_list": [
+        {
+          "ingredients": [
+            "200g Farine",
+            "100g Sucre roux",
+            "50g Beurre demi-sel",
+            "20cl Crème fleurette",
+            "10cl Lait",
+            "0,5 sachet Levure"
+          ],
+          "title": "Ingrédients"
+        }
+      ]
+    },
+    "estimatedCost": {
+      "label": "Bon marché",
+      "value": 0
+    },
+    "difficulty": {
+      "label": "Facile",
+      "value": 0
+    },
+    "tags": [
+      {
+        "title": "Oeufs",
+        "slug": "oeufs"
+      },
+      {
+        "title": "Végétarien",
+        "slug": "végétarien"
+      },
+      {
+        "title": "Goûter",
+        "slug": "goûter"
+      },
+      {
+        "title": "Recette time",
+        "slug": "recette time"
+      },
+      {
+        "title": "Panier pique-nique",
+        "slug": "panier pique-nique"
+      },
+      {
+        "title": "Buffet",
+        "slug": "buffet"
+      },
+      {
+        "title": "Brunch petit déjeuner",
+        "slug": "brunch petit déjeuner"
+      },
+      {
+        "title": "Pas cher",
+        "slug": "pas cher"
+      },
+      {
+        "title": "Débutant",
+        "slug": "débutant"
+      },
+      {
+        "title": "Enfant",
+        "slug": "enfant"
+      },
+      {
+        "title": "Recettes pour ados",
+        "slug": "recettes pour ados"
+      },
+      {
+        "title": "Familiale",
+        "slug": "familiale"
+      },
+      {
+        "title": "Recette facile",
+        "slug": "recette facile"
+      },
+      {
+        "title": "Dessert",
+        "slug": "dessert"
+      }
+    ],
+    "medias": [
+      {
+        "title": null,
+        "url": "https://cac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2FCAC.2Fvar.2Fcui.2Fstorage.2Fimages.2Fguide-du-bien-manger.2Fconversions-et-mesures.2Fla-genoise-express-sans-oeuf-et-sans-fouetter-350222.2F4006813-1-fre-FR.2Fla-genoise-express-sans-oeuf-et-sans-fouetter.2Ejpg/748x372/quality/90/crop-from/center/genoise-sans-oeuf.jpeg"
+      }
+    ],
+    "userReviews": {
+        "average": 4.6,
+        "count": 675
+    }
+}

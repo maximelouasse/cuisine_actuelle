@@ -13,6 +13,7 @@ Componant configuration
   template: `
     <app-header></app-header>
     <router-outlet></router-outlet>
+    <app-footer></app-footer>
   `,
 })
 //
@@ -32,12 +33,15 @@ export class AppComponent {
         }
         let currentUrlSlug = event.url.slice(1);
 
-        if (currentUrlSlug) {
-          //this.renderer.addClass(document.body, currentUrlSlug);
+        if(currentUrlSlug.includes('recipe')) {
+          currentUrlSlug = 'detail-recipe';
+          this.renderer.setProperty(document.body, 'id', currentUrlSlug);
+        } else if(currentUrlSlug == "") {
+          currentUrlSlug = 'list-recipe';
           this.renderer.setProperty(document.body, 'id', currentUrlSlug);
         } else {
-          currentUrlSlug = 'list-recipe';
-          this.renderer.setProperty(document.body, 'id', 'list-recipe');
+          //this.renderer.addClass(document.body, currentUrlSlug);
+          this.renderer.setProperty(document.body, 'id', currentUrlSlug);
         }
         this.previousUrl = currentUrlSlug;
       }

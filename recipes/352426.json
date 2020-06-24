@@ -1,0 +1,146 @@
+{
+    "id": "352426",
+    "slug": "gratin-de-fleurs-de-courgettes-mozzarella-et-parmesan-352426",
+    "title": "Gratin de fleurs de courgettes mozzarella et parmesan",
+    "yield": 4,
+    "cookTime": 900,
+    "waitTime": 0,
+    "prepTime": 900,
+    "totalTime": 1800,
+    "calorieLevel": "Moyen",
+    "instructions": {
+        "split_instructions": [
+            "Otez les pistils de vos fleurs de courgettes.",
+            "Lavez vos courgettes. Eliminez les extrémités. Coupez-les en fines rondelles à l’aide d’une mandoline.",
+            "Coupez vos boules de mozzarella en morceaux.",
+            "Farcissez vos fleurs de courgettes de mozzarella.",
+            "Dans un plat à gratin, alternez fleurs de courgettes et fines rondelles de courgettes jaune et verte. Arrosez l’ensemble d’huile d’olive. Salez. Enfournez à 180 °C pendant 15 minutes.",
+            "Râpez le parmesan à la micro-râpe.",
+            "Agrémentez votre gratin de parmesan râpé. Poivrez."
+        ]
+    },
+    "parsedIngredients": {
+      "split_ingredients": [
+        {
+          "title": "Ingrédients",
+          "ingredients": [
+            {
+                "ingredient": "Fleurs de courgettes",
+                "quantity": "12",
+                "unit": null,
+                "commonIngredient": "Courgettes",
+                "referenceIngredient": "Courgettes",
+                "image": "fleur-de-courgette.png"
+            },
+            {
+                "ingredient": "Boules de mozzarella",
+                "quantity": "2",
+                "unit": null,
+                "commonIngredient": "Mozzarella",
+                "referenceIngredient": "Mozzarella",
+                "image": "mozzarella.png"
+            },
+            {
+                "ingredient": "Petite courgette jaune",
+                "quantity": "1",
+                "unit": null,
+                "commonIngredient": "Courgette",
+                "referenceIngredient": "Courgette",
+                "image": "courgette.png"
+            },
+            {
+                "ingredient": "Petite courgette verte",
+                "quantity": "1",
+                "unit": null,
+                "commonIngredient": "Courgette",
+                "referenceIngredient": "Courgette",
+                "image": "courgette.png"
+            },
+            {
+                "ingredient": "Parmesan",
+                "quantity": "40",
+                "unit": "g",
+                "commonIngredient": "Parmesan",
+                "referenceIngredient": "Parmesan",
+                "image": "parmesan.png"
+            },
+            {
+                "ingredient": "Huile d'olive",
+                "quantity": "2",
+                "unit": "cuil. à soupe",
+                "commonIngredient": "Huile d'olive",
+                "referenceIngredient": "Huile d'olive",
+                "image": "huile-dolive.png"
+            },
+            {
+                "ingredient": "Sel",
+                "quantity": null,
+                "unit": null,
+                "commonIngredient": "Sel",
+                "referenceIngredient": "Sel",
+                "image": "sel.png"
+            },
+            {
+                "ingredient": "Poivre",
+                "quantity": null,
+                "unit": null,
+                "commonIngredient": "Poivre",
+                "referenceIngredient": "Poivre",
+                "image": "poivre.png"
+            }
+          ]
+        }
+      ],
+      "ingredients_list": [
+        {
+          "ingredients": [
+            "12Fleurs de courgettes",
+            "2 Boules de mozzarella",
+            "1 Petite courgette jaune",
+            "1 Petite courgette verte",
+            "40g Parmesan",
+            "2 cuil. à soupe Huile d’olive",
+            "Sel",
+            "Poivre"
+          ],
+          "title": "Ingrédients"
+        }
+      ]
+    },
+    "estimatedCost": {
+      "label": "Assez cher",
+      "value": 0
+    },
+    "difficulty": {
+      "label": "Facile",
+      "value": 0
+    },
+    "tags": [
+      {
+        "title": "Courgette",
+        "slug": "courgette"
+      },
+      {
+        "title": "Mozzarella",
+        "slug": "mozzarella"
+      },
+      {
+        "title": "Parmesan",
+        "slug": "parmesan"
+      },
+      {
+        "title": "Tartes salées",
+        "slug": "tartes salées"
+      }
+    ],
+    "medias": [
+      {
+        "title": null,
+        "url": "https://cac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2018.2F09.2F25.2F7028d750-54b2-48e7-917d-07424903d9d8.2Ejpeg/748x372/quality/90/crop-from/center/gratin-de-fleurs-de-courgettes-mozzarella-et-parmesan.jpeg"
+      }
+    ],
+    "userReviews": {
+        "average": 5,
+        "count": 2
+    }
+}

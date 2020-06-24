@@ -1,0 +1,205 @@
+{
+    "id": "208494",
+    "slug": "escabeche-de-sardines-208494",
+    "title": "Escabèche de sardines",
+    "yield": 4,
+    "cookTime": 900,
+    "waitTime": 0,
+    "prepTime": 900,
+    "totalTime": 1800,
+    "calorieLevel": "Moyen",
+    "instructions": {
+        "split_instructions": [
+            "Rincez les sardines sous l’eau, frottez-les du bout des doigts pour les écailler et épongez-les. Farinez-les, puis faites-les frire à la poêle, dans l’huile d’arachide chaude. Déposez-les sur une grille pour les égoutter.",
+            "Rincez le poivron. Eliminez le pédoncule, les graines et les côtes blanches, puis émincez finement la pulpe. Pelez la carotte, les oignons et l’ail, émincez-les finement.",
+            "Dans une poêle, faites revenir à l’huile d’olive le poivron, la carotte, les oignons et l’ail. Ajoutez le thym et le laurier, salez, poivrez et laissez cuire sur feu moyen 10 min environ. Versez sur les légumes le vinaigre et 10 cl d’eau, laissez réduire de moitié et ajoutez le piment.",
+            "Tassez les sardines dans un plat creux, arrosez-les avec le contenu de la poêle et laissez refroidir. Couvrez d’un film étirable et réservez au frais jusqu’au moment de servir."
+        ]
+    },
+    "parsedIngredients": {
+      "split_ingredients": [
+        {
+          "title": "Ingrédients",
+          "ingredients": [
+            {
+              "ingredient": "Grosses sardines vidées",
+              "quantity": "12",
+              "unit": null,
+              "commonIngredient": "Sardines",
+              "referenceIngredient": "Sardines",
+              "image": "sardine.png"
+            },
+            {
+              "ingredient": "Poivron rouge",
+              "quantity": "1",
+              "unit": null,
+              "commonIngredient": "Poivron",
+              "referenceIngredient": "Poivron",
+              "image": "poivron.png"
+            },
+            {
+              "ingredient": "Carotte",
+              "quantity": "1",
+              "unit": null,
+              "commonIngredient": "Carotte",
+              "referenceIngredient": "Carotte",
+              "image": "carotte.png"
+            },
+            {
+              "ingredient": "Oignons",
+              "quantity": "2",
+              "unit": null,
+              "commonIngredient": "Oignons",
+              "referenceIngredient": "Oignons",
+              "image": "oignon.png"
+            },
+            {
+              "ingredient": "Ail",
+              "quantity": "2",
+              "unit": "gousses",
+              "commonIngredient": "Ail",
+              "referenceIngredient": "Ail",
+              "image": "ail.png"
+            },
+            {
+              "ingredient": "Brin de thym",
+              "quantity": "1",
+              "unit": null,
+              "commonIngredient": "Thym",
+              "referenceIngredient": "Thym",
+              "image": "thym.png"
+            },
+            {
+              "ingredient": "Feuille de laurier",
+              "quantity": "1",
+              "unit": null,
+              "commonIngredient": "Laurier",
+              "referenceIngredient": "Laurier",
+              "image": "laurier.png"
+            },
+            {
+              "ingredient": "Farine",
+              "quantity": "1",
+              "unit": "cuil. à soupe",
+              "commonIngredient": "Farine",
+              "referenceIngredient": "Farine",
+              "image": "farine.png"
+            },
+            {
+              "ingredient": "Vinaigre de cidre",
+              "quantity": "10",
+              "unit": "cl",
+              "commonIngredient": "Vinaigre",
+              "referenceIngredient": "Vinaigre",
+              "image": "vinaigre.png"
+            },
+            {
+              "ingredient": "Huile d'olive",
+              "quantity": "3",
+              "unit": "cuil. à soupe",
+              "commonIngredient": "Huile d'olive",
+              "referenceIngredient": "Huile",
+              "image": "huile.png"
+            },
+            {
+              "ingredient": "Huile d'arachide",
+              "quantity": "4",
+              "unit": "cuil. à soupe",
+              "commonIngredient": "Huile d'arachide",
+              "referenceIngredient": "Huile",
+              "image": "huile.png"
+            },
+            {
+              "ingredient": "Piment en poudre",
+              "quantity": "1",
+              "unit": "pincée",
+              "commonIngredient": "Piment",
+              "referenceIngredient": "Piment",
+              "image": "piment.png"
+            },
+            {
+              "ingredient": "Sel",
+              "quantity": null,
+              "unit": null,
+              "commonIngredient": "Sel",
+              "referenceIngredient": "Sel",
+              "image": "sel.png"
+            },
+            {
+              "ingredient": "Poivre",
+              "quantity": null,
+              "unit": null,
+              "commonIngredient": "Poivre",
+              "referenceIngredient": "Poivre",
+              "image": "poivre.png"
+            }
+          ]
+        }
+      ],
+      "ingredients_list": [
+        {
+          "ingredients": [
+            "12 Grosses sardines vidées",
+            "1 Poivron rouge",
+            "1 Carotte",
+            "2 Oignons",
+            "2 gousses Ail",
+            "1 Brin de thym",
+            "1 Feuille de laurier",
+            "1 cuil. à soupe Farine",
+            "10 cl Vinaigre de cidre",
+            "3 cuil. à soupe Huile d’olive",
+            "4 cuil. à soupe Huile d’arachide",
+            "1 pincée Piment en poudre",
+            "Sel",
+            "Poivre"
+          ],
+          "title": "Ingrédients"
+        }
+      ]
+    },
+    "estimatedCost": {
+      "label": "Bon marché",
+      "value": 0
+    },
+    "difficulty": {
+      "label": "Facile",
+      "value": 0
+    },
+    "tags": [
+      {
+        "title": "Sardine",
+        "slug": "sardine"
+      },
+      {
+        "title": "Familiale",
+        "slug": "familiale"
+      },
+      {
+        "title": "Buffet",
+        "slug": "buffet"
+      },
+      {
+        "title": "Été",
+        "slug": "été"
+      },
+      {
+        "title": "Entrée",
+        "slug": "entrée"
+      },
+      {
+        "title": "Tapas",
+        "slug": "taps"
+      }
+    ],
+    "medias": [
+      {
+        "title": null,
+        "url": "https://cac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2018.2F09.2F25.2F864b0422-949b-471e-9e42-207495ec3516.2Ejpeg/748x372/quality/90/crop-from/center/escabeche-de-sardines.jpeg"
+      }
+    ],
+    "userReviews": {
+        "average": 5,
+        "count": 3
+    }
+}

@@ -58,6 +58,13 @@ export class RecipeService {
       .catch(this.handleError);
   }
 
+  public search(queryString: String) {
+    return this.HttpClient.post(`${environment.apiUrl}/recipe/`, { filters: { ingredients: [queryString] } })
+      .toPromise()
+      .then(data => this.getData(data, 'recipe'))
+      .catch(this.handleError);
+  }
+
   /*
   Methods to get API responses
   */

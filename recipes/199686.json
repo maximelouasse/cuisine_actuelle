@@ -1,0 +1,162 @@
+{
+    "id": "199686",
+    "slug": "petits-cakes-feta-tomate-199686",
+    "title": "Petits cakes feta-tomate",
+    "yield": 4,
+    "cookTime": 1200,
+    "waitTime": 0,
+    "prepTime": 600,
+    "totalTime": 1800,
+    "calorieLevel": "Moyen",
+    "instructions": {
+        "split_instructions": [
+            "Préchauffez le four à th. 6 (180 °C). Fouettez vivement les œufs dans une jatte avec le sel et le sucre. Incorporez l’huile d’olive et le yaourt en fouettant jusqu’à ce que le mélange soit bien émulsionné.",
+            "Incorporez la farine, puis la feta émiettée en dés et les tomates confites coupées en tout petits dés. Mélangez bien.",
+            "Répartissez cette pâte dans 8 caissettes de papier plissé (superposées trois par trois pour les consolider et posées directement sur la plaque du four). Enfournez 20 min. Servez les cakes tièdes ou froids."
+        ]
+    },
+    "parsedIngredients": {
+      "split_ingredients": [
+        {
+          "title": "Ingrédients",
+          "ingredients": [
+            {
+              "ingredient": "Feta",
+              "quantity": "150",
+              "unit": "g",
+              "commonIngredient": "Feta",
+              "referenceIngredient": "Feta",
+              "image": "feta.png"
+            },
+            {
+              "ingredient": "Tomates confites",
+              "quantity": "100",
+              "unit": "g",
+              "commonIngredient": "Tomates",
+              "referenceIngredient": "Tomates",
+              "image": "tomate.png"
+            },
+            {
+              "ingredient": "Oeufs",
+              "quantity": "2",
+              "unit": null,
+              "commonIngredient": "Oeufs",
+              "referenceIngredient": "Oeufs",
+              "image": "oeuf.png"
+            },
+            {
+              "ingredient": "Huile d'olive",
+              "quantity": "4",
+              "unit": "cuil. à soupe",
+              "commonIngredient": "Huile d'olive",
+              "referenceIngredient": "Huile d'olive",
+              "image": "huile.png"
+            },
+            {
+              "ingredient": "Yaourt nature",
+              "quantity": "4",
+              "unit": "cuil. à soupe",
+              "commonIngredient": "Yaourt",
+              "referenceIngredient": "Yaourt",
+              "image": "yaourt.png"
+            },
+            {
+              "ingredient": "Farine pour gâteaux",
+              "quantity": "150",
+              "unit": "g",
+              "commonIngredient": "Farine",
+              "referenceIngredient": "Farine",
+              "image": "farine.png"
+            },
+            {
+              "ingredient": "Sucre",
+              "quantity": "0.5",
+              "unit": "cuil. à café",
+              "commonIngredient": "Sucre",
+              "referenceIngredient": "Sucre",
+              "image": "farine.png"
+            },
+            {
+              "ingredient": "Sel",
+              "quantity": "0.5",
+              "unit": "cuil. à café",
+              "commonIngredient": "Sel",
+              "referenceIngredient": "Sel",
+              "image": "sel.png"
+            }
+          ]
+        }
+      ],
+      "ingredients_list": [
+        {
+          "ingredients": [
+            "150g Feta",
+            "100g Tomates confites",
+            "2 Oeufs",
+            "4 cuil. à soupe Huile d’olive",
+            "4 cuil. à soupe Yaourt nature",
+            "150g Farine pour gâteaux",
+            "0,5 cuil. à café Sucre",
+            "0,5 cuil. à café Sel"
+          ],
+          "title": "Ingrédients"
+        }
+      ]
+    },
+    "estimatedCost": {
+      "label": "Bon marché",
+      "value": 0
+    },
+    "difficulty": {
+      "label": "Facile",
+      "value": 0
+    },
+    "tags": [
+      {
+        "title": "Feta",
+        "slug": "feta"
+      },
+      {
+          "title": "Familiale",
+          "slug": "familiale"
+      },
+      {
+        "title": "Végétarien",
+        "slug": "végétarien"
+      },
+      {
+        "title": "Buffet",
+        "slug": "buffet"
+      },
+      {
+        "title": "Recette facile",
+        "slug": "recette facile"
+      },
+      {
+        "title": "Recette rapide",
+        "slug": "recette rapide"
+      },
+      {
+        "title": "Apéro dinatoire",
+        "slug": "apéro dinatoire"
+      },
+      {
+        "title": "Amuse-bouches",
+        "slug": "amuse-bouches"
+      },
+      {
+        "title": "Tomate",
+        "slug": "tomate"
+      }
+    ],
+    "medias": [
+      {
+        "title": null,
+        "url": "https://cac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2018.2F09.2F25.2Fe0bee95c-b3cb-424a-abb4-f36262bd88de.2Ejpeg/748x372/quality/90/crop-from/center/petits-cakes-feta-tomate.jpeg"
+      }
+    ],
+    "userReviews": {
+        "average": 2.8,
+        "count": 15
+    }
+}

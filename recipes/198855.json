@@ -1,0 +1,155 @@
+{
+    "id": "198855",
+    "slug": "hamburgers-de-pomme-au-foie-gras-198855",
+    "title": "Hamburgers de pomme au foie gras",
+    "yield": 4,
+    "cookTime": 600,
+    "waitTime": 0,
+    "prepTime": 600,
+    "totalTime": 1200,
+    "calorieLevel": "Élevé",
+    "instructions": {
+        "split_instructions": [
+            "Coupez le pain d’épice en bâtonnets. Faites-les dorer 3 min à la poêle dans 30 g de beurre.",
+            "Coupez un chapeau et un fond dans les pommes. Faites-les revenir 3 min à la poêle dans le reste de beurre. Saupoudrez de sucre et laissez dorer.",
+            "Faites dorer le foie gras dans une poêle très chaude sans matière grasse, juste 1 min 30 par face. Egouttez-le, salez, poivrez. Garnissez-en les fonds de pomme, replacez les chapeaux.",
+            "Servez ces « hamburgers » entourés du jus de cuisson des pommes relevé de vinaigre. Accompagnez de « frites » de pain d’épice."
+        ]
+    },
+    "parsedIngredients": {
+      "split_ingredients": [
+        {
+          "title": "Ingrédients",
+          "ingredients": [
+            {
+              "ingredient": "Escalopes de foie gras surgelées (280 g)",
+              "quantity": "8",
+              "unit": null,
+              "commonIngredient": "Foie gras",
+              "referenceIngredient": "Foie gras",
+              "image": "foie-gras.png"
+            },
+            {
+              "ingredient": "Pommes",
+              "quantity": "4",
+              "unit": null,
+              "commonIngredient": "Pommes",
+              "referenceIngredient": "Pommes",
+              "image": "pomme.png"
+            },
+            {
+              "ingredient": "Pain d'épice",
+              "quantity": "4",
+              "unit": "tranches",
+              "commonIngredient": "Pain d'épice",
+              "referenceIngredient": "Pain d'épice",
+              "image": "pain.png"
+            },
+            {
+              "ingredient": "Sucre en poudre",
+              "quantity": "20",
+              "unit": "g",
+              "commonIngredient": "Sucre",
+              "referenceIngredient": "Sucre",
+              "image": "scure.png"
+            },
+            {
+              "ingredient": "Vinaigre",
+              "quantity": "1",
+              "unit": "cuil. à soupe",
+              "commonIngredient": "Vinaigre",
+              "referenceIngredient": "Vinaigre",
+              "image": "vinaigre.png"
+            },
+            {
+              "ingredient": "Beurre",
+              "quantity": "60",
+              "unit": "g",
+              "commonIngredient": "Beurre",
+              "referenceIngredient": "Beurre",
+              "image": "beurre.png"
+            },
+            {
+              "ingredient": "Fleur de sel",
+              "quantity": null,
+              "unit": null,
+              "commonIngredient": "Sel",
+              "referenceIngredient": "Sel",
+              "image": "sel.png"
+            },
+            {
+              "ingredient": "Poivre",
+              "quantity": null,
+              "unit": null,
+              "commonIngredient": "Poivre",
+              "referenceIngredient": "Poivre",
+              "image": "poivre.png"
+            }
+          ]
+        }
+      ],
+      "ingredients_list": [
+        {
+          "ingredients": [
+            "8 Escalopes de foie gras surgelées(280 g)",
+            "4 Pommes",
+            "4 tranches Pain d’épice",
+            "20g Sucre en poudre",
+            "1 cuil. à soupe Vinaigre",
+            "60g Beurre",
+            "Fleur de sel",
+            "Poivre"
+          ],
+          "title": "Ingrédients"
+        }
+      ]
+    },
+    "estimatedCost": {
+      "label": "Assez cher",
+      "value": 0
+    },
+    "difficulty": {
+      "label": "Facile",
+      "value": 0
+    },
+    "tags": [
+      {
+        "title": "Foie gras",
+        "slug": "foie gras"
+      },
+      {
+        "title": "Recette facile",
+        "slug": "recette facile"
+      },
+      {
+        "title": "Réception",
+        "slug": "réception"
+      },
+      {
+        "title": "Recette originale",
+        "slug": "recette originale"
+      },
+      {
+        "title": "Plat",
+        "slug": "plat"
+      },
+      {
+        "title": "Pomme",
+        "slug": "pomme"
+      },
+      {
+        "title": "Hamburgers",
+        "slug": "hamburgers"
+      }
+    ],
+    "medias": [
+      {
+        "title": null,
+        "url": "https://cac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2018.2F09.2F25.2Fc2ae444d-9f32-415c-bace-dbb9fb61a294.2Ejpeg/748x372/quality/90/crop-from/center/hamburgers-de-pomme-au-foie-gras.jpeg"
+      }
+    ],
+    "userReviews": {
+        "average": 3,
+        "count": 9
+    }
+}

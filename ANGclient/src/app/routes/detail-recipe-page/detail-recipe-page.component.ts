@@ -18,14 +18,35 @@ export class DetailRecipePageComponent implements OnInit {
     private _location: Location
   ) { }
 
-  public repiceDetail: any;
+  public recipeDetail: any;
+  public yield: number;
+
+  /**
+   * Methods
+   */
+  public convertSecondToMinute = (second: number) => {
+    return Math.floor(second / 60);
+  }
+
+  public getStep = (key: any) => {
+    return Math.floor(key) + 1;
+  }
+
+  public changePerson = (type: String) => {
+    if(type === "substract") {
+      this.yield--;
+    } else {
+      this.yield++;
+    }
+  }
+  //
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(params => {
       this.RecipeService.readOneItem(params.id)
         .then(apiResponse => {
-          this.repiceDetail = apiResponse.data;
-          //console.log(this.repiceDetail.medias);
+          this.recipeDetail = apiResponse.data;
+          this.yield = this.recipeDetail.yield;
         })
         .catch(error => {
           console.log('ERROR request', error);

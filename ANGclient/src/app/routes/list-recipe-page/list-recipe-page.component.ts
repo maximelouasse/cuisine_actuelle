@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ReactiveFormsModule, FormControl  } from '@angular/forms';
 
 import { RecipeService } from "../../services/recipes/recipe.service";
 import { ObservablesService } from "../../services/observable/observable.service";
@@ -18,6 +19,13 @@ export class ListRecipePageComponent implements OnInit {
   public allRecipe: any;
   public listFilterEvent: any;
   public listFilterType: any;
+  public resultsSearch: any[] = [];
+  public queryField: FormControl = new FormControl();
+  public listQueryField: any[] = [];
+  public displaySearchList: Boolean = false;
+
+  public selectedFilterType: any[] = [];
+  public selectedFilterSeason: any[] = [];
 
   /**
    * Methods
@@ -28,6 +36,52 @@ export class ListRecipePageComponent implements OnInit {
 
     public isMultiple = (value, multiple) => {
       return Number(value) % multiple;
+    }
+
+    public onBlur = () => {
+      //this.displaySearchList = false;
+    }
+
+    public onFocus = () => {
+      //this.displaySearchList = true;
+    }
+
+    public changeFilterType = (event) => {
+      let value = event.target.getAttribute('data-value-filter');
+      let index = this.selectedFilterType.indexOf(value);
+
+      if(index !== -1) {
+        this.selectedFilterType.splice(index, 1);
+      } else {
+        this.selectedFilterType.push(value);
+      }
+    }
+
+    public changeFilterSeason = (event) => {
+      let value = event.target.getAttribute('data-value-filter');
+      let index = this.selectedFilterSeason.indexOf(value);
+
+      if(index !== -1) {
+        this.selectedFilterSeason.splice(index, 1);
+      } else {
+        this.selectedFilterSeason.push(value);
+      }
+    }
+
+    public filterIsSelected = (filter: String, value: String) => {
+      if(filter == "type") {
+        if(this.selectedFilterType.indexOf(value) !== -1) {
+          return true;
+        } else {
+          return false;
+        }
+      } else if(filter == "season") {
+        if(this.selectedFilterSeason.indexOf(value) !== -1) {
+          return true;
+        } else {
+          return false;
+        }
+      }
     }
   //
 
@@ -57,6 +111,22 @@ export class ListRecipePageComponent implements OnInit {
       .catch(error => {
         console.log('ERROR request', error);
       });
+
+      this.queryField.valueChanges
+        .subscribe(queryField => {
+          //this.listQueryField.push(queryField);
+          this.RecipeService.search(queryField)
+            .then(response => {
+              if(queryField == "") {
+                this.resultsSearch = null;
+                this.displaySearchList = false;
+              } else {
+                this.resultsSearch = response.data;
+                this.displaySearchList = true;
+              }
+            })
+          }
+        );
 
       /*this.RecipeService.filterRecipe({
         'filters': {

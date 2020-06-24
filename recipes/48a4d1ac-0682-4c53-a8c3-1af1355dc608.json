@@ -22,24 +22,13 @@
     }
   },
   "instructions": {
-    "default": {
-      "html": "<p>1 Coupez les filets de <a href=\"https://www.cuisineactuelle.fr/recettes-de-cuisine/viande/poulet\">poulet</a> en cubes. Hachez-les. Salez et poivrez. <br>2 Versez le lait dans une assiette creuse et faites tremper la mie de pain. Une fois imbibée, pressez-la légèrement et incorporez-la au poulet haché. <br>3 Dans une assiette creuse, battez les œufs avec du sel et du poivre. Versez la chapelure dans une autre assiette. <br>4 Faites chauffer le bain de friture. Avec la pâte au poulet haché, façonnez des boulettes légèrement aplaties, roulez-les deux fois dans le mélange aux œufs battus puis dans la chapelure. Plongez les nuggets dans le bain de friture chaud environ 4-5 min par face. Epongez-les rapidement sur du papier absorbant. 5 Servez aussitôt par exemple comme ici, avec une petite salade composée (roquette, tomates) et des quartiers de citron vert, pour la touche mexicaine que rappelle le maïs.</p>",
-      "scripts": ""
-    },
-    "amp": {
-      "html": "<p>1 Coupez les filets de <a href=\"https://www.cuisineactuelle.fr/recettes-de-cuisine/viande/poulet\">poulet</a> en cubes. Hachez-les. Salez et poivrez. <br>2 Versez le lait dans une assiette creuse et faites tremper la mie de pain. Une fois imbibée, pressez-la légèrement et incorporez-la au poulet haché. <br>3 Dans une assiette creuse, battez les œufs avec du sel et du poivre. Versez la chapelure dans une autre assiette. <br>4 Faites chauffer le bain de friture. Avec la pâte au poulet haché, façonnez des boulettes légèrement aplaties, roulez-les deux fois dans le mélange aux œufs battus puis dans la chapelure. Plongez les nuggets dans le bain de friture chaud environ 4-5 min par face. Epongez-les rapidement sur du papier absorbant. 5 Servez aussitôt par exemple comme ici, avec une petite salade composée (roquette, tomates) et des quartiers de citron vert, pour la touche mexicaine que rappelle le maïs.</p>",
-      "scripts": ""
-    }
-  },
-  "rawIngredients": {
-    "default": {
-      "html": "<p>• 400 g de filets de <a href=\"https://www.cuisineactuelle.fr/recettes-de-cuisine/viande/poulet\">poulet</a> <br>• 80 g de chapelure de maïs <br>• 40 g de mie de pain sans gluten <br>• 4 cl de lait <br>• 2 œufs <br>• 1 bain de friture <br>• sel, poivre</p>",
-      "scripts": ""
-    },
-    "amp": {
-      "html": "<p>• 400 g de filets de <a href=\"https://www.cuisineactuelle.fr/recettes-de-cuisine/viande/poulet\">poulet</a> <br>• 80 g de chapelure de maïs <br>• 40 g de mie de pain sans gluten <br>• 4 cl de lait <br>• 2 œufs <br>• 1 bain de friture <br>• sel, poivre</p>",
-      "scripts": ""
-    }
+    "split_instructions": [
+        "Coupez les filets de poulet en cubes. Hachez-les. Salez et poivrez.",
+        "Versez le lait dans une assiette creuse et faites tremper la mie de pain. Une fois imbibée, pressez-la légèrement et incorporez-la au poulet haché.",
+        "Dans une assiette creuse, battez les œufs avec du sel et du poivre. Versez la chapelure dans une autre assiette.",
+        "Faites chauffer le bain de friture. Avec la pâte au poulet haché, façonnez des boulettes légèrement aplaties, roulez-les deux fois dans le mélange aux œufs battus puis dans la chapelure. Plongez les nuggets dans le bain de friture chaud environ 4-5 min par face. Epongez-les rapidement sur du papier absorbant.",
+        "Servez aussitôt par exemple comme ici, avec une petite salade composée (roquette, tomates) et des quartiers de citron vert, pour la touche mexicaine que rappelle le maïs."
+    ]
   },
   "parsedIngredients": {
     "ingredients_list": [
@@ -68,7 +57,8 @@
             "unit": "g",
             "preQuantity": null,
             "commonIngredient": "Filet de poulet",
-            "referenceIngredient": "Poulet"
+            "referenceIngredient": "Poulet",
+            "image": "poulet.png"
           },
           {
             "ingredient": "Chapelure de maïs",
@@ -77,7 +67,8 @@
             "unit": "g",
             "preQuantity": null,
             "commonIngredient": "Chapelure",
-            "referenceIngredient": "Chapelure"
+            "referenceIngredient": "Chapelure",
+            "image": "chapelure.png"
           },
           {
             "ingredient": "Mie de pain sans gluten",
@@ -86,7 +77,8 @@
             "unit": "g",
             "preQuantity": null,
             "commonIngredient": "Pain de mie sans croûte",
-            "referenceIngredient": "Pain"
+            "referenceIngredient": "Pain",
+            "image": "pain.png"
           },
           {
             "ingredient": "Lait",
@@ -95,7 +87,8 @@
             "unit": "cl",
             "preQuantity": null,
             "commonIngredient": "Lait",
-            "referenceIngredient": "Lait"
+            "referenceIngredient": "Lait",
+            "image": "lait.png"
           },
           {
             "ingredient": "Oeufs",
@@ -104,7 +97,8 @@
             "unit": "",
             "preQuantity": null,
             "commonIngredient": "Oeuf de lump",
-            "referenceIngredient": "Oeuf"
+            "referenceIngredient": "Oeuf",
+            "image": "oeuf.png"
           },
           {
             "ingredient": "Bain de friture",
@@ -113,25 +107,28 @@
             "unit": "",
             "preQuantity": null,
             "commonIngredient": "Huile de friture",
-            "referenceIngredient": "Huile"
+            "referenceIngredient": "Huile",
+            "image": "huile.png"
           },
           {
             "ingredient": "Sel",
             "additionalInformation": null,
-            "quantity": "_",
+            "quantity": null,
             "unit": "",
             "preQuantity": null,
             "commonIngredient": "Sel",
-            "referenceIngredient": "Sel"
+            "referenceIngredient": "Sel",
+            "image": "sel.png"
           },
           {
             "ingredient": "Poivre",
             "additionalInformation": null,
-            "quantity": "_",
+            "quantity": null,
             "unit": "",
             "preQuantity": null,
             "commonIngredient": "Poivre",
-            "referenceIngredient": "Poivre"
+            "referenceIngredient": "Poivre",
+            "image": "poivre.png"
           }
         ]
       }

@@ -1,0 +1,192 @@
+{
+    "id": "176357",
+    "slug": "millefeuille-d-ete-176357",
+    "title": "Millefeuille d'été",
+    "yield": 4,
+    "cookTime": 0,
+    "waitTime": 0,
+    "prepTime": 1200,
+    "totalTime": 1200,
+    "calorieLevel": "Faible",
+    "instructions": {
+        "split_instructions": [
+            "Coupez le melon et la pastèque en quartiers. Eliminez les graines et la peau puis détaillez-les en tranches fines. Rincez les courgettes et le concombre et, sans les peler, coupez-les en fines lamelles avec un épluche-légumes. Détaillez le feta en copeaux. Rincez et effeuillez le basilic.",
+            "Émulsionnez le jus de citron avec l’huile d’olive. Salez, poivrez.",
+            "Superposez les légumes et les fruits en millefeuille en intercalant la feta. Maintenez avec des piques en bois, arrosez de sauce au citron et parsemez de basilic. Servez bien frais."
+        ]
+    },
+    "parsedIngredients": {
+      "split_ingredients": [
+        {
+          "title": "Ingrédients",
+          "ingredients": [
+            {
+              "ingredient": "Melon",
+              "quantity": "1",
+              "unit": null,
+              "commonIngredient": "Melon",
+              "referenceIngredient": "Melon",
+              "image": "melon.png"
+            },
+            {
+              "ingredient": "Pastèque",
+              "quantity": "0,25",
+              "unit": null,
+              "commonIngredient": "Pastèque",
+              "referenceIngredient": "Pastèque",
+              "image": "pasteque.png"
+            },
+            {
+              "ingredient": "Courgettes",
+              "quantity": "2",
+              "unit": null,
+              "commonIngredient": "Courgettes",
+              "referenceIngredient": "Courgettes",
+              "image": "courgette.png"
+            },
+            {
+              "ingredient": "Concombre",
+              "quantity": "0,25",
+              "unit": null,
+              "commonIngredient": "Concombre",
+              "referenceIngredient": "Concombre",
+              "image": "concombre.png"
+            },
+            {
+              "ingredient": "Bouquet de basilic",
+              "quantity": "1",
+              "unit": null,
+              "commonIngredient": "Basilic",
+              "referenceIngredient": "Basilic",
+              "image": "basilic.png"
+            },
+            {
+              "ingredient": "Citron",
+              "quantity": "1",
+              "unit": null,
+              "commonIngredient": "Citron",
+              "referenceIngredient": "Citron",
+              "image": "citron.png"
+            },
+            {
+              "ingredient": "Feta",
+              "quantity": "250",
+              "unit": "g",
+              "commonIngredient": "Feta",
+              "referenceIngredient": "Feta",
+              "image": "feta.png"
+            },
+            {
+              "ingredient": "Huile d'olive",
+              "quantity": "3",
+              "unit": "cuil. à soupe",
+              "commonIngredient": "Huile",
+              "referenceIngredient": "Huile",
+              "image": "huile.png"
+            },
+            {
+              "ingredient": "Sel",
+              "quantity": null,
+              "unit": null,
+              "commonIngredient": "Sel",
+              "referenceIngredient": "Sel",
+              "image": "sel.png"
+            },
+            {
+              "ingredient": "Poivre",
+              "quantity": null,
+              "unit": null,
+              "commonIngredient": "Poivre",
+              "referenceIngredient": "Poivre",
+              "image": "poivre.png"
+            }
+          ]
+        }
+      ],
+      "ingredients_list": [
+        {
+          "ingredients": [
+            "1 Melon",
+            "0,25 Pastèque",
+            "2 Courgettes",
+            "0,25 Concombre",
+            "1 Bouquet de basilic",
+            "1 Citron",
+            "250g Feta",
+            "3 cuil. à soupe Huile d’olive",
+            "Sel",
+            "Poivre"
+          ],
+          "title": "Ingrédients"
+        }
+      ]
+    },
+    "estimatedCost": {
+      "label": "Bon marché",
+      "value": 0
+    },
+    "difficulty": {
+      "label": "Facile",
+      "value": 0
+    },
+    "tags": [
+      {
+        "title": "Familiale",
+        "slug": "familiale"
+      },
+      {
+        "title": "Diététique",
+        "slug": "diététique"
+      },
+      {
+        "title": "Débutant",
+        "slug": "débutant"
+      },
+      {
+        "title": "Végétarien",
+        "slug": "végétarien"
+      },
+      {
+        "title": "Pas cher",
+        "slug": "pas cher"
+      },
+      {
+        "title": "Été",
+        "slug": "été"
+      },
+      {
+        "title": "Recette facile",
+        "slug": "recette facile"
+      },
+      {
+        "title": "Recette rapide",
+        "slug": "recette rapide"
+      },
+      {
+        "title": "Recette originale",
+        "slug": "recette originale"
+      },
+      {
+        "title": "Recette légère",
+        "slug": "recette légère"
+      },
+      {
+        "title": "Recette minceur",
+        "slug": "recette minceur"
+      },
+      {
+        "title": "Entrée",
+        "slug": "entrée"
+      }
+    ],
+    "medias": [
+      {
+        "title": null,
+        "url": "https://cac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2018.2F09.2F25.2F9d58acca-89dd-4b9c-9ae4-05432e5da818.2Ejpeg/748x372/quality/90/crop-from/center/millefeuille-d-ete.jpeg"
+      }
+    ],
+    "userReviews": {
+        "average": 5,
+        "count": 14
+    }
+}

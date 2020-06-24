@@ -1,0 +1,146 @@
+{
+    "id": "236863",
+    "slug": "saumon-roti-en-ecailles-de-pommes-de-terre-236863",
+    "title": "Saumon rôti en écailles de pommes de terre",
+    "yield": 4,
+    "cookTime": 1500,
+    "waitTime": 0,
+    "prepTime": 1800,
+    "totalTime": 3000,
+    "calorieLevel": "Élevé",
+    "instructions": {
+        "split_instructions": [
+            "Faites fondre 50 g de beurre. Retirez l’écume en surface puis versez-le lentement dans un saladier en écartant le dépôt blanchâtre.",
+            "Pelez et émincez finement les pommes de terre, puis essuyez-les dans un torchon sans les rincer. Mélangez-les au beurre clarifié.",
+            "Préchauffez le four th. 7 (210 °C). Couchez un filet de saumon sur une plaque couverte d’une feuille de papier sulfurisé beurrée. Salez, poivrez. Posez le deuxième filet dessus, comme pour reconstituer le saumon. Disposez les pommes de terre comme les écailles d’un poisson, en les faisant se chevaucher. Enfournez 25 min.",
+            "Entre-temps, portez la crème à ébullition dans une petite casserole. Sur feu doux, incorporez peu à peu le reste de beurre très froid en noisettes, en remuant au fouet afin d’émulsionner la sauce. Relevez d’une pointe de zeste râpé et d’un filet de jus de citron. Servez ce beurre citronné avec le saumon en écailles."
+        ]
+    },
+    "parsedIngredients": {
+      "split_ingredients": [
+        {
+          "title": "Ingrédients",
+          "ingredients": [
+            {
+              "ingredient": "Filets de saumon frais de 900 g",
+              "quantity": "2",
+              "unit": null,
+              "commonIngredient": "Saumon",
+              "referenceIngredient": "Saumon",
+              "image": "saumon.png"
+            },
+            {
+              "ingredient": "Sans la peau",
+              "quantity": null,
+              "unit": null,
+              "commonIngredient": "Sans la peau",
+              "referenceIngredient": "Sans la peau"
+            },
+            {
+              "ingredient": "Petites pommes de terre",
+              "quantity": "500",
+              "unit": "g",
+              "commonIngredient": "Pomme de terre",
+              "referenceIngredient": "Pomme de terre",
+              "image": "pomme-de-terre.png"
+            },
+            {
+              "ingredient": "Beurre demi-sel",
+              "quantity": "175",
+              "unit": "g",
+              "commonIngredient": "Beurre",
+              "referenceIngredient": "Beurre",
+              "image": "beurre.png"
+            },
+            {
+              "ingredient": "Crème",
+              "quantity": "1",
+              "unit": "cuil. à soupe",
+              "commonIngredient": "Crème",
+              "referenceIngredient": "Crème",
+              "image": "crème.png"
+            },
+            {
+              "ingredient": "Citron non traité",
+              "quantity": "1",
+              "unit": null,
+              "commonIngredient": "Citron",
+              "referenceIngredient": "Citron",
+              "image": "citron.png"
+            },
+            {
+              "ingredient": "Sel",
+              "quantity": null,
+              "unit": null,
+              "commonIngredient": "Sel",
+              "referenceIngredient": "Sel",
+              "image": "sel.png"
+            },
+            {
+              "ingredient": "Poivre",
+              "quantity": null,
+              "unit": null,
+              "commonIngredient": "Poivre",
+              "referenceIngredient": "Poivre",
+              "image": "poivre.png"
+            }
+          ]
+        }
+      ],
+      "ingredients_list": [
+        {
+          "ingredients": [
+            "2 Filets de saumon frais de 900 g",
+            "Sans la peau",
+            "500g Petites pommes de terre",
+            "175g Beurre demi-sel",
+            "1 cuil. à soupe Crème",
+            "1 Citron non traité",
+            "Sel",
+            "Poivre"
+          ],
+          "title": "Ingrédients"
+        }
+      ]
+    },
+    "estimatedCost": {
+      "label": "Moyen",
+      "value": 0
+    },
+    "difficulty": {
+      "label": "Facile",
+      "value": 0
+    },
+    "tags": [
+      {
+        "title": "Pomme de terre",
+        "slug": "pomme de terre"
+      },
+      {
+        "title": "Familiale",
+        "slug": "familiale"
+      },
+      {
+        "title": "Recette facile",
+        "slug": "recette facile"
+      },
+      {
+        "title": "Plat",
+        "slug": "plat"
+      },
+      {
+        "title": "Saumon",
+        "slug": "saumon"
+      }
+    ],
+    "medias": [
+      {
+        "title": null,
+        "url": "https://cac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2018.2F09.2F25.2F909954a8-dbb1-4173-a290-2168ba0a8266.2Ejpeg/748x372/quality/90/crop-from/center/saumon-roti-en-ecailles-de-pommes-de-terre.jpeg"
+      }
+    ],
+    "userReviews": {
+        "average": 4.5,
+        "count": 47
+    }
+}

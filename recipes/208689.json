@@ -1,0 +1,160 @@
+{
+    "id": "208689",
+    "slug": "nuggets-de-poulet-et-chips-208689",
+    "title": "Nuggets de poulet et chips",
+    "yield": 4,
+    "cookTime": 1500,
+    "waitTime": 0,
+    "prepTime": 1200,
+    "totalTime": 2700,
+    "calorieLevel": "Élevé",
+    "instructions": {
+        "split_instructions": [
+            "Coupez les filets de poulet en cubes de 3 cm environ. Hachez-les. Salez et poivrez.",
+            "Versez le lait dans une assiette creuse et faites tremper la mie de pain. Une fois imbibée, pressez-la légèrement et incorporez-la au poulet haché.",
+            "Dans une assiette creuse, battez les œufs avec du sel et du poivre. Versez la chapelure dans une autre assiette. Préchauffez le four th. 6 (180 °C).",
+            "Faites chauffer le bain de friture. Avec la pâte au poulet haché, façonnez des boulettes légèrement aplaties, roulez-les deux fois dans le mélange aux œufs battus puis dans la chapelure. Plongez les nuggets dans le bain de friture chaud environ 4-5 min par face. Epongez-les rapidement sur du papier absorbant.",
+            "Servez les nuggets aussitôt, accompagnées de chips et de ketchup."
+        ]
+    },
+    "parsedIngredients": {
+      "split_ingredients": [
+        {
+          "title": "Ingrédients",
+          "ingredients": [
+            {
+              "ingredient": "Filets de poulet",
+              "quantity": "400",
+              "unit": "g",
+              "commonIngredient": "Poulet",
+              "referenceIngredient": "Poulet",
+              "image": "poulet.png"
+            },
+            {
+              "ingredient": "Chapelure",
+              "quantity": "80",
+              "unit": "g",
+              "commonIngredient": "Chapelure",
+              "referenceIngredient": "Chapelure",
+              "image": "chapelure.png"
+            },
+            {
+              "ingredient": "Mie de pain",
+              "quantity": "40",
+              "unit": "g",
+              "commonIngredient": "Pain",
+              "referenceIngredient": "Pain"
+            },
+            {
+              "ingredient": "Lait",
+              "quantity": "4",
+              "unit": "cl",
+              "commonIngredient": "Lait",
+              "referenceIngredient": "Lait",
+              "image": "lait.png"
+            },
+            {
+              "ingredient": "Oeufs",
+              "quantity": "2",
+              "unit": null,
+              "commonIngredient": "Oeufs",
+              "referenceIngredient": "Oeufs",
+              "image": "oeuf.png"
+            },
+            {
+              "ingredient": "Chips à l'ancienne",
+              "quantity": "1",
+              "unit": "sachet",
+              "commonIngredient": "Chips",
+              "referenceIngredient": "Chips",
+              "image": "chips.png"
+            },
+            {
+              "ingredient": "Bain de friture",
+              "quantity": "1",
+              "unit": null,
+              "commonIngredient": "Bain de friture",
+              "referenceIngredient": "Bain de friture"
+            },
+            {
+              "ingredient": "Ketchup",
+              "quantity": null,
+              "unit": null,
+              "commonIngredient": "Ketchup",
+              "referenceIngredient": "Ketchup",
+              "image": "ketchup.png"
+            },
+            {
+              "ingredient": "Sel",
+              "quantity": null,
+              "unit": null,
+              "commonIngredient": "Sel",
+              "referenceIngredient": "Sel",
+              "image": "sel.png"
+            },
+            {
+              "ingredient": "Poivre",
+              "quantity": null,
+              "unit": null,
+              "commonIngredient": "Poivre",
+              "referenceIngredient": "Poivre",
+              "image": "poivre.png"
+            }
+          ]
+        }
+      ],
+      "ingredients_list": [
+        {
+          "ingredients": [
+            "400g Filets de poulet",
+            "80g Chapelure",
+            "40g Mie de pain",
+            "4cl Lait",
+            "2 Oeufs",
+            "1 sachet Chips à l’ancienne",
+            "1 Bain de friture",
+            "Ketchup",
+            "Sel",
+            "Poivre"
+          ],
+          "title": "Ingrédients"
+        }
+      ]
+    },
+    "estimatedCost": {
+      "label": "Bon marché",
+      "value": 0
+    },
+    "difficulty": {
+      "label": "Facile",
+      "value": 0
+    },
+    "tags": [
+      {
+        "title": "Poulet",
+        "slug": "poulet"
+      },
+      {
+        "title": "Enfant",
+        "slug": "enfant"
+      },
+      {
+        "title": "Recette facile",
+        "slug": "recette facile"
+      },
+      {
+        "title": "Plat",
+        "slug": "plat"
+      }
+    ],
+    "medias": [
+      {
+        "title": null,
+        "url": "https://cac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2018.2F09.2F25.2Faf7810f6-f2c9-47f2-bd4e-be6b593da7f8.2Ejpeg/748x372/quality/90/crop-from/center/nuggets-de-poulet-et-chips.jpeg"
+      }
+    ],
+    "userReviews": {
+        "average": 4.9,
+        "count": 30
+    }
+}

@@ -3,6 +3,7 @@ Imports
 */
     // Angular
     const fs = require('fs');
+const { clear } = require('console');
 
     // Files
     const recipesFolder = './recipes';
@@ -77,7 +78,7 @@ Methods
     const getRecipesFiltered = (req) => {
         let listRecipe = [];
         let filters = req.body.filters;
-        
+
         return new Promise( (resolve, reject) => {
             fs.readdirSync(recipesFolder).forEach(file => {
                 let rawData = fs.readFileSync(recipesFolder + '/' + file);
@@ -91,14 +92,14 @@ Methods
                 }
 
                 // OK
-                if(typeof filters.type != undefined && filters.type != "") {
+                /*if(typeof filters.type != undefined && filters.type.length > 0) {
                     resultType = filterType(recipeData, filters.type);
                 } else {
                     resultType = true;
-                }
-
+                }*/
+                
                 // OK
-                if(typeof filters.time != undefined) {
+                /*if(typeof filters.time != undefined) {
                     resultTime = filterTime(recipeData, filters.time);
                 }
 
@@ -133,16 +134,16 @@ Methods
                 if(typeof filters.preferences != undefined && filters.preferences.length > 0) {
                     resultPreferences = filterPreferences(recipeData, filters.preferences);
                 }
-                resultPreferences = true;
+                resultPreferences = true;*/
                 
-                console.log(resultIngredients, resultType, resultTime, resultEvent, resultLevel, resultPreferences, !resultAllergies, resultDiet, !resultNotIngredients);
+                //console.log(resultIngredients);
 
-                if(resultIngredients && resultType && resultTime && resultEvent && resultLevel && resultPreferences && !resultAllergies && resultDiet && !resultNotIngredients) {
+                if(resultIngredients/* && resultType && resultTime && resultEvent && resultLevel && resultPreferences && !resultAllergies && resultDiet && !resultNotIngredients*/) {
                     listRecipe.push(recipeData);
                 }
             })
             
-            console.log(listRecipe.length);
+            //console.log(listRecipe.length);
             resolve(listRecipe)
         });
     }
@@ -150,10 +151,13 @@ Methods
     const filterIngredients = (recipe, filters) => {
         let recipeIngredients = recipe.parsedIngredients.split_ingredients[0].ingredients;
         let result = false;
-        
+
         recipeIngredients.forEach(element => {
             filters.forEach(ingredient => {
-                if(element.ingredient.toUpperCase() == ingredient.toUpperCase()) {
+                clearValue = clearCharacter(element.referenceIngredient);
+                clearIngredient = clearCharacter(ingredient);
+                
+                if(clearValue.toUpperCase().includes(clearIngredient.toUpperCase())) {
                     result = true;
                 }
             });
@@ -162,16 +166,20 @@ Methods
         return result;
     }
 
-    const filterType = (recipe, filter) => {
+    const filterType = (recipe, filters) => {
+        let recipeTags = recipe.tags;
         let result = false;
 
-        if(typeof detailFilterType[filter] != undefined) {
-            recipe.categories.forEach(element => {
-                if(detailFilterType[filter].includes(element.title)) {
+        recipeTags.forEach(element => {
+            filters.forEach(tag => {
+                clearValue = clearCharacter(element.slug);
+                clearTag = clearCharacter(tag);
+                
+                if(clearValue.toUpperCase().includes(clearTag.toUpperCase())) {
                     result = true;
                 }
             });
-        }
+        });
 
         return result;
     }
@@ -206,6 +214,19 @@ Methods
 
     const filterPreferences = (recipe, filters) => {
         
+    }
+
+    const clearCharacter = (value) => {
+        value = value.replace(/á/g, "a");
+        value = value.replace(/â/g, "a");
+        value = value.replace(/é/g, "e");
+        value = value.replace(/è/g, "e");
+        value = value.replace(/ê/g, "e");
+        value = value.replace(/í/g, "i");
+        value = value.replace(/ó/g, "o");
+        value = value.replace(/ú/g, "u");
+
+        return value;
     }
 //
 

@@ -51,7 +51,8 @@
             "quantity": "250",
             "unit": "g",
             "commonIngredient": "Farine",
-            "referenceIngredient": "Farine"
+            "referenceIngredient": "Farine",
+            "image": "farine.png"
           },
           {
             "ingredient": "Lait",
@@ -59,42 +60,48 @@
             "unit": "cl",
             "additionalInformation": "demi-écrémé",
             "commonIngredient": "Lait",
-            "referenceIngredient": "Lait"
+            "referenceIngredient": "Lait",
+            "image": "lait.png"
           },
           {
             "ingredient": "Sucre",
             "quantity": "20",
             "unit": "g",
             "commonIngredient": "Sucre",
-            "referenceIngredient": "Sucre"
+            "referenceIngredient": "Sucre",
+            "image": "sucre.png"
           },
           {
             "ingredient": "Levure chimique",
             "quantity": "1",
             "unit": "sachet",
-            "commonIngredient": "Levure chimique ",
-            "referenceIngredient": "Levure"
+            "commonIngredient": "Levure chimique",
+            "referenceIngredient": "Levure",
+            "image": "levure.png"
           },
           {
             "ingredient": "Oeufs",
             "quantity": "3",
             "unit": "",
             "commonIngredient": "Oeuf",
-            "referenceIngredient": "Oeuf"
+            "referenceIngredient": "Oeuf",
+            "image": "oeuf.png"
           },
           {
             "ingredient": "Beurre",
             "quantity": "40",
             "unit": "g",
             "commonIngredient": "Beurre",
-            "referenceIngredient": "Beurre"
+            "referenceIngredient": "Beurre",
+            "image": "beurre.png"
           },
           {
             "ingredient": "Sel",
             "quantity": "1",
             "unit": "pincée",
             "commonIngredient": "Sel",
-            "referenceIngredient": "Sel"
+            "referenceIngredient": "Sel",
+            "image": "sel.png"
           }
         ]
       }

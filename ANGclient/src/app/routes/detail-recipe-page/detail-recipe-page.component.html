@@ -1,6 +1,110 @@
-<a (click)="backClicked()">Retour</a>
+<main>
+  <div class="bloc-filter-recipe">
+    <div class="input-filter">
+      <img src="assets/images/profil-settings/search.png" alt="">
+      <input type="text" name="" id="" placeholder="Recherchez une recette">
+      <div class="icon-filter">
+        <img src="assets/images/list-recipe/filter-icon.png" alt="">
+      </div>
+    </div>
+    <button>Idées de menus</button>
+  </div>
 
-<main *ngIf="repiceDetail">
-  {{ repiceDetail.title }}
-  <img style="width: 100%;" src="{{ repiceDetail.medias[0].url }}">
+  <div *ngIf="recipeDetail" class="content-recipe">
+    <div class="main-image-recipe" style.background-image="url({{ recipeDetail.medias[0].url }})"></div>
+    <h3>{{ recipeDetail.title }}</h3>
+
+    <div class="review">
+      <div class="star-rank">
+
+      </div>
+      <p>{{ recipeDetail.userReviews.count }} <span [innerText]="recipeDetail.userReviews.count > 1 ? ' notes' : ' note'"></span></p>
+    </div>
+
+    <div class="detail-recipe">
+      <div class="global-information">
+        <div>
+          <img src="assets/images/detail-recipe/level-icon.png" alt="">
+          <p>{{ recipeDetail.difficulty.label}}</p>
+        </div>
+        <div>
+          <img src="assets/images/detail-recipe/cost-icon.png" alt="">
+          <p>{{ recipeDetail.estimatedCost.label}}</p>
+        </div>
+        <div>
+          <img src="assets/images/detail-recipe/time-icon.png" alt="">
+          <p>{{ convertSecondToMinute(recipeDetail.waitTime + recipeDetail.prepTime) }} min</p>
+        </div>
+        <div>
+          <img src="assets/images/detail-recipe/cook-icon.png" alt="">
+          <p>{{ convertSecondToMinute(recipeDetail.cookTime) }} min</p>
+        </div>
+      </div>
+
+      <div class="content-ingredient">
+        <h4>Ingrédients</h4>
+
+        <div class="content-yield-recipe">
+          <button class="yield-control substract" aria-label="Enlever une personne" (click)="changePerson('substract')">
+            <svg width="20" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M.667 4.147V.678h18.666v3.469z" fill="#FFF" fill-rule="evenodd"></path></svg>
+          </button>
+          <div class="yield-recipe">
+            <span class="yield-number">{{ yield }}</span>
+            <span class="yield-unit" [innerText]="yield > 1 ? 'personnes': 'personne'"></span>
+          </div>
+          <button class="yield-control add" aria-label="Ajouter une personne" (click)="changePerson('add')">
+            <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M19.333 8.547v2.93H11.56v7.874H8.44v-7.874H.667v-2.93H8.44V.673h3.118v7.874z" fill="#FFF" fill-rule="evenodd"></path></svg>
+          </button>
+        </div>
+
+        <div class="pub-service">
+          <p>Nouveau</p>
+          <img src="/assets/images/profil-settings/pubservice.png" alt="">
+          <p>Acheter vos ingrédients chez les producteurs locaux !</p>
+          <a>Découvir le service</a>
+        </div>
+
+        <button class="shop-ingredients">Commander les ingrédients</button>
+
+        <ul class="list-ingredients">
+          <li *ngFor="let ingredient of recipeDetail.parsedIngredients.split_ingredients[0].ingredients">
+            <div>
+              <img src="assets/images/ingredients/{{ ingredient.image }}" alt="">
+            </div>
+            <div>
+              <p>{{ ingredient.ingredient }}</p>
+              <p>{{ ingredient.quantity }}<span [innerText]="ingredient.unit != null ? ' ' + ingredient.unit : ''"></span></p>
+            </div>
+          </li>
+        </ul>
+
+        <div style="text-align: center;">
+          <img src="assets/images/ad_2.png" alt="">
+        </div>
+      </div>
+
+      <div class="content-preparation">
+        <h4>Étapes de préparation</h4>
+
+        <ul>
+          <li *ngFor="let instruction of recipeDetail.instructions.split_instructions | keyvalue">
+            <p>
+              <span>{{ getStep(instruction.key) }}.</span>
+              {{ instruction.value }}
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="more-recipe">
+
+      </div>
+
+      <div style="text-align: center;">
+        <img src="assets/images/ad_3.png" alt="">
+      </div>
+    </div>
+  </div>
 </main>
+
+<app-magazine></app-magazine>

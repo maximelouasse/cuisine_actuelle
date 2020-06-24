@@ -1,0 +1,135 @@
+{
+    "id": "196078",
+    "slug": "roulades-de-jambon-a-la-brousse-196078",
+    "title": "Roulades de jambon à la brousse",
+    "yield": 4,
+    "cookTime": 0,
+    "waitTime": 0,
+    "prepTime": 600,
+    "totalTime": 600,
+    "calorieLevel": "Élevé",
+    "instructions": {
+        "split_instructions": [
+            "Détaillez 2 tranches de jambon cru en tout petits morceaux. Mélangez-les à la brousse avec les oignons pelés et hachés, le persil et la moitié de la ciboulette ciselés. Poivrez généreusement.",
+            "Répartissez la préparation sur les 8 tranches de jambon restantes. Roulez-les et ficelez avec un brin de ciboulette. Parsemez du reste de ciboulette ciselée. Servez bien frais."
+        ]
+    },
+    "parsedIngredients": {
+      "split_ingredients": [
+        {
+          "title": "Ingrédients",
+          "ingredients": [
+            {
+              "ingredient": "Petites tranches de jambon cru",
+              "quantity": "10",
+              "unit": null,
+              "commonIngredient": "Jambon",
+              "referenceIngredient": "Jambon",
+              "image": "jambon.png"
+            },
+            {
+              "ingredient": "Brousse (ou de fromage frais)",
+              "quantity": "200",
+              "unit": "g",
+              "commonIngredient": "Fromage",
+              "referenceIngredient": "Fromage",
+              "image": "fromage.png"
+            },
+            {
+              "ingredient": "Oignons nouveaux",
+              "quantity": "2",
+              "unit": null,
+              "commonIngredient": "Oignons",
+              "referenceIngredient": "Oignons",
+              "image": "oignon.png"
+            },
+            {
+              "ingredient": "Bouquet de ciboulette",
+              "quantity": "1",
+              "unit": null,
+              "commonIngredient": "Ciboulette",
+              "referenceIngredient": "Ciboulette",
+              "image": "ciboulette.png"
+            },
+            {
+              "ingredient": "Bouquet de persil",
+              "quantity": "0.5",
+              "unit": null,
+              "commonIngredient": "Persil",
+              "referenceIngredient": "Persil",
+              "image": "persil.png"
+            },
+            {
+              "ingredient": "Poivre",
+              "quantity": null,
+              "unit": null,
+              "commonIngredient": "Poivre",
+              "referenceIngredient": "Poivre",
+              "image": "poivre.png"
+            }
+          ]
+        }
+      ],
+      "ingredients_list": [
+        {
+          "ingredients": [
+            "10 Petites tranches de jambon cru",
+            "200g Brousse(ou de fromage de chèvre frais)",
+            "2 Oignons nouveaux",
+            "1 Bouquet de ciboulette",
+            "0,5 Bouquet de persil",
+            "Poivre"
+          ],
+          "title": "Ingrédients"
+        }
+      ]
+    },
+    "estimatedCost": {
+      "label": "Moyen",
+      "value": 0
+    },
+    "difficulty": {
+      "label": "Facile",
+      "value": 0
+    },
+    "tags": [
+      {
+        "title": "Roulés",
+        "slug": "roulés"
+      },
+      {
+        "title": "Débutant",
+        "slug": "débutant"
+      },
+      {
+        "title": "Buffet",
+        "slug": "buffet"
+      },
+      {
+        "title": "Recette rapide",
+        "slug": "recette rapide"
+      },
+      {
+        "title": "Apéro dinatoire",
+        "slug": "apéro dinatoire"
+      },
+      {
+        "title": "Entrée",
+        "slug": "entrée"
+      },
+      {
+        "title": "Amuse-bouches",
+        "slug": "amuse-bouches"
+      }
+    ],
+    "medias": [
+      {
+        "title": null,
+        "url": "https://cac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2018.2F09.2F25.2F6bd01ff3-8cb4-4e57-b2c5-faa6421703f9.2Ejpeg/748x372/quality/90/crop-from/center/roulades-de-jambon-a-la-brousse.jpeg"
+      }
+    ],
+    "userReviews": {
+        "average": 5,
+        "count": 8
+    }
+}

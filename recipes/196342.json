@@ -1,0 +1,186 @@
+{
+    "id": "196342",
+    "slug": "biscuit-chocolat-196342",
+    "title": "Biscuit chocolat",
+    "yield": 4,
+    "cookTime": 600,
+    "waitTime": 0,
+    "prepTime": 1500,
+    "totalTime": 2100,
+    "calorieLevel": "Très élevé",
+    "instructions": {
+        "split_instructions": [
+            "Préchauffez le four th. 6 (180°C). Tamisez ensemble la levure et la farine.",
+            "Montez les blancs en neige, saupoudrez 60 g de sucre glace, battez encore 2 min et incorporez délicatement le chocolat râpé, la farine avec la levure et le calvados. Versez la pâte dans les moules à tartelette beurrés. Glissez au four et laissez cuire 10 à 12 min.",
+            "Laissez tiédir les biscuits avant de les démouler. Fouettez la crème en chantilly, dès qu'elle est ferme ajoutez-lui la vanille en poudre et 50 g de sucre glace.",
+            "Lavez les pommes et taillez-les en fines tranches. Au moment de servir posez sur chaque assiette un biscuit, quelques tranches de pommes et une bonne cuillerée de Chantilly. Saupoudrez de sucre glace et de cacao et servez."
+        ]
+    },
+    "parsedIngredients": {
+      "split_ingredients": [
+        {
+          "title": "Ingrédients",
+          "ingredients": [
+            {
+                "ingredient": "Chocolat amer râpé",
+                "quantity": "50",
+                "unit": "g",
+                "commonIngredient": "Chocolat",
+                "referenceIngredient": "Chocolat",
+                "image": "chocolat.png"
+            },
+            {
+                "ingredient": "Farine",
+                "quantity": "70",
+                "unit": "g",
+                "commonIngredient": "Farine",
+                "referenceIngredient": "Farine",
+                "image": "farine.png"
+            },
+            {
+                "ingredient": "Paquet de elvure chimique (5g)",
+                "quantity": "0.5",
+                "unit": null,
+                "commonIngredient": "Levure",
+                "referenceIngredient": "Levure",
+                "image": "levure.png"
+            },
+            {
+                "ingredient": "Sucre glace",
+                "quantity": "120",
+                "unit": "g",
+                "commonIngredient": "Sucre glace",
+                "referenceIngredient": "Sucre glace",
+                "image": "sucre-glace.png"
+            },
+            {
+                "ingredient": "Blancs d'oeufs",
+                "quantity": "3",
+                "unit": null,
+                "commonIngredient": "Blancs d'oeufs",
+                "referenceIngredient": "Blancs d'oeufs",
+                "image": "oeuf.png"
+            },
+            {
+                "ingredient": "Calvados",
+                "quantity": "1",
+                "unit": "cuil. à soupe",
+                "commonIngredient": "Calvados",
+                "referenceIngredient": "Calvados",
+                "image": "calvados.png"
+            },
+            {
+                "ingredient": "Beurre mou",
+                "quantity": "20",
+                "unit": "g",
+                "commonIngredient": "Beurre",
+                "referenceIngredient": "Beurre mou",
+                "image": "beurre.png"
+            },
+            {
+                "ingredient": "Crème fleurette",
+                "quantity": "200",
+                "unit": "g",
+                "commonIngredient": "Crème",
+                "referenceIngredient": "Crème fleurette",
+                "image": "creme.png"
+            },
+            {
+                "ingredient": "Vanille en poudre",
+                "quantity": "1",
+                "unit": "pincée",
+                "commonIngredient": "Vanille en poudre",
+                "referenceIngredient": "Vanille en poudre",
+                "image": "vanille.png"
+            },
+            {
+                "ingredient": "Cacao",
+                "quantity": "1",
+                "unit": "cuil. à café",
+                "commonIngredient": "Cacao",
+                "referenceIngredient": "Cacao",
+                "image": "cacao.png"
+            },
+            {
+                "ingredient": "Pommes",
+                "quantity": "2",
+                "unit": null,
+                "commonIngredient": "Pommes",
+                "referenceIngredient": "Pommes",
+                "image": "pomme.png"
+            }
+          ]
+        }
+      ],
+      "ingredients_list": [
+        {
+          "ingredients": [
+            "50g Chocolat amer râpé",
+            "70g Farine",
+            "0,5 Paquet de levure chimique(5 g)",
+            "120g Sucre glace",
+            "3 Blancs d'oeufs",
+            "1 cuil. à soupe Calvados",
+            "20g Beurre mou",
+            "200g Crème fleurette",
+            "1 pincée Vanille en poudre",
+            "1 cuil. à café Cacao",
+            "2 Pommes"
+          ],
+          "title": "Ingrédients"
+        }
+      ]
+    },
+    "estimatedCost": {
+      "label": "Bon marché",
+      "value": 0
+    },
+    "difficulty": {
+      "label": "Facile",
+      "value": 0
+    },
+    "tags": [
+      {
+        "title": "Biscuit",
+        "slug": "biscuit"
+      },
+      {
+        "title": "Biscuit au chocolat",
+        "slug": "biscuit au chocolat"
+      },
+      {
+        "title": "Biscuits",
+        "slug": "biscuits"
+      },
+      {
+        "title": "Enfant",
+        "slug": "enfant"
+      },
+      {
+        "title": "Familiale",
+        "slug": "familiale"
+      },
+      {
+        "title": "Pas cher",
+        "slug": "pas cher"
+      },
+      {
+        "title": "Normande",
+        "slug": "normande"
+      },
+      {
+        "title": "Dessert",
+        "slug": "dessert"
+      }
+    ],
+    "medias": [
+      {
+        "title": null,
+        "url": "https://cac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2018.2F09.2F25.2Fe87b0052-c9d2-4dc0-9375-9efbf5fb05b4.2Ejpeg/748x372/quality/90/crop-from/center/biscuit-chocolat.jpeg"
+      }
+    ],
+    "userReviews": {
+        "average": 5,
+        "count": 14
+    }
+}

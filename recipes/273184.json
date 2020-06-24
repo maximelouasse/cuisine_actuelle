@@ -1,0 +1,114 @@
+{
+    "id": "273184",
+    "slug": "courgettes-au-fromage-273184",
+    "title": "Courgettes au fromage",
+    "yield": 4,
+    "cookTime": 2100,
+    "waitTime": 0,
+    "prepTime": 600,
+    "totalTime": 2700,
+    "calorieLevel": "Moyen",
+    "instructions": {
+        "split_instructions": [
+            "Préchauffez le four à 180°C th 6). Lavez et coupez les courgettes en rondelles d’environ 1 cm d’épaisseur.",
+            "Faites-les cuire dans une casserole d’eau bouillante salée pendant 10 min puis égouttez-les. Déposez-les dans un plat à four et mélangez-les avec la crème fraiche.",
+            "Salez, poivrez et ajoutez le curry. Saupoudrez de Comté râpé et enfournez pour 25 min. Dégustez bien chaud."
+        ]
+    },
+    "parsedIngredients": {
+      "split_ingredients": [
+        {
+          "title": "Ingrédients",
+          "ingredients": [
+            {
+              "ingredient": "Courgettes",
+              "quantity": "3",
+              "unit": null,
+              "commonIngredient": "Courgettes",
+              "referenceIngredient": "Courgettes",
+              "image": "courgette.png"
+            },
+            {
+              "ingredient": "Crème épaisse",
+              "quantity": "10",
+              "unit": "cl",
+              "commonIngredient": "Crème",
+              "referenceIngredient": "Crème",
+              "image": "creme.png"
+            },
+            {
+              "ingredient": "Comté",
+              "quantity": "100",
+              "unit": "g",
+              "commonIngredient": "Fromage",
+              "referenceIngredient": "Comté",
+              "image": "fromage.png"
+            },
+            {
+              "ingredient": "Curry",
+              "quantity": "1",
+              "unit": "pincée",
+              "commonIngredient": "Curry",
+              "referenceIngredient": "Curry",
+              "image": "curry.png"
+            }
+          ]
+        }
+      ],
+      "ingredients_list": [
+        {
+          "ingredients": [
+            "3Courgettes",
+            "10cl Crème épaisse",
+            "100g Comté",
+            "1 pincée Curry"
+          ],
+          "title": "Ingrédients"
+        }
+      ]
+    },
+    "estimatedCost": {
+      "label": "Bon marché",
+      "value": 0
+    },
+    "difficulty": {
+      "label": "Facile",
+      "value": 0
+    },
+    "tags": [
+      {
+        "title": "Courgette",
+        "slug": "courgette"
+      },
+      {
+        "title": "Plat",
+        "slug": "plat"
+      },
+      {
+        "title": "Recette rapide",
+        "slug": "recette rapide"
+      },
+      {
+        "title": "Recette facile",
+        "slug": "recette facile"
+      },
+      {
+        "title": "Pas cher",
+        "slug": "pas cher"
+      },
+      {
+        "title": "Débutant",
+        "slug": "débutant"
+      }
+    ],
+    "medias": [
+      {
+        "title": null,
+        "url": "https://cac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2018.2F09.2F25.2F30fd4b1b-278e-4576-9b3f-96e647e7157f.2Ejpeg/748x372/quality/90/crop-from/center/courgettes-au-fromage.jpeg"
+      }
+    ],
+    "userReviews": {
+        "average": 5,
+        "count": 102
+    }
+}

@@ -20,6 +20,8 @@ Imports
     import { HeaderComponent } from './shared/header/header.component';
     import { WelcomeComponent } from './routes/welcome/welcome.component';
     import { ProfilSettingsComponent } from './routes/profil-settings/profil-settings.component';
+    import { FooterComponent } from './shared/footer/footer.component';
+import { MagazineComponent } from './shared/magazine/magazine.component';
 
 /*
 Definition & export
@@ -34,6 +36,8 @@ Definition & export
       HeaderComponent,
       WelcomeComponent,
       ProfilSettingsComponent,
+      FooterComponent,
+      MagazineComponent,
     ],
     imports: [
       BrowserModule,
