@@ -31,6 +31,8 @@
 
     <p>CONNECT</p>
 
+    <a class="link_avantage">Les avantages de mon profil ?</a>
+
     <div class="menu_form_login_register">
       <p class="active">INSCRIPTION</p>
       <span></span>
@@ -40,10 +42,10 @@
     <form id="register-form" [formGroup]="formData" (submit)="registerUser(formData.value)">
       <input formControlName="email" name="email" type="email" placeholder="Votre adresse email">
 
-      <p>
+      <!-- <p>
         <input type="checkbox" id="condition" required>
         <label for="condition" aria-describedby="label">J’accepte <a>les conditions générales d’utilisation et la charte de protection des données.</a></label>
-      </p>
+      </p> -->
 
       <button [disabled]="!formData.valid" type="submit">Créer un compte</button>
     </form>
@@ -56,7 +58,7 @@
       <img src="/assets/images/popup/google.png" alt="">
       Se connecter avec Google
     </button>
-
     <a class="link_prisma">Découvrir Prisma Connect</a>
   </div>
 </div>
+
