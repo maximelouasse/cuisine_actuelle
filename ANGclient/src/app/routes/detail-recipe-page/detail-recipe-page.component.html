@@ -11,14 +11,17 @@
   </div> -->
 
   <div *ngIf="recipeDetail" class="content-recipe">
-    <div class="main-image-recipe" style.background-image="url({{ recipeDetail.medias[0].url }})"></div>
+    <div class="main-image-recipe" style.background-image="url({{ recipeDetail.medias[0].url }})">
+      <img [routerLink]="['/']" src="assets/images/detail-recipe/retour.png">
+    </div>
+
     <div class="header-detail-recipe">
 
       <h3>{{ recipeDetail.title }}</h3>
 
       <div class="review">
         <div>
-          <img src="assets/images/list-recipe/review-icon.png" alt="">{{ recipeDetail.userReviews.average }}
+          <img src="assets/images/list-recipe/review-icon.png" alt=""><span>{{ recipeDetail.userReviews.average }}</span>
         </div>
         <p>{{ recipeDetail.userReviews.count }} <span [innerText]="recipeDetail.userReviews.count > 1 ? ' notes' : ' note'"></span></p>
       </div>
@@ -36,7 +39,7 @@
         </div>
         <div>
           <img src="assets/images/detail-recipe/cook-icon.png" alt="">
-          <p>{{ convertSecondToMinute(recipeDetail.cookTime) }} min</p>
+          <p [innerText]="recipeDetail.cookTime > 0 ? convertSecondToMinute(recipeDetail.cookTime) + ' min' : 'sans cuisson'"></p>
         </div>
         <div>
           <img src="assets/images/detail-recipe/cost-icon.png" alt="">
@@ -79,7 +82,7 @@
             </div>
             <div>
               <p>{{ ingredient.ingredient }}</p>
-              <p>{{ ingredient.quantity }}<span [innerText]="ingredient.unit != null ? ' ' + ingredient.unit : ''"></span></p>
+              <p>{{ calc(ingredient.quantity) }}<span [innerText]="ingredient.unit != null ? ' ' + ingredient.unit : ''"></span></p>
             </div>
           </li>
         </ul>
