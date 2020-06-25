@@ -21,7 +21,9 @@ Imports
     import { WelcomeComponent } from './routes/welcome/welcome.component';
     import { ProfilSettingsComponent } from './routes/profil-settings/profil-settings.component';
     import { FooterComponent } from './shared/footer/footer.component';
-import { MagazineComponent } from './shared/magazine/magazine.component';
+    import { MagazineComponent } from './shared/magazine/magazine.component';
+    import { AuthService } from "./services/auth/auth.service";
+    import { UserService } from "./services/user/user.service";
 
 /*
 Definition & export
@@ -46,7 +48,7 @@ Definition & export
       FormsModule,
       ReactiveFormsModule,
     ],
-    providers: [],
+    providers: [AuthService, UserService],
     bootstrap: [AppComponent],
   })
   export class AppModule {}

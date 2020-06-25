@@ -36,8 +36,9 @@ export class RecipeService {
   };
 
   // Get Filtered Recipe
-  public filterRecipe(data: any): Promise<any> {
-    return this.HttpClient.post(`${environment.apiUrl}/recipe/`, data)
+  public filterRecipe(data: any) {
+    console.log(data);
+    return this.HttpClient.post(`${environment.apiUrl}/recipe/`, { filters: data })
       .toPromise()
       .then(data => this.getData(data, 'recipe'))
       .catch(this.handleError);

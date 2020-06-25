@@ -3,12 +3,11 @@ Imports
 */
     // Angular
     const fs = require('fs');
-const { clear } = require('console');
 
     // Files
     const recipesFolder = './recipes';
 
-    const listFilterType = [["apero", "Apéro"], ["entree", "Entrée"], ["plat", "Plat"], ["dessert", "Dessert"], ["sauce", "Sauce"], ["boisson", "Boissons"], ["poisson", "Poisson"], ["viande", "Viande"]];
+    const listFilterType = [["apero", "Apéritif"], ["entree", "Entrée"], ["plat", "Plat"], ["dessert", "Dessert"]/*, ["sauce", "Sauce"], ["boisson", "Boissons"], ["poisson", "Poisson"], ["viande", "Viande"]*/];
 
     const listFilterEvent = [["saint_valentin", "Saint-Valentin"], ["teo_time", "Recette Teo Time"], ["reception", "Réception"], ["paques", "Pâques"], ["noel", "Recette de Noël"], ["pique_nique", "Panier pique-nique"], ["halloween", "Halloween"], ["mardi_gras", "Mardi gras"], ["gouter", "Goûter"], ["chandeleur", "Chandeleur"], ["buffet", "Buffet"], ["brunch", "Brunch et Petit déjeuner"], ["barbecue", "Barbecue et grillades"], ["apero", "Apéros dinatoire"], ["nouvel_an", "Nouvel An" ]];
 
@@ -92,11 +91,18 @@ Methods
                 }
 
                 // OK
-                /*if(typeof filters.type != undefined && filters.type.length > 0) {
+                if(typeof filters.type != undefined && filters.type.length > 0) {
                     resultType = filterType(recipeData, filters.type);
                 } else {
                     resultType = true;
-                }*/
+                }
+
+                // OK
+                if(typeof filters.season != undefined && filters.season.length > 0) {
+                    resultSeason = filterSeason(recipeData, filters.season);
+                } else {
+                    resultSeason = true;
+                }
                 
                 // OK
                 /*if(typeof filters.time != undefined) {
@@ -138,12 +144,12 @@ Methods
                 
                 //console.log(resultIngredients);
 
-                if(resultIngredients/* && resultType && resultTime && resultEvent && resultLevel && resultPreferences && !resultAllergies && resultDiet && !resultNotIngredients*/) {
+                if(resultIngredients && resultType && resultSeason /*&& resultTime && resultEvent && resultLevel && resultPreferences && !resultAllergies && resultDiet && !resultNotIngredients*/) {
                     listRecipe.push(recipeData);
                 }
             })
             
-            //console.log(listRecipe.length);
+            console.log(listRecipe.length);
             resolve(listRecipe)
         });
     }
@@ -153,8 +159,9 @@ Methods
         let result = false;
 
         recipeIngredients.forEach(element => {
+            clearValue = clearCharacter(element.referenceIngredient);
+
             filters.forEach(ingredient => {
-                clearValue = clearCharacter(element.referenceIngredient);
                 clearIngredient = clearCharacter(ingredient);
                 
                 if(clearValue.toUpperCase().includes(clearIngredient.toUpperCase())) {
@@ -171,10 +178,30 @@ Methods
         let result = false;
 
         recipeTags.forEach(element => {
+            clearValue = clearCharacter(element.slug);
+
             filters.forEach(tag => {
-                clearValue = clearCharacter(element.slug);
                 clearTag = clearCharacter(tag);
-                
+
+                if(clearValue.toUpperCase().includes(clearTag.toUpperCase())) {
+                    result = true;
+                }
+            });
+        });
+
+        return result;
+    }
+
+    const filterSeason = (recipe, filters) => {
+        let recipeTags = recipe.tags;
+        let result = false;
+
+        recipeTags.forEach(element => {
+            clearValue = clearCharacter(element.slug);
+
+            filters.forEach(tag => {
+                clearTag = clearCharacter(tag);
+
                 if(clearValue.toUpperCase().includes(clearTag.toUpperCase())) {
                     result = true;
                 }

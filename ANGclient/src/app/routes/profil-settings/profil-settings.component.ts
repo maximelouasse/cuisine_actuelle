@@ -9,6 +9,10 @@ import {
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
+import { ObservablesService } from '../../services/observable/observable.service';
+import { AuthService } from '../../services/auth/auth.service';
+import { UserService } from '../../services/user/user.service';
+
 
 @Component({
   selector: 'app-profil-settings',
@@ -26,6 +30,7 @@ export class ProfilSettingsComponent implements OnInit {
   masterFormFields: Array<string>;
   stepItems: Array<any>;
   masterForm: Array<FormGroup>;
+  userInfo: any;
 
   public adultesData = [
     {
@@ -399,9 +404,21 @@ export class ProfilSettingsComponent implements OnInit {
 
   constructor(
     private readonly _formBuilder: FormBuilder,
-    private router: Router) {}
+    private router: Router,
+    private ObservablesService: ObservablesService,
+    private AuthService: AuthService,
+    private UserService: UserService) {}
 
   ngOnInit(): void {
+    if(localStorage.getItem('user-email') != null) {
+      this.AuthService.identity({email: localStorage.getItem('user-email')})
+      .then( apiResponse => {
+        if(apiResponse.err === null) {
+          this.userInfo = apiResponse.data;
+        }
+      });
+    }
+
     this.activeStepIndex = 0;
     this.masterForm = [];
     this.currentFormContent = [];
@@ -518,8 +535,31 @@ export class ProfilSettingsComponent implements OnInit {
 
   onFormSubmit(): void {
     this.setFormPreview();
-    // emit aggregate form data to parent component, where we POST
-    this.formSubmit.emit(this.formData);
+    console.log(this.formData);
+    console.log(this.allergiesCurrentData);
+    console.log(this.regimeCurrentData);
+    console.log(this.categorieCurrentData);
+
+    let sendData = {
+      "userId": this.userInfo._id,
+      "name": this.formData.prenom,
+      "address": "",
+      "postal_code": "",
+      "house_composition": {"adult": this.formData.adultes, "child": this.formData.enfants},
+      "allergy": this.allergiesCurrentData,
+      "diet": this.regimeCurrentData,
+      "not_ingredient": [],
+      "cook_level": this.formData.niveau,
+      "culinary_preference": []
+    }
+
+    console.log(sendData);
+    this.UserService.saveUserInformation(sendData)
+    .then( apiResponse => {
+      if(apiResponse.err === null) {
+        this.router.navigateByUrl('/');
+      }
+    })
   }
 
   trackByFn(index: number): number {

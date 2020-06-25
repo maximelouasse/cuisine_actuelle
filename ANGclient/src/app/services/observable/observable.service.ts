@@ -18,12 +18,17 @@ Definition and export
 
     // Init observable
     protected listRecipe: BehaviorSubject<any> = new BehaviorSubject<any>(null);
+    protected userInfo: BehaviorSubject<any> = new BehaviorSubject<any>(null);
 
     // Set observable value
     public setObservableData = (type: string, data: any) => {
       switch(type) {
         case 'recipe':
           this.listRecipe.next(data);
+          break;
+
+        case 'user':
+          this.userInfo.next(data);
           break;
 
         default:
@@ -36,6 +41,9 @@ Definition and export
       switch(type) {
         case 'recipe':
           return this.listRecipe;
+
+        case 'user':
+          return this.userInfo;
 
         default:
           break;

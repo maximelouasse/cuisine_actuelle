@@ -37,15 +37,15 @@
       <p>CONNEXION</p>
     </div>
 
-    <form>
-      <input type="email" placeholder="Votre adresse email">
+    <form id="register-form" [formGroup]="formData" (submit)="registerUser(formData.value)">
+      <input formControlName="email" name="email" type="email" placeholder="Votre adresse email">
 
       <p>
-        <input type="checkbox" id="condition">
+        <input type="checkbox" id="condition" required>
         <label for="condition" aria-describedby="label">J’accepte <a>les conditions générales d’utilisation et la charte de protection des données.</a></label>
       </p>
 
-      <button type="submit">Créer un compte</button>
+      <button [disabled]="!formData.valid" type="submit">Créer un compte</button>
     </form>
 
     <button class="facebook">

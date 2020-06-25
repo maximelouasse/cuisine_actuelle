@@ -24,6 +24,18 @@ export class ListRecipePageComponent implements OnInit {
   public listQueryField: any[] = [];
   public displaySearchList: Boolean = false;
 
+  public listFilters: any = {
+    "ingredients": [],
+    "type": [],
+    "season": [],
+    "time": { "min_time": null, "max_time": null },
+    "event": "",
+    "allergies": [],
+    "not_ingredients": [],
+    "level": "",
+    "preferences": [],
+    "diet": ""
+  };
   public selectedFilterType: any[] = [];
   public selectedFilterSeason: any[] = [];
 
@@ -100,26 +112,44 @@ export class ListRecipePageComponent implements OnInit {
       //this.displaySearchList = true;
     }
 
+    // Send data to filter recipe
+    public filterRecipe = () => {
+      this.RecipeService.filterRecipe(this.listFilters)
+      .then(response => {
+          this.resultsSearch = response.data;
+      })
+    }
+
+    // Change Filter Type
     public changeFilterType = (event) => {
       let value = event.target.getAttribute('data-value-filter');
       let index = this.selectedFilterType.indexOf(value);
 
       if(index !== -1) {
         this.selectedFilterType.splice(index, 1);
+        this.listFilters.type.splice(index, 1);
       } else {
         this.selectedFilterType.push(value);
+        this.listFilters.type.push(value);
       }
+
+      this.filterRecipe();
     }
 
+    // Change Filter Season
     public changeFilterSeason = (event) => {
       let value = event.target.getAttribute('data-value-filter');
       let index = this.selectedFilterSeason.indexOf(value);
 
       if(index !== -1) {
         this.selectedFilterSeason.splice(index, 1);
+        this.listFilters.season.splice(index, 1);
       } else {
         this.selectedFilterSeason.push(value);
+        this.listFilters.season.push(value);
       }
+
+      this.filterRecipe();
     }
 
     public filterIsSelected = (filter: String, value: String) => {
@@ -170,8 +200,9 @@ export class ListRecipePageComponent implements OnInit {
 
       this.queryField.valueChanges
         .subscribe(queryField => {
-          //this.listQueryField.push(queryField);
-          this.RecipeService.search(queryField)
+          this.listFilters.ingredients = [];
+          this.listFilters.ingredients.push(queryField);
+          this.RecipeService.filterRecipe(this.listFilters)
             .then(response => {
               if(queryField == "") {
                 this.resultsSearch = null;
@@ -273,13 +304,13 @@ export class ListRecipePageComponent implements OnInit {
         }
       );
     }
-    console.log(this.selectedTypsDePlatNames);
-    console.log(this.selectedTempsDeCuissonNames);
+    /*console.log(this.selectedTypsDePlatNames);
+    console.log(this.selectedTempsDeCuissonNames);*/
   }
 
   public onSubmit = () => {
-    console.log(this.selectedTypsDePlatNames);
-    console.log(this.selectedTempsDeCuissonNames);
+    /*console.log(this.selectedTypsDePlatNames);
+    console.log(this.selectedTempsDeCuissonNames);*/
   };
 
   public checkPopupFilter = () => {

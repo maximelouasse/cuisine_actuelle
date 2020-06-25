@@ -106,7 +106,7 @@ Methods
     const me = (body, res) => {
         return new Promise( (resolve, reject) => {
             // Search user by email
-            Models.user.findById( body.id, (error, user) => {
+            Models.user.findOne( {email: body.email}, (error, user) => {
                 if(error) reject(error)
                 else if(!user) reject('Unknow identity')
                 else { resolve(user); };
