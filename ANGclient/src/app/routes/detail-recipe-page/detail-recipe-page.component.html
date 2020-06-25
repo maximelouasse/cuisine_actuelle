@@ -1,5 +1,5 @@
 <main>
-  <div class="bloc-filter-recipe">
+  <!-- <div class="bloc-filter-recipe">
     <div class="input-filter">
       <img src="assets/images/profil-settings/search.png" alt="">
       <input type="text" name="" id="" placeholder="Recherchez une recette">
@@ -8,29 +8,28 @@
       </div>
     </div>
     <button>Idées de menus</button>
-  </div>
+  </div> -->
 
   <div *ngIf="recipeDetail" class="content-recipe">
     <div class="main-image-recipe" style.background-image="url({{ recipeDetail.medias[0].url }})"></div>
-    <h3>{{ recipeDetail.title }}</h3>
+    <div class="header-detail-recipe">
 
-    <div class="review">
-      <div class="star-rank">
+      <h3>{{ recipeDetail.title }}</h3>
 
+      <div class="review">
+        <div>
+          <img src="assets/images/list-recipe/review-icon.png" alt="">{{ recipeDetail.userReviews.average }}
+        </div>
+        <p>{{ recipeDetail.userReviews.count }} <span [innerText]="recipeDetail.userReviews.count > 1 ? ' notes' : ' note'"></span></p>
       </div>
-      <p>{{ recipeDetail.userReviews.count }} <span [innerText]="recipeDetail.userReviews.count > 1 ? ' notes' : ' note'"></span></p>
-    </div>
+      <div class="mode">
+        <div>
+          <img src="assets/images/detail-recipe/screen.png" alt="">
+        </div>
+        <p>Mode cuisine</p>
+      </div>
 
-    <div class="detail-recipe">
       <div class="global-information">
-        <div>
-          <img src="assets/images/detail-recipe/level-icon.png" alt="">
-          <p>{{ recipeDetail.difficulty.label}}</p>
-        </div>
-        <div>
-          <img src="assets/images/detail-recipe/cost-icon.png" alt="">
-          <p>{{ recipeDetail.estimatedCost.label}}</p>
-        </div>
         <div>
           <img src="assets/images/detail-recipe/time-icon.png" alt="">
           <p>{{ convertSecondToMinute(recipeDetail.waitTime + recipeDetail.prepTime) }} min</p>
@@ -39,8 +38,17 @@
           <img src="assets/images/detail-recipe/cook-icon.png" alt="">
           <p>{{ convertSecondToMinute(recipeDetail.cookTime) }} min</p>
         </div>
+        <div>
+          <img src="assets/images/detail-recipe/cost-icon.png" alt="">
+          <p>{{ recipeDetail.estimatedCost.label}}</p>
+        </div>
+        <div>
+          <img src="assets/images/detail-recipe/level-icon.png" alt="">
+          <p>{{ recipeDetail.difficulty.label}}</p>
+        </div>
       </div>
-
+    </div>
+    <div class="detail-recipe">
       <div class="content-ingredient">
         <h4>Ingrédients</h4>
 
@@ -57,14 +65,12 @@
           </button>
         </div>
 
-        <div class="pub-service">
-          <p>Nouveau</p>
-          <img src="/assets/images/profil-settings/pubservice.png" alt="">
-          <p>Acheter vos ingrédients chez les producteurs locaux !</p>
-          <a>Découvir le service</a>
+        <div class="baniere-service">
+          <img src="/assets/images/detail-recipe/elipse1.png" alt="">
+          <img src="/assets/images/detail-recipe/elipse2.png" alt="">
+          <img src="/assets/images/detail-recipe/legume-baniere.png" alt="">
+          <p>Achetez vos ingrédients chez les producteurs locaux.</p>
         </div>
-
-        <button class="shop-ingredients">Commander les ingrédients</button>
 
         <ul class="list-ingredients">
           <li *ngFor="let ingredient of recipeDetail.parsedIngredients.split_ingredients[0].ingredients">
@@ -77,6 +83,8 @@
             </div>
           </li>
         </ul>
+
+        <button class="shop-ingredients"><img src="assets/images/detail-recipe/commande.png" alt="">Passez commande</button>
 
         <div style="text-align: center;">
           <img src="assets/images/ad_2.png" alt="">

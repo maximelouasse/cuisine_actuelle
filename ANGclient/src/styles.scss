@@ -7,9 +7,14 @@
 $pink: #FF5757;
 $orange: #FFF4E8;
 $gradient-pink-to-orange: linear-gradient(83.97deg, #FF5757 -3.11%, #F98972 96.55%);
-$black: #222C31;
+$black: #000000;
 $grey: #999999;
 $white: #FFFFFF;
+
+$green: #74A78D;
+$pinkDark: #FF6854;
+$fond: #FDF8F3;
+$fond2: #FCECDB;
 
 // Other
 $padding-page: 0 20px;
@@ -75,14 +80,15 @@ button {
 // Header
 header {
   height: 50px;
-  background-color: $pink;
+  background-color: $white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: $padding-page;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
   figcaption {
     font-size: 0.9rem;
-    color: $white;
+    color: $black;
   }
 }
 
@@ -105,7 +111,7 @@ div.popup {
     background-color: $white;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    //min-height: 100vh;
+    min-height: 100vh;
     text-align: center;
     figure.close_popup {
       text-align: center;
@@ -614,52 +620,52 @@ body#profil-settings {
         font-family: "Poppins-Regular";
         margin-bottom: 5px;
       }
-      div.pub-service {
-        background: $gradient-pink-to-orange;
-        border-radius: 10px;
-        padding: 20px 10px;
-        position: relative;
-        margin-top: 30px;
-        p:first-of-type {
-          position: absolute;
-          left: 10px;
-          top: -40px;
-          background-color: #5D8F68;
-          border-radius: 20px;
-          color: $white;
-          font-family: "Poppins-SemiBold";
-          font-size: 1rem;
-          letter-spacing: 1px;
-          text-transform: uppercase;
-          padding: 5px 10px;
-          line-height: 15px;
-        }
-        p:last-of-type {
-          color: $white;
-          font-size: 1.6rem;
-          font-family: "Poppins-SemiBold";
-          margin: 0;
-          margin-left: 75px;
-          text-transform: none;
-          margin-bottom: 45px;
-        }
-        a {
-          float: right;
-          color: $white;
-          border: 1px solid $white;
-          padding: 10px;
-          margin-right: 10px;
-          margin-top: -30px;
-          border-radius: 20px;
-          font-size: 1rem;
-          font-family: "Poppins-Medium";
-        }
-        img {
-          position: absolute;
-          bottom: 0;
-          left: 0;
-        }
-      }
+      // div.pub-service {
+      //   background: $gradient-pink-to-orange;
+      //   border-radius: 10px;
+      //   padding: 20px 10px;
+      //   position: relative;
+      //   margin-top: 30px;
+      //   p:first-of-type {
+      //     position: absolute;
+      //     left: 10px;
+      //     top: -40px;
+      //     background-color: #5D8F68;
+      //     border-radius: 20px;
+      //     color: $white;
+      //     font-family: "Poppins-SemiBold";
+      //     font-size: 1rem;
+      //     letter-spacing: 1px;
+      //     text-transform: uppercase;
+      //     padding: 5px 10px;
+      //     line-height: 15px;
+      //   }
+      //   p:last-of-type {
+      //     color: $white;
+      //     font-size: 1.6rem;
+      //     font-family: "Poppins-SemiBold";
+      //     margin: 0;
+      //     margin-left: 75px;
+      //     text-transform: none;
+      //     margin-bottom: 45px;
+      //   }
+      //   a {
+      //     float: right;
+      //     color: $white;
+      //     border: 1px solid $white;
+      //     padding: 10px;
+      //     margin-right: 10px;
+      //     margin-top: -30px;
+      //     border-radius: 20px;
+      //     font-size: 1rem;
+      //     font-family: "Poppins-Medium";
+      //   }
+      //   img {
+      //     position: absolute;
+      //     bottom: 0;
+      //     left: 0;
+      //   }
+      // }
       p:last-of-type {
         font-size: 1.2rem;
         text-transform: none;
@@ -672,7 +678,6 @@ body#profil-settings {
   position: relative;
   text-align: center;
   padding: 20px;
-  background-color: $orange;
 
   div.input-filter {
     position: relative;
@@ -756,14 +761,14 @@ body#profil-settings {
         text-align: center;
         background-color: #FFF;
         width: 75px;
-        padding: 10px;
-        margin: 10px 10px 10px 0;
+        padding: 12px 0px;
+        margin: 7px 7px 7px 0;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
         border-radius: 20px 4px 20px 4px;
         cursor: default;
 
         &.active {
-          background-color: #FF6854;
+          background-color: $pinkDark;
           color: #FFF;
         }
       }
@@ -788,35 +793,26 @@ body#profil-settings {
 
 // List Recipe Page
 body#list-recipe {
+  background-color: $fond;
+  input[type=text] {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  }
   .bloc-list-recipe {
     padding: 0 20px;
-    margin-top: 25px;
-
     & > div {
-      position: relative;
-      margin-bottom: 10px;
-
-      h3 {
-        display: inline-block;
-        font-family: 'Poppins-SemiBold';
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: 0.5px;
-        width: 70%;
-      }
-
       span {
-        display: inline-block;
-        position: absolute;
-        width: 30%;
-        right: 0;
-        font-family: 'Poppins-Medium';
-        font-weight: 600;
-        font-size: 13px;
+        float: right;
+        font-size: 1.3rem;
         line-height: 19px;
         text-align: right;
-        color: #FD595C;
+        color: $pinkDark;
+        margin-top: 3px;
+        vertical-align: middle;
+        margin-bottom: 10px;
+        img {
+          vertical-align: middle;
+          margin-left: 5px;
+        }
       }
     }
 
@@ -828,58 +824,49 @@ body#list-recipe {
       box-shadow: 0px 1px 1px rgba(153, 153, 153, 0.5);
       border-radius: 10px;
       margin-bottom: 11px;
-
-      a {
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-        text-decoration: none;
-
-        & > div {
-          display: inline-block;
-          width: calc((100% / 2) - 20px);
-          vertical-align: middle;
-
-          &.recipe-image {
+      & > div {
+        &.recipe-image {
+          width: 40%;
+          padding-bottom: 100px;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 50%;
+          border-radius: 7px 0 0 7px;
+          float: left;
+          div {
             position: relative;
-            display: inline-block;
-            width: 50%;
-            padding-bottom: 100px;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: 50%;
-            border-radius: 7px 0 0 7px;
-
-            div {
-              position: relative;
-              background-color: $orange;
-              width: 30px;
-              height: 30px;
-              top: 7px;
-              left: 11px;
-              border-radius: 10px;
-
-              img {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-              }
+            background-color: $orange;
+            width: 30px;
+            height: 30px;
+            top: 7px;
+            left: 11px;
+            border-radius: 10px;
+            img {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
             }
           }
+        }
 
-          &.recipe-description {
-            padding-left: 20px;
+        &.recipe-description {
+          padding-left: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          height: 130px;
+          h3 {
+            font-family: 'Poppins-Medium';
+            font-weight: 600;
+            font-size: 1.4rem;
+            line-height: 19px;
+            letter-spacing: 0.200667px;
+            padding-right: 25px;
+            color: #222C31;
+          }
 
-            h3 {
-              font-family: 'Poppins-Medium';
-              font-weight: 600;
-              font-size: 14px;
-              line-height: 19px;
-              letter-spacing: 0.200667px;
-              color: #222C31;
-            }
-
+          div {
             span {
               display: inline-block;
               font-family: 'Poppins-Regular';
@@ -888,24 +875,32 @@ body#list-recipe {
               line-height: 15px;
               letter-spacing: 0.143333px;
               color: rgba(0, 0, 0, 0.4);
-              vertical-align: text-top;
-            }
-
-            span:last-of-type {
+              vertical-align: bottom;
               margin-left: 6px;
+            }
+            img {
+              vertical-align: top;
             }
           }
         }
+      }
 
-        p.sponsored {
-          text-align: center;
-          background-color: #FA8A73;
-          color: #FFF;
-          font-family: 'Poppins-Regular';
-          font-weight: normal;
-          font-size: 10px;
-          letter-spacing: 1px;
-        }
+      p.sponsored {
+        text-align: center;
+        background-color: #FA8A73;
+        color: #FFF;
+        font-family: 'Poppins-Regular';
+        font-weight: normal;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        position: absolute;
+        padding: 5px 0;
+        top: 55px;
+        right: -54px;
+        width: 130px;
+        transform: rotate(90deg);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
       }
     }
   }
@@ -915,48 +910,49 @@ body#list-recipe {
 body#detail-recipe {
   .content-recipe {
     .main-image-recipe {
-      padding-bottom: 260px;
-      position: relative;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50%;
-    }
-
-    h3 {
-      font-family: 'Poppins-SemiBold';
-      font-weight: bold;
-      font-size: 2.8rem;
-      text-align: center;
-      color: #352B2B;
-      margin-top: 10px;
-    }
-
-    .review {
-      text-align: center;
-      margin: 20px 0;
-
-      p {
-        font-family: 'Poppins-Medium';
-        text-decoration-line: underline;
-        font-weight: 500;
-        font-size: 1.1rem;
-        line-height: 1.6rem;
-        color: #222C31;
-
+        padding-bottom: 260px;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%;
       }
-    }
-
-    .detail-recipe {
-      padding: 0 20px;
-      margin-bottom: 40px;
-
+    div.header-detail-recipe {
+      background-color: $fond;
+      padding: 20px 0;
+      text-align: center;
+      h3 {
+        font-family: 'Poppins-SemiBold';
+        font-weight: bold;
+        font-size: 2.8rem;
+        color: #352B2B;
+        margin-top: 10px;
+      }
+      .review, .mode {
+        text-align: center;
+        margin: 20px 20px;
+        display: inline-block;
+        div {
+          height: 20px;
+          text-align: center;
+          vertical-align: middle;
+          margin-bottom: 10px;
+          color: #ABA9A8;
+        }
+        p {
+          font-family: 'Poppins-Medium';
+          text-decoration-line: underline;
+          font-weight: 500;
+          font-size: 1.1rem;
+          line-height: 1.6rem;
+          color: #50555C;
+        }
+      }
       .global-information {
         margin-top: 22px;
-
         & div {
           display: inline-block;
           width: calc(100% / 4);
-          font-family: 'Poppins-Medium';
+          font-family: 'Poppins-SemiBold';
           font-weight: 600;
           font-size: 1.2rem;
           line-height: 18px;
@@ -964,10 +960,13 @@ body#detail-recipe {
           color: #222C31;
         }
       }
+    }
 
+    .detail-recipe {
+      padding: 0 20px;
+      margin-bottom: 40px;
       .content-ingredient {
         margin-top: 50px;
-
         h4 {
           font-family: 'Poppins-Medium';
           font-weight: 600;
@@ -1002,9 +1001,8 @@ body#detail-recipe {
             padding: 0;
             width: 40px;
             height: 40px;
-            border: 1px solid #fff;
             border-radius: 50%;
-            background: linear-gradient(0deg, #FF5757, #FF5757);
+            background-color: $pinkDark;
             box-shadow: 1px 2px 6px rgba(157, 170, 177, 0.5);
             -webkit-box-shadow: 1px 2px 6px rgba(157, 170, 177, 0.5);
             overflow: hidden;
@@ -1025,57 +1023,93 @@ body#detail-recipe {
           }
         }
 
-        div.pub-service {
-          background: $gradient-pink-to-orange;
-          border-radius: 10px;
-          padding: 20px 10px;
+        div.baniere-service {
+          width: 100%;
+          height: 111px;
+          background-color: $green;
           position: relative;
-          margin-top: 30px;
-          p:first-of-type {
+          overflow: hidden;
+          border-radius: 6px;
+          img:first-of-type {
             position: absolute;
-            left: 10px;
-            top: -40px;
-            background-color: #5D8F68;
-            border-radius: 20px;
-            color: $white;
-            font-family: "Poppins-SemiBold";
-            font-size: 1rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            padding: 5px 10px;
-            line-height: 15px;
+            top: 0;
+            left: 0;
           }
-          p:last-of-type {
-            color: $white;
-            font-size: 1.6rem;
-            font-family: "Poppins-SemiBold";
-            margin: 0;
-            margin-left: 75px;
-            text-transform: none;
-            margin-bottom: 45px;
-          }
-          a {
-            float: right;
-            color: $white;
-            border: 1px solid $white;
-            padding: 10px;
-            margin-right: 10px;
-            margin-top: -30px;
-            border-radius: 20px;
-            font-size: 1rem;
-            font-family: "Poppins-Medium";
-          }
-          img {
+          img:nth-of-type(2) {
             position: absolute;
             bottom: 0;
-            left: 0;
+            left: 176px;
+          }
+          img:last-of-type {
+            float: left;
+            position: relative;
+            margin-left: -7px;
+          }
+          p {
+            color: $white;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 133px;
+            width: 176px;
+            font-size: 1.4rem;
+            font-family: "Poppins-Regular";
+            line-height: 19px;
           }
         }
 
+        // div.pub-service {
+        //   background: $gradient-pink-to-orange;
+        //   border-radius: 10px;
+        //   padding: 20px 10px;
+        //   position: relative;
+        //   margin-top: 30px;
+        //   p:first-of-type {
+        //     position: absolute;
+        //     left: 10px;
+        //     top: -40px;
+        //     background-color: #5D8F68;
+        //     border-radius: 20px;
+        //     color: $white;
+        //     font-family: "Poppins-SemiBold";
+        //     font-size: 1rem;
+        //     letter-spacing: 1px;
+        //     text-transform: uppercase;
+        //     padding: 5px 10px;
+        //     line-height: 15px;
+        //   }
+        //   p:last-of-type {
+        //     color: $white;
+        //     font-size: 1.6rem;
+        //     font-family: "Poppins-SemiBold";
+        //     margin: 0;
+        //     margin-left: 75px;
+        //     text-transform: none;
+        //     margin-bottom: 45px;
+        //   }
+        //   a {
+        //     float: right;
+        //     color: $white;
+        //     border: 1px solid $white;
+        //     padding: 10px;
+        //     margin-right: 10px;
+        //     margin-top: -30px;
+        //     border-radius: 20px;
+        //     font-size: 1rem;
+        //     font-family: "Poppins-Medium";
+        //   }
+        //   img {
+        //     position: absolute;
+        //     bottom: 0;
+        //     left: 0;
+        //   }
+        // }
+
         button.shop-ingredients {
-          margin-top: 30px;
+          margin-top: 20px;
+          margin-bottom: 40px;
           text-align: center;
-          background: #FD595C;
+          background: $pinkDark;
           border-radius: 6px;
           font-family: 'Poppins-Medium';
           font-weight: 600;
@@ -1083,6 +1117,10 @@ body#detail-recipe {
           line-height: 21px;
           letter-spacing: 0.43px;
           color: #FFFFFF;
+          img {
+            margin-right: 20px;
+            vertical-align: bottom;
+          }
         }
 
         .list-ingredients {
@@ -1180,6 +1218,7 @@ body#detail-recipe {
 
               span {
                 color: #FF5757;
+                font-family: 'Poppins-SemiBold';
               }
             }
           }
@@ -1191,8 +1230,8 @@ body#detail-recipe {
 
 // Footer
 footer {
-  background-color: $pink;
-  color: #FFFFFF;
+  background-color: $fond2;
+  color: $black;
   text-align: center;
   padding: 20px 50px;
 
@@ -1218,7 +1257,7 @@ footer {
 
 // Bottom Magazine
 .magazine {
-  background-color: #FCECDB;
+  background-color: #FF8272;
   padding: 20px;
   text-align: center;
 
@@ -1229,7 +1268,7 @@ footer {
     font-size: 1.6rem;
     line-height: 2.4rem;
     letter-spacing: 0.5px;
-    color: #222C31;
+    color: $white;
     text-align: left;
   }
 
