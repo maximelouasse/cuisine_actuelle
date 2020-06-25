@@ -162,27 +162,30 @@
 
   <div class="bloc-list-recipe">
     <div>
-      <h3>Recettes suggérées</h3>
-      <span>Trier par :</span>
+      <span>Trier par <img src="assets/images/list-recipe/trier.png" alt=""></span>
     </div>
 
     <ul *ngIf="allRecipe" class="list-recipe">
-      <li *ngFor="let recipe of allRecipe | keyvalue">
-        <a [routerLink]="['/recipe', recipe.value.id]" >
-          <div class="recipe-image" style.background-image="url({{ recipe.value.medias[0].url }})">
-            <div>
-              <img src="assets/images/list-recipe/save-icon.png" alt="">
-            </div>
+      <li *ngFor="let recipe of allRecipe | keyvalue" [routerLink]="['/recipe', recipe.value.id]">
+        <div class="recipe-image" style.background-image="url({{ recipe.value.medias[0].url }})">
+          <div>
+            <img src="assets/images/list-recipe/save-icon.png" alt="">
           </div>
-          <div class="recipe-description">
-            <h3>{{ recipe.value.title }}</h3>
-            <span><img src="assets/images/list-recipe/clock-icon.png" alt=""></span>
+        </div>
+        <div class="recipe-description">
+          <h3>{{ recipe.value.title }}</h3>
+          <div>
+            <img src="assets/images/list-recipe/clock-icon.png" alt="">
             <span>{{ convertSecondToMinute(recipe.value.prepTime) }} m</span>
           </div>
-          <p *ngIf="isMultiple(recipe.key, 3) == 0" class="sponsored">
-            Sponsorisé
-          </p>
-        </a>
+          <div>
+            <img src="assets/images/list-recipe/review-icon.png" alt="">
+            <span>Note {{ recipe.value.userReviews.average }}</span>
+          </div>
+        </div>
+        <p *ngIf="isMultiple(recipe.key, 3) == 0" class="sponsored">
+          Sponsorisé
+        </p>
       </li>
       <li>
         <a href="">

@@ -273,13 +273,9 @@ export class ListRecipePageComponent implements OnInit {
         }
       );
     }
-    console.log(this.selectedTypsDePlatNames);
-    console.log(this.selectedTempsDeCuissonNames);
   }
 
   public onSubmit = () => {
-    console.log(this.selectedTypsDePlatNames);
-    console.log(this.selectedTempsDeCuissonNames);
   };
 
   public checkPopupFilter = () => {
