@@ -40,7 +40,7 @@ export class RecipeService {
     console.log(data);
     return this.HttpClient.post(`${environment.apiUrl}/recipe/`, { filters: data })
       .toPromise()
-      .then(data => this.getData(data, 'recipe'))
+      .then(data => this.getData(data))
       .catch(this.handleError);
   }
 
@@ -59,10 +59,10 @@ export class RecipeService {
       .catch(this.handleError);
   }
 
-  public search(queryString: String) {
+  public search(queryString: String): Promise<any> {
     return this.HttpClient.post(`${environment.apiUrl}/recipe/`, { filters: { ingredients: [queryString] } })
       .toPromise()
-      .then(data => this.getData(data, 'recipe'))
+      .then(data => this.getData(data))
       .catch(this.handleError);
   }
 

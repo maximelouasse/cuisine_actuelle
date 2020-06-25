@@ -2,10 +2,9 @@
   <div class="bloc-filter-recipe">
     <div class="input-filter">
       <img src="assets/images/profil-settings/search.png" alt="">
-      <input type="text" [formControl]="queryField" (blur)="onBlur()" (focus)="onFocus()" name="keyword" id="keyword" placeholder="Ingrédients, recette, type de cuisine">
-      <!--<div class="icon-filter">
-        <img src="assets/images/list-recipe/filter-icon.png" alt="">
-      </div>-->
+      <form [formGroup]="formData">
+        <input type="text" [formControl]="queryField" (blur)="onBlur()" (focus)="onFocus()" name="keyword" id="keyword" placeholder="Ingrédients, recette, type de cuisine">
+      </form>
     </div>
     <ul *ngIf="displaySearchList" class="filter-search">
       <li *ngFor="let result of resultsSearch">
@@ -13,12 +12,19 @@
           <p class="recipe-name">{{ result.title }}</p>
         </a>
       </li>
-      <li>
+      <li (click)="addSearchFilter()">
         Toutes les recettes avec <span>"{{ queryField.value }}"</span>
       </li>
     </ul>
 
-    <!--<button>Idées de menus</button>-->
+    <div *ngIf="currentListSearchFilters.length > 0" class="list-filter-selected">
+      <ul>
+        <li *ngFor="let item of currentListSearchFilters | keyvalue" (click)="deleteSearchFilter(item.key)">
+          <img src="../../../assets/images/list-recipe/cross-icon.png" alt="">
+          <span>{{ item.value }}</span>
+        </li>
+      </ul>
+    </div>
 
     <div class="content-filter">
       <h3>Trouver par</h3>
@@ -165,8 +171,8 @@
       <span>Trier par <img src="assets/images/list-recipe/trier.png" alt=""></span>
     </div>
 
-    <ul *ngIf="allRecipe" class="list-recipe">
-      <li *ngFor="let recipe of allRecipe | keyvalue" [routerLink]="['/recipe', recipe.value.id]">
+    <ul *ngIf="listRecipe" class="list-recipe">
+      <li *ngFor="let recipe of listRecipe | keyvalue" [routerLink]="['/recipe', recipe.value.id]">
         <div class="recipe-image" style.background-image="url({{ recipe.value.medias[0].url }})">
           <div>
             <img src="assets/images/list-recipe/save-icon.png" alt="">

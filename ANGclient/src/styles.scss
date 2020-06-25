@@ -743,6 +743,32 @@ body#profil-settings {
     }
   }
 
+  div.list-filter-selected {
+    text-align: left;
+
+    ul {
+      li {
+        display: inline-block;
+        width: auto;
+        padding: 8px 15px;
+        margin: 8px 8px 0 0;
+        background-color: #FFF;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+        border-radius: 100px;
+
+        img {
+          vertical-align: middle;
+        }
+
+        span {
+          display: inline-block;
+          margin-left: 10px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
   div.content-filter {
     text-align: left;
     margin-top: 20px;

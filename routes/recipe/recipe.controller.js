@@ -84,21 +84,21 @@ Methods
                 let recipeData = JSON.parse(rawData);
 
                 // OK
-                if(typeof filters.ingredients != undefined && filters.ingredients.length > 0) {
+                if(typeof filters.ingredients != 'undefined' && filters.ingredients.length > 0) {
                     resultIngredients = filterIngredients(recipeData, filters.ingredients);
                 } else {
                     resultIngredients = true;
                 }
 
                 // OK
-                if(typeof filters.type != undefined && filters.type.length > 0) {
+                if(typeof filters.type != 'undefined' && filters.type.length > 0) {
                     resultType = filterType(recipeData, filters.type);
                 } else {
                     resultType = true;
                 }
 
                 // OK
-                if(typeof filters.season != undefined && filters.season.length > 0) {
+                if(typeof filters.season != 'undefined' && filters.season.length > 0) {
                     resultSeason = filterSeason(recipeData, filters.season);
                 } else {
                     resultSeason = true;
@@ -157,18 +157,27 @@ Methods
     const filterIngredients = (recipe, filters) => {
         let recipeIngredients = recipe.parsedIngredients.split_ingredients[0].ingredients;
         let result = false;
+        let foundIngredient;
 
-        recipeIngredients.forEach(element => {
-            clearValue = clearCharacter(element.referenceIngredient);
+        for(let i = 0; i < filters.length; i++) {
+            foundIngredient = false;
+            clearIngredient = clearCharacter(filters[i]);
 
-            filters.forEach(ingredient => {
-                clearIngredient = clearCharacter(ingredient);
-                
+            for(let j = 0; j < recipeIngredients.length; j++) {
+                clearValue = clearCharacter(recipeIngredients[j].referenceIngredient);
+
                 if(clearValue.toUpperCase().includes(clearIngredient.toUpperCase())) {
-                    result = true;
+                    foundIngredient = true;
+                    break;
                 }
-            });
-        });
+            }
+
+            if(foundIngredient) {
+                result = true;
+            } else {
+                return false;
+            }
+        }
 
         return result;
     }
