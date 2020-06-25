@@ -1,7 +1,5 @@
 <main>
-
-
-  <img class="retour" (click)="goToStep('prev')" src="/assets/images/profil-settings/retour.png" alt="" *ngIf="activeStepIndex < 6">
+  <img class="retour" (click)="goToStep('prev')" src="/assets/images/profil-settings/retour.png" alt="" *ngIf="activeStepIndex > 0 && activeStepIndex < 6">
 
   <p class="step" *ngIf="activeStepIndex < 6">{{ activeStepIndex + 1 }}/6</p>
   <h2 class="form-heading">{{ stepItems[activeStepIndex].titleStep }}</h2>
@@ -94,7 +92,7 @@
           <input type="text" name="prenom" id="prenom" placeholder="Renseignez votre prénom">
 
           <label for="">Email</label>
-          <input type="email" name="email" id="email" placeholder="Renseignez votre email">
+          <input type="email" name="email" id="email" placeholder="Renseignez votre email" value="{{currentFormContent[6].email.value}}">
 
           <hr>
 
@@ -138,40 +136,18 @@
               </div>
             </label>
           </div>
+        </div>
 
-          <hr>
-
-          <h3>Mangez local !</h3>
-
-          <div class="pub-service">
-            <p>Nouveau</p>
-            <img src="/assets/images/profil-settings/pubservice.png" alt="">
-            <p>Acheter vos ingrédients chez les producteurs locaux !</p>
-            <a>Découvir le service</a>
-          </div>
-
-          <p>Renseignez une adresse pour vous faire livrer des ingrédients directement depuis vos producteurs locaux</p>
-
-          <label for="adresse">Adresse</label>
-          <input type="text" name="adresse" id="adresse" placeholder="Votre adresse complète">
-
-          <label for="code_postal">Code postal</label>
-          <input type="text" name="code_postal" id="code_postal" placeholder="9200">
-
-
-          <!-- <ul>
-            <li class="form-details-list" *ngFor="let field of masterFormFields; trackBy: trackByFn">
-              <span class="text-bold">{{ field }}</span>
-              <span>{{ formData[field] || 'N/A' }}</span>
-            </li>
-          </ul> -->
+        <div class="confidentialite"  *ngIf="activeStepIndex < 6">
+          <p>Nous garantissons la confidentialité de vos données</p>
+          <a>Conditions générales d'utilisation et de protection de vos données personnelles.</a>
         </div>
 
         <div class="button-container">
-          <button *ngIf="activeStepIndex === stepItems.length - 1" type="button"
-            (click)="onFormSubmit()">Enregistrer</button>
-          <button type="button" [disabled]="activeStepIndex === stepItems.length - 1 || masterForm[i].invalid"
-            (click)="goToStep('next')" *ngIf="activeStepIndex < 6">Suivant</button>
+          <button type="button" (click)="onFormSubmit()" *ngIf="activeStepIndex == 6">Enregistrer</button>
+          <button type="button" (click)="goToStep('next')" *ngIf="activeStepIndex < 5">Suivant</button>
+          <button type="button" (click)="goToStep('next')" *ngIf="activeStepIndex == 5">Enregister et créer mon profil</button>
+          <button type="button" class="annuler" (click)="stopForm()" *ngIf="activeStepIndex < 6">Annuler</button>
         </div>
       </div>
     </form>

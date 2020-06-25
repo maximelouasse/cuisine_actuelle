@@ -365,6 +365,7 @@ export class ProfilSettingsComponent implements OnInit {
       validations: {},
       errors: {},
       placeholder: "Resneignez votre adresse email",
+      value: localStorage.getItem('user-email')
     }
   }
 
@@ -478,17 +479,15 @@ export class ProfilSettingsComponent implements OnInit {
   }
 
   goToStep(step: string): void {
-    if (step == 'prev' && this.activeStepIndex == 0)
-      this.router.navigate(['welcome']);
-
     this.activeStepIndex = step === 'prev' ? this.activeStepIndex - 1 : this.activeStepIndex + 1;
-
-    console.log(this.masterForm);
+    window.scrollTo(0, 0);
 
     this.setFormPreview();
   }
 
-
+  stopForm():void {
+    this.router.navigate(['welcome']);
+  }
 
   getSelectedInputs(whatInput, value, isChecked): void {
     console.log(whatInput);

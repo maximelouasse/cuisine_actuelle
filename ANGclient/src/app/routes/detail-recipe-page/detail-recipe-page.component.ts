@@ -20,6 +20,7 @@ export class DetailRecipePageComponent implements OnInit {
 
   public recipeDetail: any;
   public yield: number;
+  public initialYield: number;
 
   /**
    * Methods
@@ -33,11 +34,15 @@ export class DetailRecipePageComponent implements OnInit {
   }
 
   public changePerson = (type: String) => {
-    if(type === "substract") {
+    if (type === "substract")
       this.yield--;
-    } else {
+    else if (type === "add")
       this.yield++;
-    }
+  }
+
+  public calc = (quantity) => {
+    if( quantity != null)
+      return Math.round( (this.yield * parseFloat(quantity.replace(/,/g, '.')) / this.initialYield) * 100) / 100;
   }
   //
 
@@ -47,6 +52,7 @@ export class DetailRecipePageComponent implements OnInit {
         .then(apiResponse => {
           this.recipeDetail = apiResponse.data;
           this.yield = this.recipeDetail.yield;
+          this.initialYield = this.recipeDetail.yield;
         })
         .catch(error => {
           console.log('ERROR request', error);
