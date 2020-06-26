@@ -24,7 +24,7 @@
                       {{ data.label }}
                     </label>
                   </div>
-                  <img class="add_foyer" src="assets/images/profil-settings/add.png" alt="">
+                  <img class="add_foyer" src="assets/images/profil-settings/add.png" alt=""  *ngIf="activeStepIndex != 4">
               </ng-container>
 
               <ng-container *ngSwitchCase="'checkbox'">
