@@ -149,7 +149,7 @@ Methods
                 }
             })
             
-            console.log(listRecipe.length);
+            //console.log(listRecipe.length);
             resolve(listRecipe)
         });
     }

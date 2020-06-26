@@ -25,7 +25,7 @@
               "unit": null,
               "commonIngredient": "Jambon",
               "referenceIngredient": "Jambon",
-              "image": "jambon.png"
+              "image": "jambon-cru.png"
             },
             {
               "ingredient": "Brousse (ou de fromage frais)",
@@ -33,7 +33,7 @@
               "unit": "g",
               "commonIngredient": "Fromage",
               "referenceIngredient": "Fromage",
-              "image": "fromage.png"
+              "image": "brousse.png"
             },
             {
               "ingredient": "Oignons nouveaux",

@@ -68,7 +68,7 @@
             "preQuantity": null,
             "commonIngredient": "Chapelure",
             "referenceIngredient": "Chapelure",
-            "image": "chapelure.png"
+            "image": "chapelure-mais.png"
           },
           {
             "ingredient": "Mie de pain sans gluten",
@@ -78,7 +78,7 @@
             "preQuantity": null,
             "commonIngredient": "Pain de mie sans croûte",
             "referenceIngredient": "Pain",
-            "image": "pain.png"
+            "image": "mie-de-pain-sans-gluten.png"
           },
           {
             "ingredient": "Lait",
