@@ -485,6 +485,11 @@ body#profil-settings {
       font-size: 1.6rem;
     }
     form {
+      img.add_foyer {
+        position: absolute;
+        right: 20px;
+        margin-top: 25px;
+      }
       p {
         font-size: 1.6rem;
         margin-top: 25px;
@@ -753,6 +758,9 @@ body#profil-settings {
     input {
       padding-left: 50px;
       background-color: #FFF;
+      font-family: 'Poppins-Regular';
+      font-size: 1.4rem;
+      color: #222C31;
     }
   }
 
@@ -760,16 +768,18 @@ body#profil-settings {
     position: absolute;
     width: calc(100% - 40px);
     z-index: 10;
-
     li {
       background-color: #FFF;
-      padding: 10px;
-
+      padding-right: 10px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 60px;
+      text-align: left;
+      border-bottom:1px solid #F6F6F6;
       a {
         text-decoration: none;
         color: #11193D;
       }
-
       &:last-of-type {
         font-family: 'Poppins-SemiBold';
         font-weight: normal;
@@ -777,7 +787,6 @@ body#profil-settings {
         line-height: 1.9rem;
         color: #FFF;
         background-color: #FF6854;
-
         span {
           font-weight: 800;
         }
